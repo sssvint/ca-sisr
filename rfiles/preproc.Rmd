@@ -1,0 +1,170 @@
+---
+title: "ca_analysis"
+author: "Samuel Vinter"
+date: "2024-12-10"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+pacman::p_load(tidyverse, dplyr, readr)
+```
+
+```{r}
+Adam <- read_delim("csv/Adam_coded.csv", 
+    delim = ";", escape_double = FALSE, trim_ws = TRUE)
+
+Albert <- read_delim("csv/Albert_coded.csv", 
+    delim = ";", escape_double = FALSE, trim_ws = TRUE)
+
+Anthony <- read_delim("csv/Anthony_coded.csv", 
+    delim = ";", escape_double = FALSE, trim_ws = TRUE)
+
+AD <- read_delim("csv/AD_coded.csv", 
+    delim = ";", escape_double = FALSE, trim_ws = TRUE)
+
+AH <- read_delim("csv/AH_coded.csv", 
+    delim = ";", escape_double = FALSE, trim_ws = TRUE)
+
+AS <- read_delim("csv/AS2_coded.csv", 
+    delim = ";", escape_double = FALSE, trim_ws = TRUE)
+```
+
+```{r}
+Adam <- Adam %>%
+  rename(file = "...1") %>%
+  rename(type = "Type of repair") %>%
+  rename(sameturn = "Same-turn - specify type") %>%
+  rename(TRP = "TRP - specify type") %>%
+  rename(thirdturn = "Third-turn - specify type") %>%
+  rename(thirdpos = "Third-position - specify type") 
+Adam$type[is.na(Adam$type)] <- "same-turn"# one na value in type which should be same turn
+
+Albert <- Albert %>%
+  rename(file = File) %>%
+  rename(type = "Type of repair") %>%
+  rename(sameturn = "Same-turn - specify type") %>%
+  rename(TRP = "TRP - specify type") %>%
+  rename(thirdturn = "Third-turn - specify type") %>%
+  rename(thirdpos = "Third-position - specify type")
+
+Anthony <- Anthony %>%
+  rename(file = File) %>%
+  rename(type = "Type of repair") %>%
+  rename(sameturn = "Same-turn - specify type") %>%
+  rename(TRP = "TRP - specify type") %>%
+  rename(thirdturn = "Third-turn - specify type") %>%
+  rename(thirdpos = "Third-position - specify type")
+
+AD <- AD %>%
+  rename(file = "...1") %>%
+  rename(type = "Type of repair") %>%
+  rename(sameturn = "Same-turn - specify type") %>%
+  rename(TRP = "TRP - specify type") %>%
+  rename(thirdturn = "Third-turn - specify type") %>%
+  rename(thirdpos = "Third-position - specify type")
+
+AH <- AH %>%
+  rename(file = "...1") %>%
+  rename(type = "Type of repair") %>%
+  rename(sameturn = "Same-turn - specify type") %>%
+  rename(TRP = "TRP - specify type") %>%
+  rename(thirdturn = "Third-turn - specify type") %>%
+  rename(thirdpos = "Third-position - specify type")
+AH$type[is.na(AH$type)] <- "same-turn" # one na value in type which should be same turn
+AH <- cbind(AH, comments=NA)
+
+AS <- AS %>%
+  rename(type = "Type of repair") %>%
+  rename(sameturn = "Same-turn - specify type") %>%
+  rename(TRP = "TRP - specify type") %>%
+  rename(thirdturn = "Third-turn - specify type") %>%
+  rename(thirdpos = "Third-position - specify type")
+```
+
+```{r}
+Adam <- drop_na(Adam, Utterance) 
+Albert <- drop_na(Albert, Utterance)
+Anthony <- drop_na(Anthony, Utterance)
+AD <- drop_na(AD, Utterance)
+AH <- drop_na(AH, Utterance)
+AS <- drop_na(AS, Utterance)
+# for some reason theres a bunch of redundant NA rows in some of em
+
+Adam_drop <- Adam %>% 
+  filter(!(Speaker %in% "MOT")) %>% # removing MOT (but preserving NA, for pauses!)
+  filter_at(vars(type,pause,search,"repeat",cause,other,comments),any_vars(!is.na(.)))
+
+Albert_drop <- Albert %>% 
+  filter(!(Speaker %in% "MOT")) %>% 
+  filter_at(vars(type,pause,search,"repeat",cause,other,comments),any_vars(!is.na(.)))
+
+Anthony_drop <- Anthony %>%
+  filter(!(Speaker %in% "MOT")) %>% 
+  filter_at(vars(type,pause,search,"repeat",cause,other,comments),any_vars(!is.na(.)))
+
+AD_drop <- AD %>%
+  filter(!(Speaker %in% "MOT")) %>% 
+  filter_at(vars(type,pause,search,"repeat",cause,other,comments),any_vars(!is.na(.)))
+
+AD_drop <- subset(AD_drop, file!="AD3") # so theres only 3 files in each
+
+AH_drop <- AH %>%
+  filter(!(Speaker %in% "MOT")) %>% 
+  filter_at(vars(type,pause,search,"repeat",cause,other),any_vars(!is.na(.)))
+
+AS_drop <- AS %>%
+  filter(!(Speaker %in% "MOT")) %>% 
+  filter_at(vars(type,pause,search,"repeat",cause,other,comments),any_vars(!is.na(.)))
+```
+
+```{r}
+
+```
+
+
+```{r}
+# combine dfs
+g1 <- rbind(Adam_drop, Albert_drop, Anthony_drop)
+g2 <- rbind(AD_drop, AH_drop, AS_drop)
+
+# g1 has more observations than g2
+```
+
+```{r}
+g1_l <- g1 %>%
+  pivot_longer(
+    cols = c("sameturn", "TRP", "thirdturn", "thirdpos"),
+    names_to = "turn",
+    values_to = "reptype",
+    values_drop_na = TRUE
+  ) %>%
+  select(-c("turn", "comments")) %>%
+  relocate(reptype, .after = type)
+
+g2_l <- g2 %>%
+  pivot_longer(
+    cols = c("sameturn", "TRP", "thirdturn", "thirdpos"),
+    names_to = "turn",
+    values_to = "reptype",
+    values_drop_na = TRUE
+  ) %>%
+  select(-c("turn", "comments")) %>%
+  relocate(reptype, .after=type)
+```
+
+```{r}
+g1_l %>%
+  count(reptype)
+
+g2_l %>%
+  count(reptype)
+```
+```{r}
+
+```
+

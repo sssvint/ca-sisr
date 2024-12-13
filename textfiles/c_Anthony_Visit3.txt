@@ -1,0 +1,1003 @@
+CHI:no
+CHI:no
+MOT:do you want to build
+CHI:no
+MOT:do you want to build gigi's house
+CHI:no
+CHI:no
+MOT:do you want to build your house
+CHI:no
+MOT:do you want to get the big legos
+CHI:all done
+MOT:do you want to put those blocks away
+CHI:no
+MOT:here t
+MOT:you can put them in the bag
+CHI:no blocks
+MOT:here
+MOT:you want to play with the big blocks
+CHI:no
+MOT:here
+CHI:no
+CHI:no
+CHI:no
+CHI:no blocks
+CHI:no blocks
+CHI:no blocks
+CHI:no blocks
+MOT:you want to take the block out
+MOT:here
+CHI:yes
+MOT:don't cry
+MOT:here
+CHI:yes
+MOT:do you want to make some block soup
+CHI:no
+MOT:mmm
+CHI:no
+CHI:no
+CHI:no
+MOT:alright
+MOT:Anthony, no throwing please
+CHI:no
+MOT:how about a bowl
+CHI:no
+MOT:you want to put a bowl on your head
+CHI:no
+MOT:Anthony's got a bowl
+CHI:no
+MOT:on his head
+MOT:on his head
+CHI:no
+CHI:no bowl
+MOT:gi gi's got a bowl on her head
+CHI:no no no
+MOT:you don't want to sing
+CHI:no
+MOT:okay
+MOT:let's calm down
+MOT:what do you want to do
+CHI:no clean up
+MOT:we don't have to clean up
+MOT:what do you want to do
+CHI:no ball
+CHI:no ball
+CHI:no
+MOT:you wanna catch
+MOT:let's catch
+MOT:let's play catch
+MOT:you want to throw
+CHI:no
+MOT:good throwing
+CHI:no throwing
+CHI:no throwing
+CHI:no ball
+CHI:ball
+CHI:I don't know
+CHI:I don't know
+CHI:I don't know
+MOT:where's the ball
+CHI:what
+MOT:where's the ball
+MOT:do you need a hug
+CHI:where'd the ball go
+MOT:where'd the ball go
+MOT:can you show me
+CHI:I can
+CHI:over
+CHI:xxx
+MOT:where's the ball
+CHI:the ball
+MOT:where did it go
+MOT:where is it
+MOT:Anthony I see it
+MOT:Anthony
+MOT:come here
+MOT:look what I found
+MOT:I found the ball
+MOT:do you want to see how high it bounces
+CHI:oh no
+CHI:I do
+MOT:you want to go put it away
+CHI:no
+MOT:no no no
+MOT:we're not going to hide it
+CHI:mine
+CHI:mine
+MOT:okay
+MOT:let's go put it away
+CHI:no
+CHI:mine
+CHI:no
+CHI:ball
+MOT:where is it
+CHI:no ball
+MOT:where is it
+CHI:no ball
+MOT:come on
+CHI:my ball xxx my ball
+MOT:okay
+MOT:why don't you sit here for a minute until you're done
+CHI:xxx
+CHI:no
+MOT:do you want to read a book about those animals
+CHI:no
+CHI:no
+MOT:how about wiggle jiggle jump
+CHI:no
+MOT:do you want to read
+MOT:the story about the elephant
+CHI:no
+CHI:no
+MOT:do you want to read the story about this guy
+CHI:no
+MOT:what do you want to do
+CHI:this one
+MOT:what
+CHI:this one
+MOT:a story about this guy
+CHI:yes
+MOT:alright
+MOT:let's see
+MOT:let's read a story about this guy
+MOT:let's see
+MOT:you ready
+MOT:good calming down
+MOT:let's see
+MOT:this is the story of this guy
+MOT:wiggle jiggle and jumping
+MOT:he can wiggle jiggle jump up
+MOT:silly willy prance
+MOT:make him jump up
+MOT:good job
+MOT:he's jumping on the bed
+MOT:button up the shirt
+MOT:can you button up his shirt
+MOT:where's the shirt
+MOT:do buttons
+MOT:do buttons
+MOT:make believe
+MOT:put on the pants
+MOT:where's his pants
+CHI:where's his pants
+MOT:what color are his pants
+MOT:what color
+MOT:is that red
+CHI:red
+MOT:that's red
+CHI:no
+MOT:what color is it
+CHI:blue
+MOT:blue
+MOT:turn the page
+MOT:turn the page
+MOT:put on the shoes
+MOT:tie
+MOT:on the socks
+MOT:tie up the shoes
+MOT:turn the page
+MOT:Jesse dance with me
+CHI:no
+MOT:and I'll dance with you
+MOT:turn the page
+MOT:the end
+MOT:can you say the end
+CHI:the end
+MOT:the end
+MOT:do you want to read this book now
+CHI:yes
+MOT:who is my friend
+MOT:one happy cat wants to be petted
+MOT:two thirsty cats lap up milk
+MOT:how many cats are in this picture
+MOT:does that look like coconut
+CHI:yes
+MOT:look at the doggies
+MOT:do you want to count the dogs
+CHI:yes
+MOT:let's count
+MOT:ready
+MOT:one
+CHI:one
+CHI:two
+CHI:three
+CHI:four
+CHI:five
+CHI:six
+CHI:seven
+MOT:seven dogs
+MOT:wow
+MOT:look at these animals
+MOT:what are these
+CHI:birds
+MOT:how many birds do you see
+CHI:one
+CHI:two
+MOT:two birds
+MOT:how about this
+MOT:what are these
+CHI:fish
+MOT:fish
+MOT:how many fish
+CHI:one
+CHI:two
+CHI:three
+CHI:four
+CHI:five
+CHI:six
+MOT:six fish
+MOT:what's this
+MOT:what is this
+CHI:a horse
+MOT:one horse
+MOT:what are these
+CHI:rabbits
+MOT:how many rabbits
+CHI:one
+CHI:two
+CHI:three
+CHI:four
+MOT:two rabbits
+MOT:these aren't rabbits
+MOT:two rabbits
+MOT:what's this
+MOT:a hamster
+MOT:I don't think you ever saw a hamster
+MOT:and this is a tiny
+MOT:mouse
+MOT:can you say mouse
+CHI:mouse
+MOT:this is fish food
+MOT:and a dog collar
+CHI:yes
+MOT:what else do you see
+CHI:a
+CHI:no
+CHI:yes
+MOT:oh
+MOT:do you want to brush him
+MOT:do you want to brush the horse
+MOT:good job
+MOT:here
+MOT:let's brush
+MOT:brush the horse
+MOT:good brushing
+MOT:who else can we brush
+MOT:can we brush
+MOT:a fish
+CHI:yes
+MOT:no
+MOT:we can brush a dog
+MOT:want to brush a dog
+CHI:no
+MOT:how about a cat
+CHI:yes
+MOT:go ahead
+MOT:brush
+MOT:brush the cat
+CHI:I have
+CHI:a spoon
+MOT:you have a boo boo
+CHI:a spoon
+MOT:a spoon
+MOT:do you want to feed somebody something
+MOT:here
+MOT:feed the bird
+MOT:oh
+MOT:good job
+MOT:he's hungry
+MOT:who else can you feed
+CHI:dog
+MOT:do you want to feed the dog
+MOT:good feeding
+MOT:what else do you want to do, bud
+CHI:ball
+MOT:do you want to try this
+CHI:go
+MOT:how does it go
+MOT:press
+MOT:here
+MOT:turn
+MOT:press
+MOT:you did it
+MOT:what do you have to do with the star
+MOT:push
+MOT:push
+MOT:xxx does it
+MOT:xxx I see
+MOT:Anthony look
+CHI:toy
+CHI:a toy
+MOT:be in the middle xxx
+MOT:Anthony do you
+CHI:I xxx
+MOT:want to make a tower
+CHI:yes
+MOT:what can we use to make a tower
+MOT:here
+MOT:let's use all the
+MOT:all the blocks for the tower
+MOT:come here
+MOT:okay
+MOT:you ready
+MOT:can you put one on
+CHI:yeah
+MOT:good job
+MOT:here
+MOT:can you put this block on top
+CHI:xxx this
+MOT:uh oh
+MOT:here
+MOT:Anthony here
+MOT:come here
+CHI:no
+MOT:can you put this block on top please
+CHI:yeah
+CHI:yeah
+MOT:and this one too
+CHI:ball
+MOT:come on
+MOT:because when we build it we can knock it down
+MOT:want to put this one on top
+CHI:yes
+MOT:do you want to knock it down with the ball
+CHI:yes
+MOT:go ahead
+MOT:throw the ball at it
+MOT:let's throw the ball at it
+MOT:ready
+MOT:throw it xxx
+MOT:throw the ball at it
+MOT:watch
+MOT:watch Anthony
+MOT:watch
+MOT:Anthony
+MOT:that's not the ball you had, honey
+MOT:here's the ball you had
+MOT:okay
+MOT:here
+MOT:let's throw the ball
+CHI:no no no no no no no
+MOT:let's throw the ball
+CHI:no no no no no no no
+MOT:ready
+CHI:no
+MOT:oh
+MOT:we did it
+CHI:no
+MOT:do you want to do it again
+CHI:no
+CHI:yes
+MOT:okay
+MOT:go ahead
+MOT:let's build
+MOT:want to do another one
+CHI:yes
+MOT:okay
+MOT:it's okay baby
+MOT:good job
+MOT:look at that tower
+MOT:do you want to put this one on top
+CHI:another one
+MOT:another one
+CHI:yes
+CHI:no
+MOT:good job
+MOT:where's the ball
+MOT:oh
+MOT:it's okay
+MOT:we can fix it
+MOT:do you want to knock it down with the ball again
+CHI:yes
+CHI:I know
+MOT:okay
+MOT:ready
+CHI:xxx
+MOT:alright
+MOT:let's get ready, Anthony
+MOT:let's get ready to knock it down
+MOT:come here
+CHI:xxx
+MOT:let me see the elephants
+MOT:let's get ready to knock it down
+MOT:do you want the
+CHI:xxx
+MOT:do you want the elephant to knock it down
+CHI:yes
+MOT:come on
+MOT:let's go
+MOT:charge
+MOT:hurry
+MOT:where's the other elephant
+CHI:here's the elephant
+MOT:hurry
+MOT:where's the other elephant
+MOT:you do one
+MOT:ready
+MOT:let's knock it down
+MOT:ready
+MOT:you did it
+CHI:yeah
+MOT:do you want to build another one
+CHI:another one
+MOT:he's probably not going to care about this
+MOT:look Anthony
+MOT:do you want a cookie
+CHI:yes
+MOT:what do we have to do to get the cookie out
+CHI:xxx
+MOT:what do we have to do
+CHI:open
+MOT:okay
+MOT:you want to take one
+MOT:here
+MOT:there's not much cream in that one
+MOT:here
+MOT:okay
+MOT:go ahead
+MOT:have it
+MOT:you can have it
+MOT:take a bite
+MOT:is it good
+CHI:yeah
+MOT:what flavor is it
+MOT:chocolate
+CHI:yes
+MOT:look Anthony
+CHI:no no no
+MOT:can you look what I have
+CHI:no
+MOT:look
+MOT:look at these two containers
+CHI:xxx
+MOT:which one do you want
+MOT:Anthony
+MOT:which container do you want
+CHI:this is xxx
+CHI:with xxx
+MOT:which container do you want
+CHI:this one
+MOT:which one
+CHI:this one
+MOT:can you hold it
+CHI:this one xxx
+MOT:do you want another cookie
+CHI:yes
+MOT:where are the cookies
+CHI:the cookies xxx
+MOT:where are the cookies
+CHI:cookies
+CHI:they're in my hands
+MOT:where are the cookies
+MOT:he's trying to keep me away from his xxx
+MOT:I'm going to give a cookie to the elephant
+MOT:here elephant
+CHI:no
+MOT:mmm
+CHI:my elephant
+MOT:yum
+CHI:no elephant
+CHI:no elephant
+CHI:my elephant
+CHI:my elephant
+CHI:my elephant
+MOT:Anthony look
+MOT:what's this
+CHI:my elephant
+MOT:what is that
+CHI:balloon
+MOT:do you want me to blow it up
+CHI:no
+CHI:no
+CHI:no
+CHI:no
+CHI:no
+CHI:no
+CHI:no
+MOT:Anthony
+CHI:no fighting
+CHI:fighting
+MOT:xxx
+MOT:Anthony
+CHI:I xxx
+MOT:come here baby girl
+MOT:you play
+MOT:you're going to take a nice long nap
+MOT:Anthony
+MOT:look at the balloon
+MOT:do you want me to blow this up
+MOT:Anthony
+MOT:Anthony do you want me to blow the balloon up
+CHI:this Anthony do
+CHI:this Anthony
+CHI:this xxx
+CHI:xxx do
+MOT:you want me to blow the balloon up
+CHI:yes
+CHI:xxx
+CHI:xxx
+MOT:look
+CHI:xxx
+MOT:say
+MOT:I'm going to let it go when you say ready set go, okay
+CHI:go
+MOT:ready
+CHI:go
+MOT:set
+CHI:go
+MOT:where'd it go
+MOT:where did it go
+MOT:can you find it
+MOT:do you maybe see it over there by the bus
+MOT:can you go get it
+MOT:we can do it again
+CHI:a stick
+MOT:where's the balloon
+CHI:here's the balloon
+MOT:do you want to do it again
+CHI:yes
+MOT:say again
+MOT:can you say again
+CHI:and again
+MOT:what color is it
+CHI:blue
+MOT:do you want me to throw it in the air again
+CHI:yeah
+MOT:what do you have to say
+MOT:ready
+MOT:set
+CHI:set
+CHI:go
+MOT:where is it
+MOT:what do you want
+CHI:more please
+MOT:more please
+CHI:yes
+MOT:say blow
+CHI:blow
+MOT:do you want to make it bigger
+CHI:yes
+MOT:wow
+MOT:look how big it is
+MOT:hey
+MOT:look how big it is
+CHI:xxx big
+MOT:do you want
+MOT:do you want it to fly
+CHI:no
+MOT:ready
+CHI:no
+MOT:set
+CHI:go
+MOT:wow
+MOT:where is it
+CHI:over there
+MOT:go get it
+MOT:what do you want
+CHI:more please
+MOT:what do I have to do
+CHI:blow
+MOT:what do I have to do
+CHI:more please
+MOT:do I have to
+CHI:push
+MOT:not push
+MOT:blow
+CHI:blow
+CHI:wow
+CHI:wow
+MOT:bigger
+CHI:yeah
+MOT:say bigger
+CHI:bigger
+MOT:now what do you want to do
+CHI:glow
+MOT:ready
+MOT:set
+CHI:go
+MOT:whoa
+MOT:where did it go
+MOT:where did it go
+MOT:I'm not really sure
+CHI:over there
+MOT:it did go over there
+MOT:look over by the chair
+MOT:do you see it
+MOT:let's look
+MOT:oh
+MOT:I think I see it Anthony look
+MOT:can you get it
+MOT:what do you want
+CHI:more please
+MOT:what do I have to do
+CHI:open
+MOT:open or
+MOT:blow
+CHI:blow
+CHI:blow
+MOT:bigger
+CHI:yeah
+MOT:say bigger
+CHI:bigger
+MOT:look at me
+CHI:bigger
+CHI:bigger
+MOT:bigger
+CHI:yes
+CHI:bigger
+CHI:big
+CHI:big
+MOT:is it big enough
+CHI:yes
+MOT:now what
+CHI:um
+MOT:ready
+CHI:set
+CHI:go
+MOT:wow
+CHI:yes
+MOT:wow
+CHI:another
+MOT:what do you want
+CHI:more please
+MOT:more please
+CHI:yes
+MOT:what do I have to do
+CHI:up
+MOT:what do I have to do
+CHI:up
+MOT:what do I have to do
+CHI:blow
+MOT:blow
+MOT:more
+CHI:yes
+CHI:more please
+MOT:now what do we have to do
+CHI:more please
+CHI:more please
+MOT:ready
+CHI:set
+CHI:go
+MOT:whoa
+MOT:where did it go
+CHI:over there
+MOT: can you get it
+CHI:I'll get it
+MOT:can you get it
+MOT:watch for anna
+CHI:xxx
+CHI:ready set go
+MOT:good job
+MOT:what do we need for ready set go
+CHI:xxx
+MOT:a balloon
+CHI:balloon
+MOT:what do I have to do
+CHI:up
+MOT:what do I have to do
+CHI:blow
+MOT:blow
+CHI:blow
+CHI:blow
+CHI:done
+MOT:done
+CHI:yes
+MOT:now what
+CHI:up
+MOT:ready
+CHI:set
+CHI:go
+MOT:whoa
+CHI:ready set go
+CHI:ready set go
+MOT:where did it go
+CHI:over there
+MOT:where
+MOT:look around
+MOT:do you see it
+MOT:Anthony, do you want to listen to a song
+CHI:no
+CHI:done song
+CHI:done song
+MOT:he used to love songs but now he doesn't want to hear
+MOT:do you want to hear a dragon tale song
+CHI:yeah
+MOT:the funny
+CHI:yeah
+CHI:done
+CHI:done
+MOT:the funny song
+CHI:done
+MOT:do you want to hear the funny song
+CHI:done
+MOT:what are you done with
+CHI:done music
+MOT:you done with balloon
+MOT:or done with music
+CHI:done
+CHI:music
+MOT:music
+CHI:a balloon
+MOT:more balloon
+CHI:yes
+CHI:yes
+CHI:ready set go
+MOT:wow
+CHI:where did it go
+MOT:where did it go
+CHI:over there
+MOT:over there
+MOT:what else do you want to do
+MOT:what to do patty cake
+CHI:no
+CHI:done patty cake
+MOT:done with patty cake
+MOT:do you want to
+MOT:ohh
+MOT:look at this Anthony
+MOT:remote controlled car
+CHI:yes
+CHI:more
+MOT:whoa
+CHI:ready set
+MOT:beep beep
+CHI:go
+MOT:Anthony look
+CHI:ready ssss
+CHI:ready set go
+MOT:careful
+MOT:do you want me to make it go
+CHI:yes
+MOT:look
+MOT:gigi can do it from here
+MOT:put it down
+MOT:I'll show you
+CHI:up
+MOT:he's got plumber butt
+MOT:Anthony put it down
+MOT:I'll show you how it goes
+MOT:it's not that very far, honey
+MOT:I can make it go from here
+MOT:watch
+CHI:all done
+MOT:here
+MOT:I'll show you how to do it
+MOT:come here
+MOT:I'll show you how to do it
+MOT:do you want
+MOT:do you want to see
+MOT:you can push it with this
+CHI:xxx
+MOT:come here
+MOT:push this
+CHI:no push
+CHI:no push
+CHI:push
+CHI:no move it
+MOT:look
+CHI:no push
+MOT:watch
+MOT:push this
+CHI:no
+CHI:no
+MOT:you don't want to
+MOT:okay
+MOT:it's
+CHI:no push
+CHI:no push
+MOT:it's a control
+MOT:good job, buddy
+MOT:do you want to do the planet puzzle
+CHI:yes
+CHI:baby elephant
+CHI:baby elephant
+MOT:where's the planet puzzle
+MOT:did he pickup that xxx
+CHI:elephant
+MOT:he didn't pick up that thing, right
+CHI:baby elephant
+CHI:elephant
+CHI:baby elephant
+MOT:where's the planet puzzle
+CHI:cool book
+CHI:xxx
+CHI:xxx
+CHI:xxx
+CHI:xxx
+MOT:oops
+MOT:sorry honey
+MOT:do you want to do planet puzzle or abc's
+CHI:planet
+CHI:puzzle
+CHI:start abc's out
+CHI:o's
+CHI:s
+MOT:you ready
+CHI:yes
+CHI:xxx
+CHI:xxx
+MOT:what do you want to build first
+MOT:the sun
+CHI:yes
+MOT:okay
+MOT:let's look for all the yellow pieces
+CHI:the sun
+CHI:sun pieces
+CHI:this is the
+MOT:hey there
+MOT:anna
+MOT:we need the yellow piece
+MOT:okay
+MOT:here
+MOT:you can play with these pieces
+MOT:where does that go
+CHI:turn it around
+MOT:twist it around
+MOT:here
+MOT:try this
+MOT:good job
+CHI:more piece
+MOT:let's see
+MOT:you got to try the pieces
+CHI:whoa
+MOT:do you know how to
+MOT:do you know
+MOT:I've never built this before, Anthony
+MOT:so I need your help
+MOT:alright
+CHI:I know
+MOT:do you need another yellow piece
+MOT:does that go there
+CHI:yes
+MOT:no
+MOT:try this piece
+CHI:no try this
+MOT:oh
+CHI:no
+MOT:maybe anna has the piece we need
+CHI:no
+CHI:no
+MOT:say anna no
+CHI:no no
+MOT:how about this piece
+MOT:does this piece work
+CHI:no
+MOT:try this piece
+CHI:no pi
+CHI:no piece
+CHI:no piece
+CHI:no that piece
+MOT:alright
+MOT:do you want to put this away
+CHI:no
+MOT:well then please pick it up
+CHI:done
+MOT:do you want to put this away
+CHI:no
+MOT:let's try this piece then
+MOT:does it work
+CHI:yes
+CHI:that
+MOT:does this piece go anywhere
+CHI:yes
+CHI:no
+MOT:hmm
+CHI:no fit piece
+CHI:no
+CHI:no that piece
+MOT:well that goes there honey
+MOT:you had the right piece
+CHI:right piece
+MOT:you know what
+MOT:why don't we just say the name of the puzzles
+MOT:look
+CHI:earth
+MOT:can you tell us the name of the planets
+MOT:what's this
+CHI:earth
+MOT:what planet is this
+CHI:earth
+MOT:where do we live
+CHI:earth
+MOT:earth
+MOT:what's this
+CHI:a puzzle piece
+CHI:puzzle piece
+MOT:does this go here
+CHI:no
+MOT:I think it does
+CHI:xxx
+MOT:how about this piece
+CHI:this piece
+MOT:try that piece
+CHI:wow
+MOT:wow
+MOT:good job Anthony
+CHI:wow
+MOT:do you know where this piece goes
+MOT:good job
+MOT:what did you just make
+MOT:how fun is that
+CHI:mercury
+MOT:mercury
+MOT:right
+MOT:alright
+CHI:venus
+MOT:what is this one
+CHI:venus
+MOT:venus
+MOT:go ahead
+MOT:can you put venus together
+MOT:what else
+CHI:oh
+MOT:let's see
+MOT:does this go anywhere
+CHI:yes
+CHI:try
+MOT:slide it over a little bit
+MOT:try over here
+MOT:good job
+MOT:what else do we need
+CHI:slide piece
+MOT:here
+MOT:we need some earth pieces
+MOT:oh wow
+MOT:you did it
+MOT:where does that piece go
+MOT:do you know where this piece goes
+CHI:yes
+CHI:xxx
+MOT:try over here
+MOT:how about this piece
+CHI:it's over there
+CHI:over
+MOT:we need some more earth pieces
+CHI:big
+MOT:what planet is this one
+CHI:neptune
+MOT:what is this one
+CHI:neptune
+MOT:neptune
+MOT:you're looking at the word
+MOT:that's
+MOT:that's not a planet now
+MOT:oh yes you're right
+MOT:I'm sorry
+CHI:neptune
+CHI:neptune
+CHI:neptune
+MOT:where does neptune go
+MOT:is this the rest of neptune
+MOT:where does this piece go
+CHI:fit
+CHI:fit it
+MOT:there it is
+MOT:neptune has a ring
+MOT:how about this piece
+MOT:does this go anywhere
+CHI:yes
+CHI:turn around
+MOT:where does it go
+CHI:turn a
+MOT:does it go here
+CHI:yes
+MOT:no
+MOT:maybe that doesn't go yet okay
+MOT:we have to wait
+MOT:let's see
+CHI:where's the piece go
+MOT:where are the rest of the earth pieces
+MOT:oh
+MOT:here
+MOT:here buddy
+MOT:where does this piece go
+CHI:here
+CHI:turn around
+MOT:turn around
+MOT:turn it around again
+MOT:try this way
+MOT:let's see
+MOT:good trying
+MOT:let's see
+MOT:here
+MOT:see if this works anywhere

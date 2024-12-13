@@ -1,0 +1,636 @@
+MOT:As2, look at all the toys
+MOT:look at all that
+MOT:so much fun to play with
+MOT:look at everything, huh
+MOT:what's that, huh
+MOT:what does that do, huh
+MOT:what does that do, huh
+MOT:do you know how to use that
+CHI:xxx
+MOT:push the button
+MOT:what's that
+CHI:xxx
+MOT:no, that's an octopus
+MOT:that's an octopus
+CHI:xxx
+MOT:is that a lion
+MOT:what's that
+CHI:ball ball
+MOT:no, that's not a ball ball
+MOT:you have the car
+MOT:are you fixing the car with the bottle
+MOT:is that your plan huh
+MOT:do you see the froggy
+MOT:ribbit, ribbit
+MOT:fishie
+MOT:another fishie
+MOT:what sound does a fishie make
+MOT:what are those
+MOT:you know that's not a tool right
+MOT:that's actually a bottle
+MOT:it looks like you are trying to unscrew the car with the bottle
+MOT:hey, what's this
+MOT:what does this do buddy
+MOT:what's this
+MOT:hey
+MOT:what's that do, huh
+MOT:does it spin around
+MOT:who's that
+MOT:is that you
+MOT:is this a teddy_bear
+MOT:oh, you love the bear
+MOT:can you give the bear a kiss
+MOT:no
+MOT:what are you doing with that
+MOT:is that how you fix a car
+MOT:is that how you fix it
+MOT:like that
+CHI:xxx
+MOT:yeah, it's not quite the right tool buddy
+MOT:it doesn't work like that
+MOT:did you see the blocks
+MOT:see the blocks
+CHI:blocks
+MOT:blocks, yeah
+MOT:what do you do with those, huh
+MOT:there's a bus too
+MOT:the people for the bus
+MOT:no, no you put the people in the bus, see
+MOT:do you see all the people
+MOT:they're going on the bus
+MOT:good job
+MOT:uh_oh
+MOT:they fell out
+MOT:uh_oh
+MOT:uh_oh
+MOT:oh, it talks
+MOT:how about that, huh
+MOT:did you see the baby
+MOT:did you see the baby
+MOT:aw, that's a good job
+MOT:you feeding the baby
+MOT:that's a good job buddy
+CHI:xxx
+MOT:yeah, see, they bounce up and down
+MOT:xxx
+MOT:you have to put it in that spot
+MOT:see
+MOT:what's that
+MOT:you going to brush his hair
+MOT:he has a hat on buddy
+MOT:that might be tough
+MOT:that might be tough to do
+CHI:xxx
+MOT:yeah
+CHI:xxx
+MOT:do you wanna brush the bear
+MOT:get his hair nice
+MOT:put bear in there too
+MOT:he can drive the bus
+MOT:look at that
+MOT:look at this one
+MOT:what does this one do
+CHI:xxx
+MOT:that's a clown
+MOT:clown
+CHI:clown
+MOT:hey, you wanna build a tower
+MOT:do you wanna build a tower
+MOT:let's build a tower
+CHI:xxx
+CHI:a tower
+MOT:yeah, I work with you
+MOT:keep going
+MOT:keep going
+MOT:okay
+MOT:good job
+MOT:now what do we do
+MOT:now what
+MOT:do you want to knock it down
+MOT:yeah, yeah you like that
+MOT:yeah, you like the demo phase
+MOT:yeah
+MOT:you wanna build another one
+MOT:hey, let's try a different one
+MOT:As2, work me
+MOT:come on
+MOT:let's build it
+MOT:keep going
+MOT:okay, I've got one
+MOT:and another one
+MOT:alright
+MOT:and another one
+MOT:and another one
+MOT:you've got to put that in the middle
+MOT:there you go
+CHI:xxx
+MOT:yeah
+MOT:whoa
+MOT:that's a spoon
+MOT:hey, want to see if we can build a really high one
+MOT:hey, As2
+MOT:As2 As2
+MOT:want to build a really high one
+MOT:here, you put one on
+MOT:put it on
+MOT:put it on
+MOT:hey, look
+MOT:put another one on
+MOT:uh_oh
+MOT:oh no
+MOT:hey, come on
+MOT:hey
+MOT:can I see that
+MOT:let me see that for a minute
+MOT:give me that
+MOT:give me that toy
+CHI:mine
+MOT:yours
+MOT:no, it's not really yours
+MOT:it's kind of on loan
+MOT:hey, you want to do some more building
+MOT:come on
+MOT:work with me
+MOT:help me build
+MOT:help me build
+MOT:where does that one go
+MOT:there
+MOT:one more
+MOT:uh_oh
+MOT:oh
+MOT:that's right
+MOT:you're not going to let me build anything are you
+MOT:hey, let's build a tower and knock it down
+MOT:oh, let's not go throwing them
+MOT:hey As2
+MOT:hey, can you say hi
+MOT:wave to the clown
+MOT:say hi clown
+MOT:hi clown
+MOT:what's in here
+MOT:oh, it's a lion
+MOT:can you wave to the lion
+MOT:can you wave to the lion
+MOT:oh, that wasn't nice
+MOT:that wasn't nice
+MOT:not nice
+MOT:what's in here
+MOT:what is that
+MOT:is that a bunny rabbit
+MOT:is that a bunny rabbit
+MOT:is that a clown
+MOT:huh
+MOT:it's another clown
+MOT:how do you get it to pop back up
+MOT:push the button
+MOT:no no no
+MOT:push the button
+MOT:hey look
+MOT:what's this
+MOT:watch
+MOT:As2
+MOT:As2
+MOT:hey
+MOT:okay, I don't know what your fascination is with the bottles
+MOT:want to put these back in
+MOT:hey
+MOT:As2, buddy
+MOT:okay, we'll play with that in a minute
+MOT:hey look, what's that
+MOT:is that a clown
+CHI:that
+MOT:yeah, that's a bus driver
+MOT:is that a clown
+MOT:watch
+MOT:you try
+MOT:how do you get this one to open
+MOT:oh, good job
+MOT:how do you do this one
+MOT:how do you do this one
+CHI:no, no, no
+MOT:okay
+MOT:hey, you see the clown
+MOT:hey As2
+MOT:come here
+MOT:come here
+MOT:hey, can you help me close these
+MOT:can you help me up these away
+MOT:can you close them
+MOT:how about this one
+MOT:and this one
+MOT:now can you open them
+MOT:can you open them up
+MOT:okay, that's that one
+MOT:how do you this one
+MOT:how do you do this one
+MOT:do you know
+MOT:oh, that's a good job
+MOT:how about this one
+MOT:and this one
+MOT:hey
+CHI:bus
+MOT:yes, that is a bus
+MOT:hey look
+MOT:As2
+MOT:how about this one
+MOT:spin it
+MOT:spin it
+MOT:spin it
+MOT:can you do it
+MOT:like this
+MOT:open this way
+MOT:oh there it goes
+MOT:can you close them back up
+MOT:As2, hey look
+MOT:look
+MOT:As2
+MOT:buddy, you're going to put the bear on the bus huh
+MOT:look As2, look what I have
+MOT:what's in there
+MOT:what's in there
+MOT:you can have some
+MOT:do you want one
+MOT:do you want some
+MOT:hey, pretzels
+MOT:hey do you want a pretzel
+MOT:As2, do you want a pretzel
+MOT:oh you want a pretzel on a spoon
+MOT:do you want me to open this
+CHI:yeah
+MOT:yeah
+MOT:yes
+MOT:do you like one
+MOT:As2, do you want one
+MOT:just one
+MOT:just one
+MOT:okay
+MOT:I don't think you need the spoon for that
+MOT:hey
+MOT:As2, look what I got
+MOT:look what I got
+MOT:which one do you want
+MOT:do you want that one
+MOT:do you want that one
+MOT:what are you gonna do
+CHI:xxx
+MOT:what are you gonna do
+MOT:there's nothing in there
+MOT:you going to open it up
+MOT:do you know how to open it
+MOT:do you want me to open it for you
+MOT:hey
+MOT:do you want me to open the container
+MOT:no
+MOT:you don't want the empty container
+MOT:okay
+CHI:xxx
+MOT:oh, what's that
+MOT:what's that
+MOT:what's that, huh
+MOT:As2, what is that
+MOT:do you know what that is
+MOT:watch
+MOT:you wanna see what I'm gonna do
+MOT:ready
+MOT:ready
+MOT:it's a balloon blower upper
+MOT:it's not making a lot of sense to daddy, kid
+MOT:so we'll do it the good old fashioned way huh
+MOT:oh what's that
+CHI:balloon
+MOT:ready
+MOT:ready
+MOT:set
+MOT:go
+MOT:wanna do it again
+MOT:I'll find it
+MOT:I'll find it
+MOT:you wanna do it again
+MOT:yes
+MOT:you wanna see me do it again
+MOT:you ready
+CHI:xxx
+MOT:ready
+MOT:ready
+MOT:set
+MOT:ready
+MOT:go
+MOT:oh, where'd it go
+MOT:where'd it go
+MOT:it's over here this time
+MOT:it's over here
+MOT:it's over here
+MOT:you wanna do it again
+MOT:do you wanna do it again
+MOT:you wanna do it again
+MOT:yeah
+MOT:oh, oh
+MOT:are you ready
+MOT:set
+MOT:go
+CHI:balloon
+MOT:yeah
+MOT:balloon
+CHI:xxx
+MOT:yeah
+MOT:yeah
+MOT:oh you fascinated by the balloon blower upper
+MOT:okay
+MOT:do you wanna do it again
+MOT:one more time
+MOT:you wanna try that thing
+MOT:okay
+MOT:we can try it
+MOT:no guarantees
+MOT:wanna do it together
+MOT:watch your hand
+MOT:can't put your hand in there buddy
+MOT:see
+MOT:how about daddy does it
+MOT:ready
+MOT:ready
+MOT:set
+MOT:go
+MOT:here it goes
+MOT:whoa
+MOT:bring it here
+MOT:As2
+MOT:you can't put that in your mouth
+MOT:let's go in here
+MOT:okay
+MOT:let me see that for a minute
+MOT:uh_oh
+MOT:look what we've got here
+MOT:look what I have now As2
+MOT:what's in there
+CHI:balloon
+MOT:look at all the toys
+MOT:look at all the toys in there
+MOT:oh, wrong way buddy
+MOT:you have to turn it around
+MOT:you've gotta turn them around
+MOT:can you turn them around
+MOT:be a cool dude
+MOT:be a cool dude
+CHI:balloon
+MOT:huh
+CHI:balloon
+MOT:there's more stuff in there
+MOT:look
+MOT:there's more stuff
+MOT:oh yeah, mommy's favorite
+MOT:what sound does that make
+MOT:what sound does a snake make
+MOT:oh, you gonna get me with the snake
+MOT:let me see that
+MOT:let me see
+CHI:balloon
+MOT:it's all gone
+MOT:I know what you're looking for
+MOT:it's all gone
+CHI:xxx
+MOT:it's all gone buddy
+MOT:it's okay
+MOT:hey, put the sunglasses on
+MOT:hey come here
+MOT:it's okay
+MOT:it's okay
+MOT:hey, don't be fresh
+MOT:don't be fresh
+MOT:look there's other stuff in here
+MOT:is it in there
+CHI:no
+MOT:are you sure it's not in there
+MOT:are you sure
+MOT:that's just the inflator kid
+MOT:the balloon went bye_bye
+MOT:come here
+MOT:what are you doing
+MOT:what are you going to do with that
+MOT:what about the snake
+MOT:you don't wanna play with the snake
+MOT:boys like to play with snakes
+CHI:xxx
+MOT:you don't wanna play with anything in here
+MOT:do you see what's in there
+MOT:oh, I think I see a car
+MOT:oh, what sound does that make
+MOT:is it driving
+MOT:hey
+MOT:here let me see that for a second
+MOT:it's okay
+MOT:look at the car
+MOT:As2, As2
+MOT:come on buddy
+MOT:why don't we play with the toys we have
+MOT:no
+MOT:no
+MOT:can I drive the car on you
+MOT:I can't drive the car on you
+MOT:that is just more interesting isn't it
+MOT:you know the funny thing, kid
+MOT:I don't think that's really considered a toy
+MOT:can you put the car back in the bag
+MOT:can you put it back in there
+MOT:thank you
+MOT:okay
+MOT:what's that
+CHI:xxx
+MOT:that's a remote for the car
+MOT:it makes the car drive
+CHI:car
+MOT:yeah
+MOT:it's supposed to make the car drive
+CHI:xxx
+MOT:you gonna put it back
+MOT:you putting it back together
+MOT:look at this thing
+MOT:look at this car
+MOT:can you check out the car
+MOT:can you check out the car
+MOT:what do you think
+MOT:hey, what do you think
+CHI:xxx
+CHI:balloon
+MOT:remote
+MOT:remote
+MOT:the word remote
+MOT:remote
+MOT:yeah
+MOT:hey, can we put this away
+CHI:no
+MOT:yeah, let's put that away
+MOT:let's put that away for a couple minutes
+MOT:it's okay
+CHI:mama
+MOT:look at the car
+MOT:look at the car
+MOT:no, look at the car
+MOT:no
+MOT:hey
+MOT:hey, come here
+MOT:what's wrong
+MOT:don't do that
+MOT:hey
+MOT:xxx car buddy
+MOT:As2
+MOT:As2
+MOT:As2
+MOT:hey
+MOT:it's all gone
+MOT:this would be more exciting if it worked huh
+MOT:xxx feet
+MOT:can you put it back together
+MOT:can you put it back together
+MOT:does that go in there
+MOT:where does that go
+MOT:there it goes
+MOT:how does that come out
+MOT:do you know how that comes apart
+MOT:there you go
+MOT:demolition derby
+MOT:yeah
+MOT:here you go
+MOT:where are you going
+MOT:where are you going
+MOT:okay
+CHI:ow
+MOT:okay
+MOT:look, look
+MOT:now you can actually
+MOT:there you go
+MOT:time of your life with that thing huh
+MOT:your birthday's coming
+MOT:I can probably get you one of those for three bucks
+MOT:see, see what you're supposed to do
+MOT:see what it does
+MOT:watch your fingers
+MOT:don't put them in there
+MOT:see
+MOT:oh you wanna look at some books
+MOT:oh look, we've got books
+MOT:new books
+MOT:no, no no no
+MOT:you like books
+MOT:hey
+MOT:okay
+MOT:As2
+MOT:look
+MOT:look at the bear
+MOT:what's the bear doing
+MOT:wiggle_jiggle jump up
+MOT:silly_willy prance
+MOT:button up the shirt
+MOT:put on the pants
+MOT:pull on the socks, tie up the shoes
+MOT:oh look there's the mommy and daddy bear
+MOT:that was quick huh
+MOT:I like that
+MOT:that fits right in with your attention span
+MOT:oh pop_ups
+MOT:pop_ups
+MOT:you like these
+MOT:how many animals
+MOT:look one
+MOT:do you see the pop_up
+MOT:what is it
+MOT:what is it
+MOT:yeah that's right
+MOT:a sea otter
+MOT:how many tusks
+MOT:two
+MOT:what is it
+MOT:go ahead
+MOT:open it up
+MOT:a walrus
+MOT:look there's more
+MOT:you want to go over there
+MOT:those are dolphins
+MOT:those are dolphins
+MOT:how many are leaping
+MOT:can you uncover that one
+MOT:four
+MOT:how many in this family
+MOT:uncover that one
+MOT:uncover that one
+MOT:uncover that one
+MOT:you want to do that
+MOT:they're black swans and there's three of them
+MOT:you done with that one
+MOT:want to go to the bear book
+MOT:let's try this one
+MOT:let's try Tum_Tum Tickle
+MOT:Tum_Tum Tickle
+MOT:xxx
+MOT:tiptoes, twinkle nose, giggle_wiggle wake
+MOT:see the papa bear
+MOT:he's waking up
+MOT:does that look like daddy in the morning
+MOT:that's not mommy because she's smiling
+MOT:wake up in the morning and in the afternoon
+MOT:see the sun
+MOT:wake up for our lady Sun but not for Mister_Moon
+MOT:hey, where's the moon
+MOT:where's the moon
+MOT:As2, where's the moon
+MOT:where's the stars
+MOT:where's the stars
+MOT:want to do a little more in this one
+MOT:we didn't finish with the animals
+MOT:what are those
+MOT:what are those
+MOT:more interested in that huh
+MOT:okay, well we almost made it through all the books buddy
+MOT:you see the penguins
+CHI:xxx
+MOT:see the penguins
+MOT:see the seahorses
+MOT:seahorses
+MOT:that's not a toy
+MOT:no, it is
+MOT:see the seals
+MOT:those are eels
+CHI:mama
+MOT:yeah, that's cool huh
+MOT:that's cool huh
+MOT:it's more interesting with a balloon on it
+CHI:balloon
+MOT:is it free time
+MOT:he's fascinated by the balloon
+MOT:oh
+CHI:mine
+MOT:uh_oh
+MOT:what did you do
+MOT:can you put it back on
+MOT:put it back on
+MOT:yeah, put it back on there
+MOT:put it back on
+MOT:uh_oh
+MOT:want to do it again
+MOT:yeah
+MOT:you ready
+MOT:watch your hands
+MOT:you can't put your hands
+MOT:keep your hand out of the way
+MOT:uh_oh
+MOT:game's over
+MOT:uh_oh
+CHI:balloon
+MOT:yeah, balloon
+MOT:that's okay
+CHI:xxx
+MOT:did you say ready, set, go
+CHI:no balloon
+MOT:ready
+MOT:set
+MOT:say go
+CHI:ready
+MOT:set
+CHI:go
+MOT:go, yes that's right
+CHI:night_night
+MOT:you going night_nights
+MOT:I don't think you can launch the frog
+MOT:I don't think it works like that
+MOT:do you see the bus
+MOT:want to put the bus driver back in

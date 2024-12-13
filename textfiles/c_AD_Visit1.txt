@@ -1,0 +1,693 @@
+MOT:look Ad
+MOT:look at all these toys
+CHI:xxx
+MOT:toys, yeah
+MOT:what do you see
+CHI:xxx
+MOT:what do you see
+MOT:kitty on the book
+MOT:what's that
+MOT:is it squishy
+MOT:squishy ball
+MOT:come here
+MOT:whoa
+MOT:it's bouncy
+MOT:what's in there
+CHI:eh
+MOT:what's in there
+MOT:does it come out
+CHI:xxx
+MOT:where is it
+MOT:where is it
+MOT:where is it
+MOT:keep looking
+MOT:I hear music
+MOT:who's in there
+MOT:look
+MOT:who's there
+MOT:ooh, is that the baby
+MOT:look
+CHI:xxx
+MOT:how does this work
+MOT:it's mommy proof
+MOT:ooh Ad
+MOT:you have a bottle
+MOT:ooh, who came out
+CHI:mama
+MOT:who's that
+MOT:is that the clown
+MOT:is that the clown
+MOT:oh yeah, come here, lets
+CHI:xxx
+MOT:ooh, look at us washing
+MOT:washing
+MOT:who can go in here
+MOT:who can go in here
+MOT:the fishy
+MOT:do you want to throw it to me
+MOT:throw it to me
+MOT:should we give the ball a bath
+MOT:no, is that silly
+CHI:xxx
+MOT:should we give fish a bath
+MOT:who can we give a bath
+MOT:how about the bear
+MOT:ooh, more ball
+MOT:go get it
+MOT:I have a ball too
+MOT:look what I've got
+CHI:uh oh
+MOT:uh oh
+MOT:go get it
+MOT:go get it
+MOT:go get it
+MOT:I got it
+MOT:come here
+MOT:come here
+MOT:where is it
+MOT:come here
+MOT:look
+CHI:xxx
+MOT:look
+CHI:xxx
+MOT:come here
+MOT:come here
+MOT:where is it
+MOT:there it is
+MOT:where is the ball
+MOT:is it there
+CHI:no
+MOT:no
+MOT:there it is
+MOT:whoa
+MOT:does the bear want the ball
+MOT:what else Ad
+MOT:look what else there is
+MOT:look
+MOT:who's that
+CHI:frog
+MOT:a frog
+MOT:do you want to go see the frog
+MOT:does the frog want to play ball
+MOT:here froggy
+MOT:ribbit
+CHI:eh
+MOT:should we do that again
+MOT:I'll hold it
+MOT:can you spin this
+MOT:can you spin it
+MOT:round and round
+MOT:pretty music
+CHI:eh
+MOT:watch
+MOT:it popped out
+MOT:push it down
+CHI:uh oh
+MOT:uh oh
+MOT:can you put him in
+MOT:ooh, there's the baby
+MOT:he's in
+MOT:he's in
+CHI:xxx
+MOT:now what
+CHI:eh
+MOT:now what
+MOT:I didn't know it did that
+MOT:ribbit
+MOT:he's noisy
+CHI:more more
+MOT:more
+MOT:push
+MOT:do you want to look at the book
+MOT:should we look at the book
+MOT:go sit over there and read the book
+MOT:come here
+MOT:you're heavy
+MOT:who's my friend
+MOT:look
+MOT:who's that
+MOT:black kitty
+MOT:cats and kittens
+MOT:that looks like happy
+MOT:one waits cat needs to be petted
+MOT:two thirsty kittens lap up milk
+MOT:what are they doing
+MOT:they're drinking
+MOT:it's fun to play and wash
+MOT:then it's time to curl up and sleep
+MOT:night night kitties
+CHI:night night
+MOT:night night
+MOT:look
+MOT:their eyes are closed
+CHI:xxx
+MOT:look who's next
+MOT:ooh, dogs and puppies
+MOT:two frisky puppies just want to play
+MOT:grown up dogs play too
+MOT:Ad, look it
+MOT:shh don't wake the puppies
+MOT:shh
+MOT:they're sleeping
+MOT:take me for a walk
+MOT:a basket makes a cozy bed
+MOT:Ad
+MOT:oh, your diaper
+MOT:is it bothering you
+MOT:do you need a diaper change
+MOT:yeah, do you want to go change your diaper
+MOT:yes, okay
+MOT:look
+MOT:lotion
+MOT:come here
+MOT:who's this
+MOT:a yellow bird
+MOT:a blue bird
+MOT:goldfish swim in cold water
+MOT:tropical fish swim in warm water
+MOT:Kerrie has fish like this in her room
+MOT:who's that
+MOT:big and little pets
+MOT:a pony is a big pet
+MOT:a little rabbit is bigger than a hamster or a tiny mouse
+MOT:he's eating a carrot
+MOT:who needs what
+MOT:who wears a collar
+MOT:oh, that's right
+MOT:that's fish food
+MOT:who wears a saddle
+MOT:the horse
+MOT:that's right
+MOT:who wears a collar and leash
+MOT:a puppy dog does
+MOT:look
+MOT:puppy dogs wear a collar
+MOT:who chases a toy mouse
+MOT:the kitties
+MOT:who nibbles carrots
+MOT:who's eating the carrot
+MOT:the hamster
+MOT:who chews biscuits
+CHI:eh
+MOT:puppy dogs
+CHI:eh
+MOT:who eats that
+MOT:the seeds
+MOT:birds eat seeds
+MOT:ooh, and that's the end
+CHI:more more
+MOT:more
+MOT:look at the kitties
+MOT:say bye bye puppy dogs
+MOT:bye bye birds and the fish
+CHI:bye bye
+MOT:bye bye small animals
+MOT:bye bye horse
+CHI:bye bye
+MOT:bye bye everything
+MOT:do you want to build STRUCTURED
+MOT:look
+MOT:can you build
+CHI:eh
+MOT:look
+CHI:eh
+MOT:yellow
+CHI:eh
+MOT:blue
+CHI:eh
+MOT:red
+CHI:eh
+MOT:is it just these
+CHI:eh
+MOT:good job
+MOT:are you looking under
+CHI:eh
+MOT:here
+MOT:you can use that one
+MOT:blue
+MOT:red
+MOT:Ad watch
+MOT:down
+MOT:can you do it
+MOT:can you build it
+MOT:put it down
+MOT:build it down
+MOT:okay
+MOT:well you have to build it up
+MOT:no, you're being silly
+MOT:up
+MOT:here
+MOT:you put the red one on
+MOT:look the star
+MOT:thank you
+MOT:can you put the yellow one on
+MOT:with the boat
+MOT:uh oh
+CHI:uh oh
+MOT:uh oh
+MOT:that one
+CHI:no
+MOT:no
+MOT:this one
+MOT:you wanna knock it down
+MOT:how about
+MOT:let me do it like that
+CHI:no
+MOT:like that
+MOT:no
+MOT:it's in
+MOT:is that right
+MOT:no
+MOT:up
+CHI:xxx
+MOT:what comes next
+MOT:ooh, you're going to put them in
+MOT:almost
+MOT:try a different way
+MOT:which one
+MOT:good job
+MOT:yay
+MOT:now up
+CHI:eh
+MOT:and down
+MOT:good job
+MOT:what comes next
+CHI:uh oh
+MOT:uh oh
+MOT:they topple over
+MOT:what about the red one
+CHI:uh oh
+MOT:what about the star
+CHI:xxx
+MOT:and it's down
+MOT:lotion
+MOT:whoops
+MOT:Ad look
+MOT:it's just pretend honey
+MOT:it's just pretend
+MOT:pretend to powder
+MOT:okay
+MOT:oh Ad look
+MOT:look what I got
+MOT:what's inside
+CHI:eh
+MOT:what's inside
+MOT:is it a snack
+MOT:is it raisins
+MOT:you can have some
+CHI:xxx
+MOT:do you want to open it
+MOT:it's stuck
+CHI:xxx
+MOT:yeah, do you need some help
+MOT:how do we open it
+MOT:mommy can't even get it open
+MOT:look
+MOT:there you go
+MOT:yummy yummy yummy yummy
+MOT:let's close it up
+MOT:look
+MOT:look
+MOT:Ad, which one do you want
+MOT:which one
+CHI:eh
+MOT:which one
+MOT:look
+MOT:which one
+MOT:you want that one
+CHI:eh
+MOT:no
+MOT:there's nothing in there
+MOT:it's empty
+MOT:which jar do you want
+MOT:this one
+CHI:eh
+MOT:which one
+MOT:that one
+CHI:eh
+MOT:yeah
+MOT:you wanna have one
+MOT:yeah, that's one is empty
+MOT:empty and raisins
+MOT:good job
+MOT:look what I have Ad
+MOT:what's this
+MOT:do you remember what that is
+MOT:look what I'm going to do
+MOT:look
+MOT:watch what I'm going to do
+MOT:ready
+MOT:set
+MOT:go
+MOT:where did it go
+MOT:do you want more
+MOT:do you want me to do it again
+MOT:give it more air
+MOT:ready
+MOT:set
+MOT:go
+MOT:did it get you
+MOT:more
+MOT:is it squeaky
+MOT:ready
+MOT:set
+MOT:go
+MOT:raisins everywhere
+MOT:oh and my
+MOT:no no no no no
+MOT:sorry
+MOT:wild wild
+MOT:I got you overexcited
+MOT:he's getting a little loopy he's so tired
+MOT:are you loopy
+MOT:are you loopy
+CHI:eh
+MOT:okay, I don't even know what
+MOT:okay
+MOT:oh the bag
+CHI:ma ma
+MOT:look honey
+MOT:look what I have Ad
+MOT:look what I have
+MOT:nope nope
+MOT:hey Kerrie no
+MOT:Ad look
+MOT:look
+MOT:come here
+MOT:look what I have
+MOT:look at this
+MOT:what's in here
+MOT:hey, what's in here
+MOT:Ad
+MOT:what's in here
+MOT:you saw a snake
+MOT:what's in
+MOT:go ahead
+MOT:look in
+CHI:eh
+MOT:go ahead
+MOT:do you want to touch
+MOT:do you want to take them out
+CHI:eh
+MOT:yeah
+MOT:that's pretty
+MOT:what is this
+CHI:eh
+MOT:what is that
+MOT:it's a star
+CHI:poof
+MOT:poof
+MOT:you've watched your sister earlier, huh
+CHI:poof
+MOT:poof
+MOT:what else is in here
+CHI:poof
+MOT:poof
+MOT:what else
+MOT:you're nervous about that snake, huh
+MOT:ooh
+MOT:who's that
+CHI:xxx
+CHI:eh
+MOT:no, he doesn't make noise
+MOT:it's a bear
+CHI:eh
+MOT:there's something else in here
+CHI:ah
+MOT:and his instinct is to be afraid of snakes
+CHI:ah
+CHI:ah
+MOT:ooh, would you like to hold it
+MOT:is it a necklace
+MOT:you're just concerned about the powder, huh
+MOT:the necklace around the neck
+CHI:eh
+MOT:it's on you
+MOT:ooh
+MOT:come over here Ad
+MOT:look
+CHI:xxx
+MOT:how does it work
+MOT:is it
+CHI:uh oh
+MOT:uh oh
+MOT:whoop
+MOT:is there a specific way I should be doing this
+MOT:whoop
+MOT:uh oh
+MOT:can you move to the side
+MOT:whoop
+MOT:ba boom
+CHI:eh
+MOT:this turns the wheels
+MOT:uh oh
+CHI:uh oh
+MOT:uh oh
+MOT:can you make it go
+MOT:look
+MOT:can you drive it
+MOT:there you go
+MOT:whoa
+CHI:uh oh
+MOT:whoop
+CHI:uh oh
+MOT:uh oh
+MOT:ooh, it bumped the frog
+MOT:bumped the frog
+MOT:you wanna keep doing that, huh
+MOT:can you make it go forward
+MOT:whoop
+MOT:and it's back
+MOT:that's it
+CHI:more
+MOT:oh more
+MOT:okay
+MOT:that's okay
+MOT:there it goes
+MOT:and you can make a bigger space for it
+MOT:make a bigger space
+MOT:look
+MOT:Ad
+MOT:there it goes
+MOT:there it goes
+MOT:bye bye
+CHI:uh oh
+MOT:you have the right idea
+MOT:you're turning it
+MOT:here
+CHI:eh
+MOT:oh, you want to do it
+MOT:okay okay
+MOT:do you want to find something different
+MOT:Ad
+CHI:uh oh
+MOT:uh oh
+MOT:where did it go
+MOT:come here
+MOT:I don't think we're ever going to get him away from this
+MOT:where is it
+MOT:where did it go
+MOT:bye bye
+MOT:Ad UNSTRUCTURED
+MOT:do you want to play with the kitchen
+MOT:do you want to play with some food
+CHI:more
+MOT:more
+MOT:how about if we race
+MOT:look
+MOT:the animals
+MOT:do you want to play with the animals
+MOT:come here
+MOT:look
+MOT:uh oh
+MOT:giraffe fell down
+MOT:uh oh
+MOT:zebra
+MOT:everybody is falling
+MOT:everybody is falling
+CHI:uh oh
+MOT:uh oh
+CHI:xxx
+MOT:oh my goodness
+MOT:does the zebra go here
+MOT:does the zebra go there
+CHI:no
+MOT:no
+MOT:does giraffe go here
+CHI:no
+MOT:with stripes
+CHI:no
+MOT:no
+MOT:how about
+MOT:is that it
+MOT:oops
+MOT:is that right
+MOT:look Ad
+MOT:look
+MOT:vroom
+MOT:Ad
+MOT:can you help me build these
+CHI:xxx
+MOT:can you help
+MOT:can you put the zebra on
+CHI:xxx
+MOT:can you put the zebra on
+MOT:where does the zebra go
+CHI:xxx
+MOT:yeah
+MOT:almost
+MOT:push
+MOT:there you go
+MOT:good job
+MOT:can you
+CHI:eh
+MOT:where's the elephant
+MOT:he's way over there
+MOT:can you go get him
+MOT:elephant and giraffe
+CHI:xxx
+MOT:is that how it goes
+MOT:no
+MOT:go get him
+MOT:go get him
+MOT:vroom
+MOT:where's my head
+MOT:where's my head
+CHI:mama
+MOT:does that go there
+CHI:no
+MOT:no
+MOT:this is a purple elephant
+MOT:look
+MOT:look
+MOT:you have to go get his body
+MOT:go get his body
+MOT:oh look
+MOT:I've got his body
+CHI:eh
+MOT:look
+CHI:eh eh eh
+MOT:peekaboo
+CHI:eh eh eh
+MOT:where
+MOT:oh this
+CHI:uh oh
+MOT:uh oh
+MOT:mommy built the elephant
+MOT:can you do the giraffe
+MOT:look
+CHI:uh oh
+MOT:can you do the giraffe
+MOT:giraffe is having water
+MOT:bye bye car
+MOT:look
+MOT:Ad
+MOT:who's faster
+MOT:vroom
+MOT:who's faster
+MOT:it's stuck
+MOT:it bumped the elephant
+MOT:bump
+MOT:bump
+CHI:eh
+MOT:can you go get the elephant
+MOT:he's over there
+MOT:and then we'll put them all together
+CHI:uh oh
+MOT:uh oh
+MOT:put him back on
+MOT:put him back on
+MOT:no
+MOT:okay
+MOT:look
+MOT:you like that
+MOT:does that go there
+CHI:no
+MOT:no
+MOT:I know
+CHI:xxx
+MOT:on your head
+CHI:no
+MOT:no
+MOT:is it a hat
+MOT:is it a hat for the elephant
+CHI:xxx
+MOT:does elephant eat with a spoon
+CHI:xxx
+MOT:do you want to feed the elephant
+CHI:eh
+MOT:elephant is hungry
+MOT:bowl on his head
+CHI:eh
+MOT:on his head
+MOT:should we put him with the other animals
+MOT:vroom
+MOT:vroom
+MOT:look
+MOT:a whole big chain
+MOT:giraffe is hungry
+MOT:back to the car
+MOT:it's over here
+MOT:this one honey
+MOT:this one
+MOT:look it's going over to the tractor
+MOT:look
+MOT:the car is visiting the tractor
+CHI:uh oh
+MOT:uh oh
+MOT:now what
+MOT:go get your tractor
+MOT:do you want to play with that
+MOT:ooh
+MOT:for the farm
+MOT:should we get a horse to go with the tractor
+MOT:should we go get a horse
+CHI:eh
+MOT:where is the horse
+MOT:he's over in the barn
+MOT:want me to go get a horse
+MOT:Ad
+MOT:who's this
+MOT:who's this
+CHI:moo
+MOT:moo
+MOT:the cow
+MOT:cow on the tractor
+CHI:xxx
+MOT:no
+CHI:xxx
+MOT:cow pushing
+CHI:xxx
+MOT:are you going to ride the tractor
+MOT:it's too small
+MOT:it's too small honey
+MOT:do you ride horses
+CHI:eh
+MOT:a horse on the tractor
+MOT:that's silly
+CHI:eh
+MOT:oh he's pushing
+MOT:oh he's pushing so hard
+MOT:oh good job horse
+MOT:look
+MOT:cow is pushing
+MOT:push
+CHI:uh oh
+MOT:uh oh
+MOT:it bumped
+MOT:whoop
+CHI:uh oh
+MOT:uh oh
+MOT:I got it
+MOT:can the horse get the remote
+CHI:xxx
+MOT:Ad
+MOT:no no
+MOT:come here sweetie
+MOT:come here
+MOT:he's such a ham
+MOT:come here sweetie
+MOT:look
+MOT:cow on the ball
+MOT:oh okay
+MOT:bye bye

@@ -1,0 +1,773 @@
+MOT:where's the orange one
+MOT:where's the orange
+MOT:where's orange
+MOT:yellow
+CHI:eh
+MOT:push
+MOT:you need
+MOT:hat do you need
+CHI:help
+MOT:help okay
+MOT:what do we do with this one
+MOT:we pull
+MOT:what do we do with that one
+MOT:you push
+MOT:how you push
+MOT:push
+MOT:green star
+MOT:turn
+MOT:yay
+MOT:Anthony, look what else I got
+MOT:rubber ducky, you're the one
+MOT:you make bath time lots of fun
+MOT:ready
+MOT:let's get the
+MOT:let's get the rubber duckies in the bathtub
+MOT:rubber ducky you're the one
+MOT:you want to
+MOT:you want to
+MOT:what ha
+MOT:what happened to the rubber ducky
+MOT:you want to give the baby a bath
+MOT:what do you want to
+MOT:how about we wash the baby
+MOT:you want to wash the baby with me
+MOT:where's the rubber ducky going
+MOT:he's going in the cup
+MOT:uh oh
+MOT:rubber ducky
+MOT:I want to feed the baby
+MOT:you want to feed the baby too
+MOT:let's feed the baby
+MOT:you want to feed the baby
+MOT:you feed the baby
+MOT:good feeding the baby
+MOT:good job
+MOT:oh
+MOT:I think the baby's sleepy
+MOT:oh what's that one
+MOT:let's see what this is
+MOT:let's see what this is
+MOT:what do we do
+MOT:what do we do
+MOT:oh
+CHI:cups
+MOT:cups, right
+MOT:all right
+MOT:let's build a tower
+MOT:you want to build a tower
+MOT:what color is this
+MOT:teddy bear
+MOT:what color
+MOT:we'll play with the teddy bear in a minute
+MOT:let's
+MOT:Andy
+MOT:you want to build a tower
+MOT:what color is this
+MOT:what color is this
+CHI:xxx
+MOT:what color
+MOT:blue
+CHI:xxx
+MOT:Anthony what color is this
+MOT:Andy
+MOT:what color
+MOT:red
+MOT:I build a tower
+MOT:do you wanna knock it down
+MOT:yay
+MOT:let's build it again
+MOT:let's build a tower
+MOT:where's the blue one
+MOT:Andy
+MOT:where's the blue
+CHI:xxx
+MOT:come here
+MOT:come here
+MOT:give me that face
+MOT:give me that face
+MOT:give me that face
+MOT:what's that
+MOT:are we going to feed the baby again
+MOT:let's feed the baby
+MOT:hey, Andy, I think the baby is thirsty
+MOT:no, no, we're not playing with that toy yet
+MOT:right
+MOT:let's go back
+MOT:what does mommy have
+MOT:what does mommy have for you
+CHI:help xxx
+MOT:noo
+MOT:noo
+MOT:noo
+MOT:no no
+MOT:look, blocks
+MOT:look, you see the blocks
+CHI:no, xxx
+CHI:noo
+CHI:no no
+MOT:what
+MOT:come on
+MOT:come back over
+CHI:aah noo
+MOT:come on
+MOT:come on
+MOT:what does this do
+MOT:ooh, look look
+MOT:ooh look look
+MOT:Andy
+MOT:tummy, tummy, tummy
+MOT:look
+MOT:good job, coming back over
+MOT:come on
+MOT:Andy
+MOT:bye bye cups
+CHI:ta ta xxx
+MOT:bye bye cups
+MOT:okay
+MOT:you want to play with the teddy bear
+MOT:the teddy bear needs a hug
+MOT:You want to give
+MOT:aww
+MOT:thank you Andy, thank you
+MOT:I needed a hug
+MOT:mommy's going to hug the teddy bear
+MOT:oh, mommy is going to hug Andy and the teddy bear
+MOT:xxx
+MOT:do you want to read a book
+MOT:let's read Clifford
+MOT:Clifford book
+MOT:you love Clifford
+MOT:right
+MOT:here we go
+MOT:Clifford wants to play with you, he's playing peek-a-boo
+MOT:can you play peek-a-boo
+MOT:peek-a-boo inside a
+CHI:xxx
+MOT:shoe, right
+MOT:under the
+CHI:rug
+MOT:inside a
+CHI:hat
+MOT:cup
+MOT:under
+MOT:what's this
+CHI:hey
+MOT:blocks
+MOT:with lots of
+CHI:xxx
+MOT:socks
+MOT:in a
+MOT:bowl
+MOT:through a hole
+CHI:xxx
+MOT:under a
+MOT:what is this
+MOT:is this a hat
+CHI:hat
+MOT:here comes the
+CHI:cat
+MOT:cat
+MOT:peek-a-boo, I see you
+MOT:I'm going to do peek-a-boo, ready
+MOT:peek-a-boo
+MOT:peek-a-boo
+MOT:your lips together Andy
+MOT:okay
+MOT:lips together
+MOT:what is this
+MOT:Andy, what do we do
+MOT:he popped up
+MOT:you do
+MOT:you turn, you turn
+MOT:good job, you turn
+MOT:you do
+MOT:pop
+MOT:pop goes the weasel
+MOT:all around the mulberry bush, the monkey chased the weasel
+MOT:the weasel thought it was all in fun
+MOT:pop, pop, pop
+MOT:do you want to build
+MOT:let's build
+MOT:do you want to build
+MOT:let's build
+MOT:your turn
+MOT:you build
+MOT:your turn
+MOT:you put it on
+MOT:awesome buddy
+MOT:great job
+MOT:mommy's turn
+MOT:your turn, your turn
+MOT:what do you want to do with the spoons
+MOT:oh
+MOT:I think the baby's thirsty
+MOT:you want to play with the baby
+MOT:come get the baby
+MOT:baby's thirsty
+MOT:can you get the baby something to drink
+MOT:thank you
+MOT:okay
+MOT:all right
+MOT:let's build a tower
+MOT:your turn
+CHI:bye
+MOT:bye
+MOT:no
+MOT:we did this one already
+MOT:okay
+MOT:I'm must going to listen to him cause I don't want to make him too
+MOT:let's go build a tower
+MOT:let's build a tower
+MOT:your turn
+CHI:no
+MOT:I know, you did this already
+MOT:okay
+MOT:bye bye blocks
+MOT:put your lips together all right
+MOT:let's see
+MOT:pink, yellow, orange, green
+MOT:okay
+MOT:your turn
+MOT:pink
+MOT:mommy's turn
+MOT:mommy's turn
+MOT:mommy's turn
+MOT:mommy's turn
+MOT:your turn
+MOT:mommy's turn
+MOT:okay
+MOT:let's say, bye bye green
+MOT:say, bye bye green
+MOT:bye bye orange
+MOT:say bye bye yellow
+MOT:bye bye pink
+MOT:pink
+MOT:mommy's turn
+MOT:Andy's turn
+MOT:mommy's turn
+MOT:bye bye pink
+MOT:bye bye yellow
+MOT:bye bye orange
+MOT:bye bye green
+MOT:yea
+MOT:what do you need
+CHI:help
+MOT:okay
+MOT:I'll help you
+MOT:way to go
+MOT:one more time
+MOT:mommy's turn
+MOT:mommy's
+MOT:can I have a turn
+MOT:hey, you took my turn
+CHI:help
+MOT:oh, I have to help you
+MOT:Andy's turn
+MOT:mommy's turn
+CHI:bye pink
+MOT:bye pink
+CHI:yellow
+MOT:bye yellow
+MOT:bye orange
+MOT:bye
+CHI:green
+MOT:green
+MOT:yay
+MOT:bye bye toys
+MOT:bye bye toy
+CHI:toys
+MOT:look what I have
+MOT:do you want some
+MOT:do you want some
+MOT:do you want a cookie
+MOT:do you want a cookie
+MOT:do you want a cookie
+MOT:do you want
+MOT:do you want a cookie
+MOT:Andy
+MOT:food's not a big motivator for Andrew
+MOT:Andrew do you want a cookie
+MOT:cookie
+MOT:mmm
+MOT:yummy
+MOT:you eat the cookie
+MOT:you eat teddy cookie
+MOT:this isn't going to work
+MOT:see he doesn't want the cookie
+MOT:look what I have
+MOT:which one do you want
+MOT:which one do you want
+CHI:xxx
+MOT:you want that one
+CHI:help
+MOT:help
+MOT:okay
+MOT:do you want me to open it
+MOT:do you want me to open it
+MOT:what do you want mommy to do
+CHI:xxx
+MOT:what do you want me to do
+CHI:open
+MOT:open
+MOT:okay
+MOT:there you go
+MOT:do you want to put the teddy inside
+CHI:xxx
+MOT:put the teddy cookie inside
+CHI:xxx
+MOT:let's do this lips together buddy ok
+MOT:lips together
+CHI:xxx
+MOT:where's that teddy bear
+MOT:put him inside
+MOT:let's make him disappear
+MOT:caught him
+MOT:I caught him
+CHI:eh
+MOT:you wanted the teddy cookie
+CHI:xxx cup
+MOT:cup
+MOT:what do you do with the cup
+MOT:do you drink from that cup
+MOT:let's do lips together Andy
+CHI:xxx
+MOT:I need to give baby a hug
+MOT:do you want to give the baby a hug or kiss
+CHI:spoon
+MOT:starring
+MOT:you doing star
+MOT:star
+MOT:star
+CHI:xxx
+MOT:look what I have
+MOT:what is this
+MOT:what is this
+CHI:bubble
+MOT:balloon
+CHI:um
+CHI:hmm
+MOT:look what I'm going to do
+MOT:look what I'm going to do
+MOT:you ready, set, go
+MOT:good saying go
+MOT:what do you want to do
+CHI:xxx
+MOT:do you want to do it
+MOT:do you want to do
+MOT:balloon
+CHI:xxx
+MOT:right, balloon
+MOT:what do you want me to do
+MOT:again
+CHI: xxx
+MOT:okay
+MOT:what is this
+MOT:balloon
+CHI:xxx
+CHI:xxx one
+MOT:ready
+MOT:ready
+CHI:go
+MOT:set
+MOT:go
+MOT:uh oh
+CHI:xxx
+MOT:what do you want
+CHI:xxx
+MOT:no more balloon
+MOT:bye bye balloon
+CHI:a xxx
+MOT:you want more balloon
+CHI:umm
+CHI:hmm
+MOT:look Andy
+MOT:look what I have now
+MOT:look at the toys I have
+MOT:look at the toys
+MOT:what is that
+MOT:what is that
+CHI:ahh
+MOT:that's a wand with a star
+MOT:it's a magic wand
+MOT:you got to wave it
+MOT:what else is in here
+MOT:what else do we have
+MOT:Andy, what else do we have
+MOT:what's in here, what's in here
+MOT:what is that
+CHI:xxx
+MOT:xxx
+CHI:xxx see
+MOT:what is that
+CHI:xxx see
+MOT:what is it
+CHI:xxx
+MOT:it's a
+MOT:snake, right
+CHI:snake
+CHI:Snake
+CHI:sss
+MOT:hi Andy
+MOT:hi Andy
+CHI:xxx
+MOT:hi Andy
+MOT:hi Andy
+MOT:hi
+CHI:xxx
+MOT:can I have a
+MOT:can I have a kiss
+MOT:can I have a
+MOT:you don't want to give me a kiss
+MOT:I'm going to give you one
+CHI:okay
+MOT:what is that
+MOT:It's a sss
+MOT:snake
+MOT:what's he doing
+MOT:is he sss
+MOT:slithering
+CHI:noo
+CHI:xxx
+MOT:what is that
+MOT:a wand
+CHI:xxx
+MOT:wand
+MOT:you wave the wand
+MOT:it's a magic wand
+MOT:what're you going to wish for
+MOT:what are you going to wish for with the magic wand
+CHI:no xxx
+MOT:xxx
+MOT:Andy, Andy, Andy
+CHI:noo xxx
+CHI:noo xxx
+MOT:Andy, Andy
+CHI:xxx
+MOT:oh, what do you want mommy to do
+MOT:stop
+CHI:no
+CHI:xxx
+MOT:blocks
+MOT:I want a hug
+MOT:can I have a hug
+CHI:no xxx
+MOT:cup
+CHI:noo
+CHI:noo
+CHI:xxx
+MOT:how does the car go
+CHI:do xxx
+MOT:the car's got to stay on the ground
+CHI:bye
+CHI:tat a tat a tat a
+MOT:uh oh
+MOT:I'm not a very good driver
+MOT:uh oh
+MOT:he's stuck
+MOT:oh, you wanted to make it go in the other thing
+MOT:nope it's going to stay in here
+MOT:say bye bye car
+MOT:bye bye car
+MOT:bye bye car
+MOT:thank you
+MOT:bye bye car
+MOT:give me a hug
+MOT:give me a hug
+MOT:what do you want to play with
+MOT:what do you want to play with
+MOT:what toy do you want, Andy
+MOT:what do you want to do
+MOT:you want to play with a toy
+MOT:yea
+MOT:alright
+MOT:ready ready ready ready
+MOT:let's see, what do you want to play with
+MOT:does he have to play with these toys
+CHI:what do you want to play with Andy
+MOT:let's see bud
+MOT:do you want to build
+MOT:look
+MOT:come have a seat
+MOT:let's build the one that goes oink oink
+MOT:let's build the one that goes oink oink
+CHI: cow
+MOT:what do you going to build
+MOT:very
+MOT:which one goes oink oink
+MOT:oh
+MOT:oh you want to build a horse
+MOT:alright
+MOT:you do the horse then
+MOT:you do the horse
+CHI:neigh
+MOT:neigh, right
+CHI:neigh xxx
+CHI:xxx neigh
+CHI:help
+MOT:do you need help
+MOT:maybe the horse goes head xxx
+MOT:Hmm
+MOT:neigh neigh
+MOT:what else do you want to build
+CHI:xxx
+MOT:what do you want to build
+CHI:xxx
+MOT:do you want to build
+CHI:xxx
+MOT:sheep
+MOT:Oh
+MOT:let's build a sheep
+MOT:how does
+MOT:what does a sheep say
+CHI:bah
+MOT:bah
+CHI:bah
+CHI:bah
+CHI:bah
+CHI:bah
+MOT:bah bah bah
+MOT:good job, Andy
+MOT:what else are you going to do
+MOT:oops
+CHI:help
+MOT:you need help
+MOT:okay
+MOT:let's move the head over here
+CHI:bah
+MOT:push it down the middle
+CHI:bah
+CHI:bah
+CHI:bah
+CHI:bah
+MOT:bah bah bah bah
+CHI:pig
+MOT:what are you going to do
+MOT:pig
+MOT:pig
+MOT:let's do piggy
+MOT:what does the pig say
+MOT:what does the pig say
+CHI:xxx
+MOT:what is that
+MOT:rooster
+MOT:how does the rooster go
+CHI:umm
+MOT:cockle doodle doo
+CHI:doodle doodle doo
+MOT:doodle doodle doo
+CHI:cockle doodle doo
+CHI:duck
+CHI:duck
+CHI:duck
+CHI:do duck
+CHI:duck
+CHI:duck
+MOT:help
+MOT:you need help
+MOT:alright
+MOT:let's move these over here
+MOT:now we'll put these where
+MOT:there
+MOT:push it in the middle
+CHI:xxx
+MOT:that's awesome Andy
+CHI:xxx
+MOT:that's awesome
+MOT:good job bud
+CHI:help
+MOT:okay
+MOT:I'll help you
+MOT:what do you want to play with now
+CHI:tat a
+MOT:what number is this
+CHI:pig
+CHI:pig
+MOT:pig
+MOT:oh
+MOT:you want to build your pig instead
+MOT:okay
+MOT:who's your pig
+MOT:how does the piggy go
+CHI:umm
+CHI:umm
+CHI:umm
+CHI:umm
+CHI:umm
+MOT:oink, oink, oink, oink
+CHI:help
+MOT:okay
+MOT:let's see
+MOT:this one's a little harder
+MOT:how about that one
+MOT:where do you think that goes
+CHI:duck
+MOT:duck
+CHI:xxx duck
+MOT:where's the duck
+CHI:xxx
+MOT:is that a baby duck
+CHI:xxx
+MOT:those are backwards
+MOT:switch those
+CHI:help
+MOT:help okay
+MOT:you move that
+MOT:move that one over
+MOT:now you put this one in
+MOT:quack
+MOT:quack
+MOT:quack
+MOT:quack
+MOT:quack
+MOT:quack
+CHI:cow
+MOT:cow, right
+CHI:mmm
+MOT:moo
+CHI:mmm
+CHI:mmm
+CHI:mmm
+CHI:mmm
+MOT:mmm
+MOT:you got to build it in here or else it's not going to make the noise
+MOT:you're the one who's going to make the noise
+CHI:mmm
+CHI:mmm
+CHI:mmm
+CHI:mmm
+MOT: you got to get your foot out of it silly
+CHI:mmm
+CHI:mmm
+CHI:mmm
+CHI:mmm
+CHI:help
+MOT:okay
+MOT:I'll help, I'll help
+MOT:hey you got that one
+MOT:moo
+MOT:awesome job
+MOT:I think we built them all
+MOT:yay
+MOT:alright
+MOT:bye bye puzzle
+MOT:you want to help mommy clean up
+MOT:put them in
+MOT:put them in, okay
+MOT:help mommy clean up
+MOT:good job
+MOT:put this away okay
+MOT:what do you want to do
+MOT:more puzzles
+MOT:let's do some puzzles
+MOT:these are so hard
+MOT:I don't know if I can do them
+MOT:what is this
+MOT:what's that
+MOT:ice cream
+MOT:ice cream truck
+MOT:Andy, where's
+CHI:sheep
+MOT:sheep sheep
+CHI:bah bah
+MOT:oh, bah
+MOT:right, sheep and the baby sheep
+MOT:what's that
+CHI:ahh
+MOT:right, socks and shoes
+MOT:good job, buddy
+CHI:wah
+MOT:what else
+MOT:where is the
+MOT:what is that
+MOT:rain
+CHI:rain
+CHI:rain
+CHI:rain
+CHI:aah
+MOT:what goes with rain
+MOT:what do you need to protect you from the rain
+MOT:rain, rain
+CHI:xxx
+MOT:Andy where's the umbrella
+MOT:where's the umbrella
+CHI:mmm
+MOT:do you see an umbrella
+MOT:I think I've found it
+MOT:there's the umbrella
+MOT:yea
+MOT:the rain
+MOT:in the rain
+MOT:good job
+MOT:Andy, where's the ducky
+MOT:where's the ducky
+CHI:quack quack quack
+MOT:quack quack
+MOT:right the duck and the baby duck
+CHI:xxx
+MOT:quack quack quack
+MOT:quack quack
+CHI:quack xxx
+MOT:good job
+MOT:Andy where are the eyes
+MOT:good job
+MOT:what goes with the eyes
+MOT:eyeglasses
+CHI:help
+MOT:oh, I'll help you
+MOT:there you go
+CHI:help
+MOT:good job
+CHI:help
+MOT:Andrew, where's
+CHI:help
+MOT:I'll help you
+MOT:where the
+MOT:where do the eyeglasses go
+MOT:can you put those on mommy's face
+MOT:put those eye glasses on mommy
+MOT:put those eyeglasses on mommy, go ahead
+MOT:those go on my eyes, good job
+MOT:can you put them on your own eyes
+MOT:you put on the glasses
+MOT:could Andy put on the glasses
+CHI:help
+MOT:can you do it Andy
+CHI: help
+MOT:I'll help you
+MOT:I'll help
+MOT:there you go
+CHI:xxx
+MOT:there you go
+MOT:good job
+MOT:Andy where's the fork
+MOT:where's the fork
+MOT:there's the fork
+MOT:and what goes with the fork
+MOT:right, the
+CHI:xxx
+MOT:knife
+CHI:help
+MOT:help, okay
+MOT:there you go
+MOT:good job
+MOT:where's the moon
+MOT:where's the moon
+CHI:egg
+MOT:that's an egg, right
+MOT:what goes with the egg
+CHI:xxx
+MOT:who lays the egg
+MOT:who lays the egg
+CHI:xxx
+MOT:who lays the egg Andy
+CHI:xxx
+MOT:is it the cluck cluck cluck cluck cluck
+MOT:chicken
+CHI:xxx
+MOT:cluck cluck cluck cluck
+CHI:xxx
+MOT:cluck cluck cluck, right
+CHI:xxx
+MOT:where's the
+MOT:what's that

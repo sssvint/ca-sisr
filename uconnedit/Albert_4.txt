@@ -1,0 +1,614 @@
+MOT	look at all these fun toys Albert
+CHI	it's a mirror
+CHI	it's a mirror
+MOT	you like that
+CHI	you have to try this mirror
+MOT	can you xxx that
+MOT	look over here Albert
+MOT	look at that toy
+MOT	you wanna try
+MOT	what is it
+MOT	it's a bus
+CHI	xxx
+MOT	let's stay here
+CHI	xxx
+CHI	I want to try it xxx on the counter
+CHI	xxx
+MOT	can you make it play
+CHI	where are they going to
+MOT	I don't know
+MOT	are they going to school
+CHI	they're going
+	(1.0)
+CHI	home
+MOT	ooh they went to school already
+CHI	no
+CHI	they're going home
+CHI	they're going home
+MOT	where were they
+CHI	they
+	(2.5)
+MOT	where are they coming home from
+CHI	school
+CHI	because they're sick
+MOT	oh they're all sick
+MOT	oh those poor kids
+MOT	are they sad
+CHI	yeah
+CHI	they're going to ps three
+MOT	what's ps three
+CHI	they're going to ps three
+MOT	what is that
+CHI	that's ps three over there
+CHI	that's ps three over there
+MOT	say hi teachers
+CHI	all the teachers leave
+MOT	I don't know
+MOT	Albert look over here
+MOT	look at this cool toy
+MOT	look
+MOT	what does it do
+MOT	cool
+MOT	here
+MOT	let's stay over here
+CHI	xxx go to school
+MOT	Albert, look at this big frog
+MOT	what do you think it does
+MOT	stand up
+MOT	let's go see the frog
+MOT	xxx
+MOT	whatcha doing
+MOT	what is it
+CHI	xxx fish xxx
+MOT	is it fish xxx
+MOT	stay with the toys Albert
+MOT	look at this frog
+CHI	toy
+CHI	they are fish toys
+CHI	uh oh
+MOT	what
+MOT	ooh are you going to let them out
+CHI	they're home
+MOT	they're home
+MOT	maybe they can't
+MOT	ooh they can get out
+MOT	where's the mommy
+CHI	that's the mommy
+MOT	ooh
+CHI	who's missing
+CHI	who is missing
+MOT	I don't know
+CHI	what teacher is missing
+MOT	hmm, I don't know
+MOT	who's missing
+CHI	apple is missing
+MOT	hey Albert
+CHI	what
+MOT	let's build a block tower
+CHI	no
+MOT	let's do that and then we can play with the bus, ok
+MOT	look at these blocks
+MOT	they have letters on them
+CHI	I like the small one
+MOT	I'm going to build one and you
+CHI	I want to build a number tower
+MOT	knock it down
+CHI	I wanna build a xxx
+MOT	here let's try this again
+MOT	you build one
+CHI	I xxx road
+MOT	build a tall tower
+CHI	xxx
+MOT	good
+MOT	sure
+CHI	a road block
+CHI	xxx
+MOT	ok watch
+CHI	xxx
+MOT	I was a truck
+MOT	Albert, I'm going to make one and then you need to knock it down
+MOT	sit down
+MOT	can you knock my tower down
+MOT	it's your turn
+MOT	ok that worked
+MOT	make one and I'll knock it down
+MOT	okay
+MOT	move out of the way
+MOT	try again
+MOT	Albert, let's try again
+MOT	make me a tower
+MOT	I'm going to show you a fun way to knock it down
+MOT	can you make a tower
+MOT	up
+CHI	no, I like this
+MOT	first make a tower then you can make a line
+CHI	then I'm going to make a word line
+MOT	sure
+CHI	for the bus to go under
+MOT	ok one more and then I got to play
+MOT	I like to knock
+MOT	get ready
+MOT	get set
+CHI	go
+MOT	hey mommy is going to get
+MOT	Albert
+CHI	I want a short tower
+MOT	you want a short one
+MOT	okay
+MOT	you knock it down
+MOT	good job
+MOT	good job
+MOT	Albert, are there missing blocks
+MOT	there's some under the table
+MOT	can you get me those two
+MOT	thanks
+MOT	can you make the tower now
+MOT	I want to do it again
+MOT	maybe I'll bounce it on there
+MOT	you make a tower for me to break down
+CHI	okay
+MOT	good
+MOT	that's great
+MOT	okay
+MOT	move out of the way
+MOT	I'm going to bounce it
+MOT	ooh you helped me
+MOT	we did it together
+CHI	xxx bus first
+MOT	okay let's do this one more time
+MOT	okay Albert we're all done with the blocks
+MOT	let's read this book
+CHI	no, I like this book
+MOT	Albert let's sit and read
+CHI	xxx
+MOT	let's sit in my lap
+CHI	xxx
+MOT	good boy
+MOT	let's read
+MOT	Albert
+CHI	xxx
+MOT	what do you see
+MOT	there's two cats drinking milk
+MOT	your turn
+MOT	I see a cat with red yarn in his mouth
+MOT	what's he doing
+CHI	licking
+MOT	licking
+MOT	yes
+MOT	there's two dogs playing
+CHI	there are two dogs
+	(3.5)
+CHI	there's- (0.6) there's two 
+	(1.0)
+CHI	pups xxx
+MOT	tell me
+MOT	and then we can turn the page and see what's next
+MOT	what are they doing
+MOT	sleeping
+MOT	show me stretching
+MOT	who's stretching
+CHI	he is
+MOT	try again
+CHI	he is stretching
+MOT	right
+MOT	turn the page
+MOT	I see a parakeet
+CHI	parakeet
+MOT	that's a bird
+MOT	what do you see
+MOT	what's this
+CHI	xxx
+MOT	show me a goldfish
+MOT	Albert, show me a goldfish
+MOT	that's a goldfish
+CHI	that's a goldfish
+MOT	show me a purple and yellow fish
+MOT	good
+MOT	ooh I see a hamster eating a carrot
+CHI	that's a
+	(1.6)
+CHI	that's a bunny carrot
+MOT	this is a mouse
+CHI	[that's a]
+MOT	[show me the] horse
+CHI	that's a hamster eating a carrot
+MOT	show me the horse
+CHI	that's the horse
+MOT	good
+MOT	okay let's look at the next one
+MOT	help me
+MOT	I see
+MOT	let's see
+CHI	xxx
+MOT	what do you see
+MOT	xxx
+MOT	what is it
+CHI	I see these
+MOT	what are they
+CHI	I eat these
+MOT	birds eat them
+MOT	Albert, show me the toy mouse
+MOT	good
+MOT	I see carrots
+CHI	I see birds
+MOT	good
+MOT	what kind of food is this
+CHI	bird food
+MOT	fish food
+MOT	close
+MOT	that was a good book
+MOT	did you like it
+CHI	no like this
+MOT	let's read this one
+MOT	Albert, what's he doing
+CHI	climbing
+MOT	he's what
+CHI	he's climbing
+MOT	he's not
+MOT	well I guess he's jumping
+MOT	climbing
+MOT	show me the underwear
+MOT	underwear
+CHI	the drawer open up
+MOT	mhmm
+MOT	I see his clothes flying in the air
+CHI	i see his clothes flying in the air (1.0) in the air
+MOT	tell me something else
+CHI	she's (0.5) he's getting undressed
+MOT	yes, he is getting undressed
+MOT	okay
+MOT	I see a papa bear
+CHI	I see a bear
+MOT	yeah
+CHI	xxx
+MOT	what's he doing
+CHI	dancing
+MOT	is he dancing
+MOT	putting on his clothes and dancing
+MOT	okay
+MOT	now what is he doing
+MOT	let's finish
+MOT	ooh wait
+MOT	I saw something cool
+MOT	let's read the book and then we can do something else
+MOT	show me where are his socks
+MOT	the boy bear socks
+MOT	good
+MOT	where
+MOT	let's see
+MOT	he's tying his shoe
+MOT	your turn
+MOT	what are they doing
+MOT	they're happy
+CHI	the end
+MOT	they're proud of him for tying his shoe
+MOT	help me turn the page
+CHI	they're unhappy
+MOT	now what are they doing
+CHI	holding hands
+MOT	yeah and doing what
+MOT	he looks like he's dancing
+MOT	what's the mommy bear doing
+CHI	the bear doing
+MOT	you tell me
+CHI	walking
+MOT	walking
+MOT	yeah, she could be walking
+MOT	I see a purple polka dot tie
+CHI	I see a polka dot tie
+MOT	I see a flower tie
+CHI	I see a skirt
+MOT	good
+MOT	you see a skirt
+MOT	okay
+MOT	the
+CHI	end
+MOT	Albert look what I have
+MOT	what's in here
+CHI	crackers
+MOT	you want some
+CHI	what kind are they
+MOT	I think they're s'mores ones
+MOT	here
+CHI	xxx more crackers in there
+CHI	almost there
+MOT	here Albert
+MOT	Albert look what I have now
+MOT	look what I'm going to do
+CHI	xxx
+MOT	get ready
+MOT	get set
+CHI	go
+MOT	oh boy
+CHI	my
+CHI	I- I'm still playing with this
+MOT	look Albert
+MOT	look what I have now
+MOT	Albert let me have the bus
+CHI	xxx
+MOT	let go
+MOT	we can play with it after
+MOT	we're finished, okay
+MOT	let's play with this after
+CHI	mom we're play- we're playing tug of war
+MOT	we are I guess
+MOT	you're silly
+MOT	we can play tug of war after, okay
+MOT	let go
+MOT	let go
+CHI	I want the bus
+MOT	ooh we can do that later
+MOT	Albert look what I have
+MOT	look
+MOT	I have some toys
+MOT	what are those
+CHI	xxx
+MOT	you wanna put those on
+CHI	xxx
+MOT	ooh you wanna put those on her
+MOT	ooh careful Albert
+CHI	no
+MOT	look what else is in here Albert
+CHI	dark
+MOT	look what else
+MOT	Albert
+MOT	oh wow
+MOT	a snake kitty
+MOT	boom
+MOT	boom
+MOT	boom
+MOT	boom
+MOT	boom
+MOT	boom
+MOT	boom
+MOT	where are the sunglasses
+MOT	here they are
+MOT	Albert look whats in here
+CHI	what is it
+MOT	look
+CHI	what
+MOT	look inside
+MOT	what else is in there
+MOT	there's more than that
+CHI	I can't see the mom
+MOT	you can't see the mom
+MOT	oh well
+MOT	you look silly
+MOT	can you put it back
+MOT	there's other cool stuff in here
+MOT	it feels really soft and interesting
+MOT	Albert look what else I have
+MOT	look what else
+CHI	what is it
+MOT	why don't you come see
+MOT	it's a bag
+MOT	you're suppose to look in it
+MOT	woah
+MOT	cool
+MOT	what is it
+MOT	what is it
+CHI	xxx
+MOT	is there something else
+MOT	Albert, is there something else
+CHI	yeah
+MOT	what
+CHI	that is
+MOT	what is it
+CHI	a snake
+MOT	ah
+MOT	what is the snake going to do
+CHI	go on the road
+CHI	it's going to go on the road
+CHI	it's a road
+MOT	Albert, here's a car
+MOT	put the snake on the road
+MOT	can you put the snake
+MOT	make the snake slither over to the other side
+MOT	there are cars driving
+MOT	vroom vroom vroom
+MOT	can you make the snake go over there
+CHI	no it's a toy
+MOT	it is a toy
+MOT	so is this
+MOT	Albert stand over
+MOT	sit over there
+MOT	sit on this side
+MOT	get ready
+MOT	I'm going to let it go
+MOT	can you catch it
+CHI	yes
+MOT	good
+MOT	send it back to me
+CHI	my
+MOT	send it back
+MOT	yay
+MOT	thanks Albert
+CHI	my
+MOT	here I'm going to drive it back to you
+MOT	I'm going to pretend that you're McDonalds and they're going through
+MOT	ready
+CHI	okay
+MOT	okay
+MOT	we're going to McDonalds
+MOT	yay
+MOT	what are they going to order
+MOT	what does the boy want
+CHI	nuggets
+MOT	nuggets
+MOT	what else does he want
+MOT	say daddy I want nuggets
+CHI	daddy I want nuggets
+MOT	good
+MOT	what else do you want
+MOT	what else do you want Albert
+MOT	wow
+MOT	what is this
+CHI	good bye
+MOT	good bye
+CHI	bunny
+MOT	good bye clown
+MOT	let's turn around Albert
+MOT	let's turn this way
+MOT	there you go
+MOT	pretend you're dialing a phone
+MOT	hello
+MOT	who is it
+MOT	it's a lion
+MOT	uh oh
+MOT	the lion disappeared
+MOT	can you call this guy
+MOT	say ring ring ring
+MOT	say hello
+MOT	can you say hello
+CHI	hello
+MOT	hi
+CHI	thanks bye
+MOT	thanks bye
+MOT	that was cool
+MOT	what else
+CHI	where's the bus
+MOT	 ooh we can play with the baby
+CHI	no, play with the bus
+MOT	hey Albert
+MOT	the baby wants some oatmeal
+CHI	no
+MOT	yeah
+MOT	the baby does
+MOT	can you make her some oatmeal in that big glass
+CHI	no
+MOT	no
+MOT	here, stir it up and then pretend this is a microwave
+MOT	right here
+MOT	put it in the microwave
+CHI	it's a table
+MOT	yeah, but we're pretending
+MOT	here, use these buttons to cook the oatmeal
+CHI	I'm going to do
+CHI	one
+CHI	two
+CHI	three
+CHI	four
+CHI	five
+CHI	six
+CHI	seven
+CHI	eight
+CHI	nine
+CHI	ten
+MOT	put it in
+MOT	ok, I'll cook it
+MOT	press the buttons and press what
+CHI	one
+CHI	two
+CHI	three
+MOT	start and then
+MOT	start
+MOT	bing
+MOT	it's all done
+CHI	I'm going to make it some more
+MOT	it's hot
+MOT	the baby doesn't want to get burned
+MOT	can you blow on it for the baby before you give it to her
+MOT	here's a spoon
+CHI	it's a table
+MOT	Albert
+MOT	feed the baby with the spoon after you blow
+MOT	it's hot
+MOT	blow on it
+MOT	it's very hot
+CHI	she's eating it and it's hot
+MOT	baby, is it too hot
+MOT	she said to blow on it please
+MOT	she's all done
+MOT	now she wants to take a bath
+MOT	she got oatmeal on her dress and everything
+MOT	can you wash the baby
+CHI	xxx
+MOT	wash her foot
+MOT	with the sponge
+MOT	uh oh
+MOT	did we put any water in there
+MOT	let's turn the water on first
+MOT	good
+CHI	what is that
+MOT	do you want warm water
+CHI	no
+MOT	no
+CHI	they want hot water
+MOT	okay, we have to be careful
+MOT	can you put your finger in to make sure it's not too hot
+CHI	it's hot
+MOT	okay we have to wait until it's just right
+MOT	okay is it ready
+CHI	no, it's too
+CHI	it's hot
+MOT	okay let's wait
+MOT	okay it's just right
+MOT	put her in
+MOT	yay
+CHI	no, I'm going to make it hot
+MOT	no more hot
+MOT	can you pour this on her head to wash her hair
+CHI	I'm making it hot
+MOT	I'm going to pour it on her head
+MOT	here, do what mommy does
+MOT	can you pour it on her head and I'll hold this over her eyes
+MOT	okay she's all done
+MOT	good
+MOT	brush the hair
+MOT	and now xxx after she takes a bath
+CHI	go take a bath
+MOT	after you take a bath, what do you do sometimes
+CHI	take a bath
+CHI	I like two baths
+MOT	and then
+MOT	where is she going
+MOT	can you put her in bed
+MOT	put her in bed
+CHI	put a xxx in bed
+MOT	is that the bed
+MOT	this is the bed
+CHI	this is the bed
+MOT	do you want to read her a story
+CHI	xxx
+MOT	read her a story
+CHI	xxx
+MOT	no the bed doesn't have water
+MOT	read her a story
+MOT	tell her about the three pigs
+MOT	what happens with the three pigs
+CHI	this is the wrong story
+MOT	yeah it's a different story
+MOT	we're pretending it's the three pigs story
+MOT	you can tell her from your memory
+MOT	once upon a time
+MOT	oh she fell asleep anyway
+MOT	she doesn't need the story
+MOT	hey, let's do the blocks where we knock down the blocks
+MOT	get the car
+MOT	ok, I'm going to build
+MOT	now it's your turn to knock it over
+MOT	you got to pull back and let it go
+MOT	pull back
+CHI	xxx
+MOT	pull back and
+MOT	let's try again
+MOT	pull back and
+MOT	ooh
+CHI	no, I don't want to do this
+MOT	why not
+CHI	no, I want to do the road
+MOT	what are you making
+CHI	a road
+CHI	for this
+CHI	a road for this
+MOT	the frog wants to go on the road
+CHI	no
+CHI	this is the road
+CHI	no no
+CHI	no xxx
+MOT	you have to look at me and tell me
+CHI	the frog is sick
+MOT	you have to tell me
+MOT	Albert, look at me and tell me
+CHI	stop playing xxx
+MOT	what are you making
