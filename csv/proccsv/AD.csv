@@ -1,0 +1,52 @@
+file,Speaker,Utterance,type,reptype,pause,search,repeat,cause,other
+AD6,CHI,I'm really hungry,Third-position,specification,NA,NA,NA,NA,NA
+AD6,CHI,it's a-,same-turn,aborting,NA,NA,NA,stuttering,NA
+AD6,CHI,it's a little bunny rabbit,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+AD6,CHI,"oh, I think",same-turn,aborting,NA,NA,NA,NA,NA
+AD6,CHI,I think that is a tail,same-turn,recycling,NA,NA,big repeat,NA,NA
+AD6,CHI,[that's] that's because it's not a real one,same-turn,recycling,NA,NA,small repeat,overlap,NA
+AD6,CHI,"um, maybe to a, maybe to a wedding",same-turn,searching,NA,small search,NA,NA,NA
+AD6,CHI,"um, maybe to a, maybe to a wedding",same-turn,recycling,NA,NA,big repeat,NA,NA
+AD6,CHI,"um, a tie",same-turn,searching,NA,small search,NA,NA,NA
+AD6,CHI,"um, honey",same-turn,searching,NA,small search,NA,NA,NA
+AD6,CHI,it's- was that the only page,same-turn,reformatting,NA,NA,NA,NA,NA
+AD6,CHI,one,Third-turn,recycling,NA,NA,NA,overlap,NA
+AD6,CHI,they=,same-turn,aborting,overlap,NA,NA,NA,NA
+AD6,CHI,"hm, dolphins",same-turn,searching,NA,small search,NA,NA,NA
+AD6,CHI,but why does,same-turn,aborting,NA,NA,NA,NA,NA
+AD6,CHI,does this one,same-turn,reformatting,NA,NA,NA,NA,NA
+AD6,CHI,does it,same-turn,replacing,NA,NA,NA,NA,NA
+AD6,CHI,is it a eel,same-turn,reformatting,NA,NA,NA,NA,NA
+AD6,CHI,um a hamster,same-turn,searching,NA,small search,NA,NA,NA
+AD6,CHI,i think it's,same-turn,aborting,NA,NA,NA,NA,NA
+AD6,CHI,i think,same-turn,aborting,NA,NA,NA,NA,NA
+AD6,CHI,no that,TRP,replacing,NA,NA,NA,NA,NA
+AD6,CHI,that looks like hamster,same-turn,recycling,NA,NA,small repeat,NA,NA
+AD6,CHI,"um, did I cry",same-turn,searching,NA,small search,NA,NA,NA
+AD6,CHI,higher,TRP,replacing,NA,NA,NA,misspeak,NA
+AD6,CHI,um elephant,same-turn,searching,NA,small search,NA,NA,NA
+AD6,CHI,um this one,same-turn,searching,NA,small search,NA,NA,NA
+AD6,CHI,um elephant,same-turn,searching,NA,small search,NA,NA,NA
+AD6,CHI,um a tongue,same-turn,searching,NA,small search,NA,NA,NA
+AD4,CHI,um I don't know,same-turn,searching,NA,small search,NA,NA,NA
+AD4,CHI,I left my duck at li by beh library,same-turn,replacing,NA,NA,NA,stuttering,NA
+AD4,CHI,like Nemo,same-turn,recycling,NA,NA,NA,overlap,NA
+AD4,CHI,and he died a[nd],same-turn,aborting,NA,NA,NA,overlap,NA
+AD4,CHI,uh,same-turn,searching,NA,small search,NA,NA,NA
+AD4,CHI,uh dog,same-turn,searching,NA,small search,NA,NA,NA
+AD4,CHI,uh fish,same-turn,searching,NA,small search,NA,NA,NA
+AD4,CHI,uh horse,same-turn,searching,NA,small search,NA,NA,NA
+AD4,CHI,uh puppy dog,same-turn,searching,NA,small search,NA,NA,NA
+AD4,CHI,uh nobody,same-turn,searching,NA,small search,NA,NA,NA
+AD4,CHI,uh Dandy,same-turn,searching,NA,small search,NA,NA,NA
+AD4,CHI,uhh birds,same-turn,searching,NA,small search,NA,NA,NA
+AD4,CHI,oh I,same-turn,aborting,NA,NA,NA,NA,NA
+AD4,CHI,froggy- how about froggy ride it,same-turn,reformatting,NA,NA,NA,NA,NA
+AD4,CHI,can I have truck,Third-turn,recycling,NA,NA,NA,overlap,NA
+AD4,CHI,hmm rock soup,same-turn,searching,NA,small search,NA,NA,NA
+AD2,CHI,no,TRP,replacing,NA,NA,NA,NA,NA
+AD2,CHI,out,Third-turn,recycling,NA,NA,small repeat,overlap,NA
+AD2,CHI,no,TRP,recycling,NA,NA,small repeat,NA,NA
+AD2,CHI,yeah,TRP,recycling,NA,NA,small repeat,NA,NA
+AD2,CHI,baby,TRP,recycling,NA,NA,small repeat,overlap,NA
+AD2,CHI,xxx (powder?),TRP,recycling,NA,NA,small repeat,no uptake,NA

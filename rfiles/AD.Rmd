@@ -1,0 +1,160 @@
+---
+title: "AD"
+author: "Samuel Vinter"
+date: "2024-12-13"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+pacman::p_load(tidyverse, dplyr, readr, ggplot2)
+```
+
+```{r}
+setwd("../csv")
+AD <- read_csv("proccsv/AD.csv")
+AD_6 <- read_delim("fullcsv/AD_6.csv", 
+    delim = ";", escape_double = FALSE, trim_ws = TRUE)
+AD_4 <- read_delim("fullcsv/AD_4.csv", 
+    delim = ";", escape_double = FALSE, trim_ws = TRUE)
+AD_2 <- read_delim("fullcsv/AD_2.csv", 
+    delim = ";", escape_double = FALSE, trim_ws = TRUE)
+```
+
+```{r}
+AD6_utt <- AD_6 %>%
+  filter(Speaker=="CHI") %>%
+  nrow()
+
+AD4_utt <- AD_4 %>%
+  filter(Speaker=="CHI") %>%
+  nrow()
+
+AD2_utt <- AD_2 %>%
+  filter(Speaker=="CHI") %>%
+  nrow()
+```
+
+```{r}
+AD_6_rep <- AD %>%
+  filter(file=="AD6")
+
+AD_4_rep <- AD %>%
+  filter(file=="AD4")
+
+AD_2_rep <- AD %>%
+  filter(file=="AD2")
+```
+
+```{r}
+sprintf("Total utterances for file AD 2: %d", nrow(AD_2))
+sprintf("Total utterances for file AD 4: %d", nrow(AD_4))
+sprintf("Total utterances for file AD 6: %d", nrow(AD_6))
+
+sprintf("Total CHI utterances for file AD 2: %d", AD2_utt)
+sprintf("Total CHI utterances for file AD 4: %d", AD4_utt)
+sprintf("Total CHI utterances for file AD 6: %d", AD6_utt)
+```
+
+```{r}
+desc <- data.frame(
+  file = c("AD 2", "AD 4", "AD 6"),
+  "total chi utt vs total n" = c(AD2_utt/nrow(AD_2), AD4_utt/nrow(AD_4), AD6_utt/nrow(AD_6)),
+  "n repairs vs n of chi utt" = c(nrow(AD_2_rep)/AD2_utt, nrow(AD_4_rep)/AD4_utt, nrow(AD_6_rep)/AD6_utt),
+  "n incomprehensible (xxx)" = c((sum(stringr::str_count(AD_2$Utterance, "xxx"))), (sum(stringr::str_count(AD_4$Utterance, "xxx"))), (sum(stringr::str_count(AD_6$Utterance, "xxx")))),
+  "n incompr vs total n of chi" = c((sum(stringr::str_count(AD_2$Utterance, "xxx")))/AD2_utt, (sum(stringr::str_count(AD_4$Utterance, "xxx")))/AD4_utt, (sum(stringr::str_count(AD_6$Utterance, "xxx")))/AD6_utt)
+)
+
+desc
+```
+
+
+```{r}
+ggplot(AD_6_rep, aes(x = reorder(reptype, reptype, function(x)-length(x)))) +
+  aes(fill = reptype) +
+  geom_bar() +
+  xlab("Repair type") +
+  ggtitle("Repair types by count in session 6 for AD")
+
+ggplot(AD_4_rep, aes(x = reorder(reptype, reptype, function(x)-length(x)))) +
+  aes(fill = reptype) +
+  geom_bar() +
+  xlab("Repair type") +
+  ggtitle("Repair types by count in session 4 for AD")
+
+ggplot(AD_2_rep, aes(x = reorder(reptype, reptype, function(x)-length(x)))) +
+  aes(fill = reptype) +
+  geom_bar() +
+  xlab("Repair type") +
+  ggtitle("Repair types by count in session 2 for AD")
+```
+
+```{r}
+AD_summ <- AD %>%
+  group_by(file, reptype) %>%
+  summarise(count = n(), .groups = "drop") %>%
+  na.omit()
+
+# x is file, y is count, lines is different repair types
+ggplot(AD_summ, aes(x = file, y=count, color=reptype, group=reptype)) +
+  geom_line(size = 1) +
+  geom_point(size = 2, position=position_jitter(width=0.05,height=0.05)) +
+  geom_text(aes(label = count), vjust = -0.5, size = 3) +# Add points to highlight individual counts 
+  ggtitle("Repair types over time (total) for AD")
+```
+
+```{r}
+total_utterances <- data.frame(
+  file = c("AD2", "AD4", "AD6"),
+  total = c(AD2_utt, AD4_utt, AD6_utt)  # Total utterances for each file
+)
+
+AD_rel <- AD_summ %>%
+  left_join(total_utterances, by = "file") %>%
+  mutate(proportion = count / total)
+
+ggplot(AD_rel, aes(x = file, y = proportion, color = reptype, group = reptype)) +
+  geom_line(size = 1) +
+  geom_point(size = 2, position=position_jitter(width=0.005,height=0.005)) +
+  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), vjust = -0.5, size = 3) +
+  ggtitle("Repair types over time (relative to total CHI utterances) for AD")
+```
+
+```{r}
+AD_l <- AD %>%
+    pivot_longer(
+      cols = c("pause", "search", "repeat", "cause"),
+      names_to = "more",
+      values_to = "whatsmore",
+      values_drop_na = TRUE
+    )
+```
+
+```{r}
+AD_more_summ <- AD_l %>%
+  group_by(file, whatsmore) %>%
+  summarise(count = n(), .groups = "drop") %>%
+  na.omit()
+
+# x is file, y is count, lines is different repair types
+ggplot(AD_more_summ, aes(x = file, y=count, color=whatsmore, group=whatsmore)) +
+  geom_line(size = 1) +
+  geom_point(size = 2) +
+  geom_text(aes(label = count), vjust = -0.5, size = 3) +# Add points to highlight individual counts 
+  ggtitle("Repair causes, types over time (total) for AD")
+```
+
+```{r}
+AD_more_rel <- AD_more_summ %>%
+  left_join(total_utterances, by = "file") %>%
+  mutate(proportion = count / total)
+
+ggplot(AD_more_rel, aes(x = file, y = proportion, color = whatsmore, group = whatsmore)) +
+  geom_line(size = 1) +
+  geom_point(size = 2) +
+  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), vjust = -0.5, size = 3) +
+  ggtitle("Repair causes, types over time (relative to total CHI utterances) for AD")
+```

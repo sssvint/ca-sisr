@@ -1,0 +1,160 @@
+---
+title: "Albert"
+author: "Samuel Vinter"
+date: "2024-12-13"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+pacman::p_load(tidyverse, dplyr, readr, ggplot2)
+```
+
+```{r}
+setwd("../csv")
+Albert <- read_csv("proccsv/Albert.csv")
+Albert_6 <- read_delim("fullcsv/Albert_6.csv", 
+    delim = ";", escape_double = FALSE, trim_ws = TRUE)
+Albert_4 <- read_delim("fullcsv/Albert_4.csv", 
+    delim = ";", escape_double = FALSE, trim_ws = TRUE)
+Albert_2 <- read_delim("fullcsv/Albert_2.csv", 
+    delim = ";", escape_double = FALSE, trim_ws = TRUE)
+```
+
+```{r}
+Albert6_utt <- Albert_6 %>%
+  filter(Speaker=="CHI") %>%
+  nrow()
+
+Albert4_utt <- Albert_4 %>%
+  filter(Speaker=="CHI") %>%
+  nrow()
+
+Albert2_utt <- Albert_2 %>%
+  filter(Speaker=="CHI") %>%
+  nrow()
+```
+
+```{r}
+Albert_6_rep <- Albert %>%
+  filter(file=="Albert6")
+
+Albert_4_rep <- Albert %>%
+  filter(file=="Albert4")
+
+Albert_2_rep <- Albert %>%
+  filter(file=="Albert2")
+```
+
+```{r}
+sprintf("Total utterances for file Albert 2: %d", nrow(Albert_2))
+sprintf("Total utterances for file Albert 4: %d", nrow(Albert_4))
+sprintf("Total utterances for file Albert 6: %d", nrow(Albert_6))
+
+sprintf("Total CHI utterances for file Albert 2: %d", Albert2_utt)
+sprintf("Total CHI utterances for file Albert 4: %d", Albert4_utt)
+sprintf("Total CHI utterances for file Albert 6: %d", Albert6_utt)
+```
+
+```{r}
+desc <- data.frame(
+  file = c("Albert 2", "Albert 4", "Albert 6"),
+  "total chi utt vs total n" = c(Albert2_utt/nrow(Albert_2), Albert4_utt/nrow(Albert_4), Albert6_utt/nrow(Albert_6)),
+  "n repairs vs n of chi utt" = c(nrow(Albert_2_rep)/Albert2_utt, nrow(Albert_4_rep)/Albert4_utt, nrow(Albert_6_rep)/Albert6_utt),
+  "n incomprehensible (xxx)" = c((sum(stringr::str_count(Albert_2$Utterance, "xxx"))), (sum(stringr::str_count(Albert_4$Utterance, "xxx"))), (sum(stringr::str_count(Albert_6$Utterance, "xxx")))),
+  "n incompr vs total n of chi" = c((sum(stringr::str_count(Albert_2$Utterance, "xxx")))/Albert2_utt, (sum(stringr::str_count(Albert_4$Utterance, "xxx")))/Albert4_utt, (sum(stringr::str_count(Albert_6$Utterance, "xxx")))/Albert6_utt)
+)
+
+desc
+```
+
+
+```{r}
+ggplot(Albert_6_rep, aes(x = reorder(reptype, reptype, function(x)-length(x)))) +
+  aes(fill = reptype) +
+  geom_bar() +
+  xlab("Repair type") +
+  ggtitle("Repair types by count in session 6 for Albert")
+
+ggplot(Albert_4_rep, aes(x = reorder(reptype, reptype, function(x)-length(x)))) +
+  aes(fill = reptype) +
+  geom_bar() +
+  xlab("Repair type") +
+  ggtitle("Repair types by count in session 4 for Albert")
+
+ggplot(Albert_2_rep, aes(x = reorder(reptype, reptype, function(x)-length(x)))) +
+  aes(fill = reptype) +
+  geom_bar() +
+  xlab("Repair type") +
+  ggtitle("Repair types by count in session 2 for Albert")
+```
+
+```{r}
+Albert_summ <- Albert %>%
+  group_by(file, reptype) %>%
+  summarise(count = n(), .groups = "drop") %>%
+  na.omit()
+
+# x is file, y is count, lines is different repair types
+ggplot(Albert_summ, aes(x = file, y=count, color=reptype, group=reptype)) +
+  geom_line(size = 1) +
+  geom_point(size = 2, position=position_jitter(width=0.05,height=0.05)) +
+  geom_text(aes(label = count), vjust = -0.5, size = 3) +# Add points to highlight individual counts 
+  ggtitle("Repair types over time (total) for Albert")
+```
+
+```{r}
+total_utterances <- data.frame(
+  file = c("Albert2", "Albert4", "Albert6"),
+  total = c(Albert2_utt, Albert4_utt, Albert6_utt)  # Total utterances for each file
+)
+
+Albert_rel <- Albert_summ %>%
+  left_join(total_utterances, by = "file") %>%
+  mutate(proportion = count / total)
+
+ggplot(Albert_rel, aes(x = file, y = proportion, color = reptype, group = reptype)) +
+  geom_line(size = 1) +
+  geom_point(size = 2, position=position_jitter(width=0.005,height=0.005)) +
+  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), vjust = -0.5, size = 3) +
+  ggtitle("Repair types over time (relative to total CHI utterances) for Albert")
+```
+
+```{r}
+Albert_l <- Albert %>%
+    pivot_longer(
+      cols = c("pause", "search", "repeat", "cause"),
+      names_to = "more",
+      values_to = "whatsmore",
+      values_drop_na = TRUE
+    )
+```
+
+```{r}
+Albert_more_summ <- Albert_l %>%
+  group_by(file, whatsmore) %>%
+  summarise(count = n(), .groups = "drop") %>%
+  na.omit()
+
+# x is file, y is count, lines is different repair types
+ggplot(Albert_more_summ, aes(x = file, y=count, color=whatsmore, group=whatsmore)) +
+  geom_line(size = 1) +
+  geom_point(size = 2) +
+  geom_text(aes(label = count), vjust = -0.5, size = 3) +# Add points to highlight individual counts 
+  ggtitle("Repair causes, types over time (total) for Albert")
+```
+
+```{r}
+Albert_more_rel <- Albert_more_summ %>%
+  left_join(total_utterances, by = "file") %>%
+  mutate(proportion = count / total)
+
+ggplot(Albert_more_rel, aes(x = file, y = proportion, color = whatsmore, group = whatsmore)) +
+  geom_line(size = 1) +
+  geom_point(size = 2) +
+  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), vjust = -0.5, size = 3) +
+  ggtitle("Repair causes, types over time (relative to total CHI utterances) for Albert")
+```

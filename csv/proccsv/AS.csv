@@ -1,0 +1,45 @@
+file,Speaker,Utterance,type,reptype,pause,search,repeat,cause,other
+AS6,CHI,"no, it's not",TRP,recycling,NA,NA,small repeat,NA,NA
+AS6,CHI,it's n- it's not,TRP,recycling,NA,NA,small repeat,NA,NA
+AS6,CHI,it's n- it's not,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+AS6,CHI,no cause he [xxx],same-turn,aborting,NA,NA,NA,overlap,NA
+AS6,CHI,that- that's not baby brush,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+AS6,CHI,I'm gon- I'm gonna knock over the spoon,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+AS6,CHI,do that,TRP,recycling,NA,NA,big repeat,NA,NA
+AS6,CHI,let [me],TRP,recycling,NA,NA,big repeat,NA,NA
+AS6,CHI,let [me],same-turn,aborting,NA,NA,NA,overlap,NA
+AS6,CHI,let me pop it,TRP,replacing,NA,NA,NA,NA,NA
+AS6,CHI,I- I am,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+AS6,CHI,let me- let me xxx that side,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+AS4,CHI,xxx my balloon out,Third-turn,recycling,NA,NA,NA,no uptake,NA
+AS4,CHI,my balloons out,Third-position,repetition,NA,NA,NA,no uptake,NA
+AS4,CHI,hey,TRP,recycling,NA,NA,NA,no uptake,NA
+AS4,CHI,hey,TRP,recycling,NA,NA,NA,no uptake,NA
+AS4,CHI,driving,TRP,recycling,NA,NA,NA,no uptake,NA
+AS4,CHI,I,same-turn,aborting,NA,NA,NA,NA,NA
+AS4,CHI,xxx broken,TRP,recycling,NA,NA,small repeat,overlap,NA
+AS4,CHI,what's that],same-turn,recycling,NA,NA,small repeat,overlap,NA
+AS4,CHI,what's that,same-turn,recycling,NA,NA,small repeat,overlap,NA
+AS4,CHI,[xxx],TRP,recycling,NA,NA,small repeat,overlap,NA
+AS4,CHI,xxx there,Third-turn,recycling,NA,NA,small repeat,overlap,NA
+AS4,CHI,xxx,Third-position,repetition,NA,NA,small repeat,no uptake,NA
+AS4,CHI,no peoples,TRP,inserting,NA,NA,NA,NA,NA
+AS4,CHI,do big,Third-position,reformulation,NA,NA,NA,NA,NA
+AS4,CHI,i want one,TRP,recycling,NA,NA,big repeat,no uptake,NA
+AS4,CHI,um big,same-turn,searching,NA,small search,NA,NA,NA
+AS4,CHI,look it,TRP,recycling,NA,NA,big repeat,no uptake,NA
+AS4,CHI,a mouth,NA,NA,NA,NA,NA,no uptake,NA
+AS4,CHI,look it,TRP,recycling,NA,NA,big repeat,no uptake,NA
+AS4,CHI,mouth,TRP,recycling,NA,NA,small repeat,no uptake,NA
+AS4,CHI,a block going in there,TRP,recycling,NA,NA,big repeat,misspeak,NA
+AS4,CHI,eat xxx,Third-turn,recycling,NA,NA,small repeat,no uptake,NA
+AS4,CHI,it eat you,TRP,replacing,NA,NA,NA,no uptake,NA
+AS4,CHI,read that,TRP,recycling,NA,NA,small repeat,no uptake,NA
+AS4,CHI,xx[x],same-turn,aborting,NA,NA,NA,overlap,NA
+AS4,CHI,I wanna take it,TRP,inserting,NA,NA,NA,NA,NA
+AS4,CHI,xxx elephant,Third-turn,recycling,NA,NA,big repeat,no uptake,NA
+AS2,CHI,balloon,Third-turn,recycling,NA,NA,NA,no uptake,NA
+AS2,CHI,balloon,Third-turn,recycling,NA,NA,NA,no uptake,NA
+AS2,CHI,balloon,Third-turn,recycling,NA,NA,NA,no uptake,NA
+AS2,CHI,balloon,TRP,recycling,NA,NA,NA,no uptake,NA
+AS2,CHI,balloon,TRP,recycling,NA,NA,NA,no uptake,NA

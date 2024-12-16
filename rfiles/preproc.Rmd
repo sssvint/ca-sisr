@@ -15,34 +15,35 @@ pacman::p_load(tidyverse, dplyr, readr)
 ```
 
 ```{r}
-Adam <- read_delim("csv/Adam_coded.csv", 
+setwd("../csv")
+
+Adam <- read_delim("codedcsv/Adam_coded.csv", 
     delim = ";", escape_double = FALSE, trim_ws = TRUE)
 
-Albert <- read_delim("csv/Albert_coded.csv", 
+Albert <- read_delim("codedcsv/Albert_coded.csv", 
     delim = ";", escape_double = FALSE, trim_ws = TRUE)
 
-Anthony <- read_delim("csv/Anthony_coded.csv", 
+Anthony <- read_delim("codedcsv/Anthony_coded.csv", 
     delim = ";", escape_double = FALSE, trim_ws = TRUE)
 
-AD <- read_delim("csv/AD_coded.csv", 
+AD <- read_delim("codedcsv/AD_coded.csv", 
     delim = ";", escape_double = FALSE, trim_ws = TRUE)
 
-AH <- read_delim("csv/AH_coded.csv", 
+AH <- read_delim("codedcsv/AH_coded.csv", 
     delim = ";", escape_double = FALSE, trim_ws = TRUE)
 
-AS <- read_delim("csv/AS2_coded.csv", 
+AS <- read_delim("codedcsv/AS2_coded.csv", 
     delim = ";", escape_double = FALSE, trim_ws = TRUE)
 ```
 
 ```{r}
 Adam <- Adam %>%
-  rename(file = "...1") %>%
   rename(type = "Type of repair") %>%
   rename(sameturn = "Same-turn - specify type") %>%
   rename(TRP = "TRP - specify type") %>%
   rename(thirdturn = "Third-turn - specify type") %>%
   rename(thirdpos = "Third-position - specify type") 
-Adam$type[is.na(Adam$type)] <- "same-turn"# one na value in type which should be same turn
+#Adam$type[is.na(Adam$type)] <- "same-turn"# one na value in type which should be same turn
 
 Albert <- Albert %>%
   rename(file = File) %>%
@@ -75,7 +76,7 @@ AH <- AH %>%
   rename(TRP = "TRP - specify type") %>%
   rename(thirdturn = "Third-turn - specify type") %>%
   rename(thirdpos = "Third-position - specify type")
-AH$type[is.na(AH$type)] <- "same-turn" # one na value in type which should be same turn
+#AH$type[is.na(AH$type)] <- "same-turn" # one na value in type which should be same turn
 AH <- cbind(AH, comments=NA)
 
 AS <- AS %>%
@@ -123,9 +124,87 @@ AS_drop <- AS %>%
 ```
 
 ```{r}
+# test
+Adam_test <- Adam_drop %>%
+   mutate(drop = if_else(if_all(c("sameturn", "TRP", "thirdturn", "thirdpos"), is.na), "yes", "no")) %>%
+    pivot_longer(
+      cols = c("sameturn", "TRP", "thirdturn", "thirdpos", "drop"),
+      names_to = "turn",
+      values_to = "reptype",
+      values_drop_na = TRUE
+    ) %>%
+  filter(!(reptype %in% "no")) %>%
+  mutate(reptype = na_if(reptype, "yes")) %>%
+  mutate( # ai gen
+    type = case_when(
+      is.na(type) & turn == "sameturn" ~ "same-turn",
+      is.na(type) & turn == "TRP" ~ "TRP",
+      is.na(type) & turn == "thirdturn" ~ "Third-turn",
+      is.na(type) & turn == "thirdpos" ~ "Third-position",
+      TRUE ~ type  # Keep existing value if none of the conditions match
+    )
+  ) %>% # not ai anymore :)
+  select(-c("turn", "comments")) %>%
+  relocate(reptype, .after = type)
 
+#if drop = no, delete row
+#reptype yes -> NA
+# if turn = same/trp/third and type = NA, change NA to turn
 ```
 
+```{r}
+long <- function(df) {
+  df_l <- df %>%
+    mutate(drop = if_else(if_all(c("sameturn", "TRP", "thirdturn", "thirdpos"), is.na), "yes", "no")) %>%
+    pivot_longer(
+      cols = c("sameturn", "TRP", "thirdturn", "thirdpos", "drop"),
+      names_to = "turn",
+      values_to = "reptype",
+      values_drop_na = TRUE
+    ) %>%
+  filter(!(reptype %in% "no")) %>%
+  mutate(reptype = na_if(reptype, "yes")) %>%
+  mutate( # ai gen
+    type = case_when(
+      is.na(type) & turn == "sameturn" ~ "same-turn",
+      is.na(type) & turn == "TRP" ~ "TRP",
+      is.na(type) & turn == "thirdturn" ~ "Third-turn",
+      is.na(type) & turn == "thirdpos" ~ "Third-position",
+      TRUE ~ type  # Keep existing value if none of the conditions match
+    )
+  ) %>% # not ai anymore :)
+  select(-c("turn", "comments")) %>%
+  relocate(reptype, .after = type)
+  
+  return(df_l)
+}
+```
+
+
+```{r}
+AD_l <- long(AD_drop)
+AH_l <- long(AH_drop)
+AS_l <- long(AS_drop)
+Adam_l <- long(Adam_drop)
+Albert_l <- long(Albert_drop)
+Anthony_l <- long(Anthony_drop)
+```
+
+
+```{r}
+# save the new csvs
+setwd("../csv/proccsv")
+write_csv(Adam_l, "Adam.csv")
+write_csv(Albert_l, "Albert.csv")
+write_csv(Anthony_l, "Anthony.csv")
+write_csv(AD_l, "AD.csv")
+write_csv(AH_l, "AH.csv")
+write_csv(AS_l, "AS.csv")
+```
+
+-------------------------
+===============================
+-------------------------
 
 ```{r}
 # combine dfs
@@ -164,6 +243,7 @@ g1_l %>%
 g2_l %>%
   count(reptype)
 ```
+
 ```{r}
 
 ```

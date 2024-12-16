@@ -1,0 +1,81 @@
+file,Speaker,Utterance,type,reptype,pause,search,repeat,cause,other
+AH6,CHI,the washcloth is usually here,Third-position,contrast,NA,NA,NA,no uptake,NA
+AH6,CHI,yeah I think I,same-turn,aborting,NA,NA,NA,NA,NA
+AH6,CHI,mama I think we should go in my room,Third-turn,recycling,NA,NA,small repeat,NA,NA
+AH6,CHI,in her nice crib,TRP,recycling,NA,NA,big repeat,NA,NA
+AH6,CHI,no she eats umm,same-turn,searching,NA,small search,NA,NA,NA
+AH6,CHI,what is what she's eating,same-turn,reformatting,NA,NA,NA,NA,NA
+AH6,CHI,no she's eating,Third-position,repetition,NA,NA,NA,NA,NA
+AH6,CHI,what is it,Third-position,repetition,NA,NA,NA,no uptake,NA
+AH6,CHI,I can't push this down,Third-turn,replacing,NA,NA,NA,overlap,NA
+AH6,CHI,what else can we do with this wand,Third-turn,recycling,NA,NA,NA,overlap,NA
+AH6,CHI,she's going right here see because she- cause she has a hurty f- cause she has a hurty foot,same-turn,recycling,NA,NA,NA,stuttering,NA
+AH6,CHI,(a lot of stuttering),same-turn,recycling,NA,NA,NA,stuttering,NA
+AH6,CHI,she doesn't make,same-turn,aborting,NA,NA,NA,NA,NA
+AH4,CHI,she she she,same-turn,recycling,NA,repetition search,NA,stuttering,NA
+AH4,CHI,she she she,same-turn,aborting,word repeat,NA,NA,NA,NA
+AH4,CHI,the the soap,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+AH4,CHI,the soap,Third-position,repetition,NA,NA,NA,no uptake,NA
+AH4,CHI,[the s-] [where's the soap],same-turn,aborting,NA,NA,NA,NA,NA
+AH4,CHI,where's the soap,Third-turn,recycling,NA,NA,NA,overlap,NA
+AH4,CHI,i'll [read the],same-turn,aborting,NA,NA,NA,overlap,NA
+AH4,CHI,I want to read the book to my baby,Third-turn,reformatting,NA,NA,NA,NA,NA
+AH4,CHI,where's the bed where's the bed,same-turn,recycling,NA,repetition search,big repeat,NA,NA
+AH4,CHI,no that's his,same-turn,aborting,NA,NA,NA,NA,NA
+AH4,CHI,maybe he maybe maybe he's gonna go to beddy,same-turn,recycling,NA,repetition search,small repeat,NA,NA
+AH4,CHI,m h[e's gonna],same-turn,aborting,NA,NA,NA,NA,NA
+AH4,CHI,he's gonna put his shoes on,Third-turn,recycling,NA,NA,NA,overlap,NA
+AH4,CHI,time to go to bedy time to go to bedy,same-turn,recycling,NA,NA,big repeat,NA,NA
+AH4,CHI,where's her bed,TRP,recycling,NA,NA,big repeat,no uptake,NA
+AH4,CHI,I'll take- I'll close my eyes,same-turn,replacing,NA,NA,NA,NA,NA
+AH4,CHI,can you put bedy,same-turn,replacing,NA,NA,NA,NA,NA
+AH4,CHI,[where's the-],same-turn,aborting,NA,NA,NA,overlap,NA
+AH4,CHI,where's the- where's the- (xxx) where's the baby blanket,Third-turn,recycling,NA,NA,small repeat,overlap,NA
+AH4,CHI,where's the- where's the- (xxx) where's the baby blanket,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+AH4,CHI,I'm gonna (xxx) I'm gonna sing her a little music before she goes to bed,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+AH4,CHI,mm I want to put people in there,same-turn,searching,NA,small search,NA,NA,NA
+AH4,CHI,can I-,same-turn,aborting,NA,NA,NA,NA,NA
+AH4,CHI,[I wanna-],same-turn,aborting,NA,NA,NA,overlap,NA
+AH4,CHI,I'll put- I'll put people in there,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+AH4,CHI,I'll put- I'll put people in there,Third-turn,reformatting,NA,NA,NA,NA,NA
+AH4,CHI,[I wanna-],Third-turn,reformatting,NA,NA,NA,no uptake,NA
+AH4,CHI,then- then we can put some little people,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+AH4,CHI,let's put- let's put a- let's put a mom,same-turn,recycling,NA,NA,big repeat,stuttering,NA
+AH4,CHI,the dad- the dad came out again,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+AH4,CHI,let's see how- how-,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+AH4,CHI,let's see how- how-,same-turn,aborting,NA,NA,NA,NA,NA
+AH4,CHI,how do you put-,same-turn,aborting,NA,NA,NA,NA,NA
+AH4,CHI,I'm gonna get,same-turn,aborting,NA,NA,NA,NA,NA
+AH4,CHI,eh there's- there's three friends,same-turn,recycling,NA,small search,small repeat,stuttering,NA
+AH4,CHI,she,same-turn,aborting,NA,NA,NA,NA,NA
+AH4,CHI,he wants,same-turn,aborting,NA,NA,NA,NA,NA
+AH4,CHI,we need- we need two more people,same-turn,recycling,NA,NA,big repeat,stuttering,NA
+AH4,CHI,we need two more and then it,same-turn,aborting,NA,NA,NA,NA,NA
+AH4,CHI,we need- we need- we need to,same-turn,recycling,NA,NA,big repeat,stuttering,NA
+AH4,CHI,we need- we need- we need to,same-turn,aborting,NA,NA,NA,NA,NA
+AH4,CHI,we need to,same-turn,aborting,NA,NA,NA,NA,NA
+AH4,CHI,I think Rose do you have one more people,same-turn,reformatting,NA,NA,NA,NA,NA
+AH4,CHI,the,same-turn,aborting,NA,NA,NA,NA,NA
+AH4,CHI,maybe- maybe- maybe the,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+AH4,CHI,maybe- maybe- maybe the,same-turn,aborting,NA,NA,NA,NA,NA
+AH2,CHI,I want,same-turn,aborting,NA,NA,NA,NA,NA
+AH2,CHI,the,same-turn,aborting,NA,NA,NA,NA,NA
+AH2,CHI,no there not right there,same-turn,replacing,NA,NA,NA,NA,NA
+AH2,CHI,that momma,TRP,recycling,NA,NA,small repeat,no uptake,NA
+AH2,CHI,he's in the running shoe,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+AH2,CHI,in in hat,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+AH2,CHI,want some more,TRP,recycling,NA,NA,big repeat,no uptake,NA
+AH2,CHI,I want I want pink balloon,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+AH2,CHI,look who that,TRP,reformatting,NA,NA,NA,no uptake,NA
+AH2,CHI,put my baby [in-],same-turn,aborting,NA,NA,NA,overlap,NA
+AH2,CHI,put my baby in,same-turn,replacing,NA,NA,NA,NA,NA
+AH2,CHI,also scary,Third-turn,recycling,NA,NA,NA,NA,NA
+AH2,CHI,on,same-turn,aborting,NA,NA,NA,NA,NA
+AH2,CHI,not on that,same-turn,replacing,NA,NA,NA,NA,NA
+AH2,CHI,"I swing, [my- my-]",same-turn,aborting,NA,NA,NA,overlap,NA
+AH2,CHI,"need, need, need",same-turn,recycling,NA,repetition search,small repeat,stuttering,NA
+AH2,CHI,I fall on at,same-turn,replacing,NA,NA,NA,NA,NA
+AH2,CHI,at someone house,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+AH2,CHI,I fall at someone's house,TRP,recycling,NA,NA,NA,NA,NA
+AH2,CHI,do a new one,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+AH2,CHI,"baby, baby knock that over",same-turn,recycling,NA,NA,small repeat,stuttering,NA

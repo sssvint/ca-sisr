@@ -1,0 +1,85 @@
+file,Speaker,Utterance,type,reptype,pause,search,repeat,cause,other
+Anthony6,CHI,this is a ele- elephant xxx,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Anthony6,CHI,xx[x],same-turn,aborting,NA,NA,NA,overlap,NA
+Anthony6,CHI,noo,same-turn,replacing,NA,NA,NA,NA,literal self repair
+Anthony6,CHI,he lives on the water and he don't swims on the land,same-turn,replacing,NA,NA,NA,NA,NA
+Anthony6,CHI,I'm going to school to drive and [I],same-turn,aborting,NA,NA,NA,overlap,NA
+Anthony6,CHI,it's not,same-turn,aborting,NA,NA,NA,NA,NA
+Anthony6,CHI,it's Jack,same-turn,replacing,NA,NA,NA,NA,NA
+Anthony6,CHI,it's hokey dokey,TRP,replacing,NA,NA,NA,NA,NA
+Anthony6,CHI,we're here,Third-turn,recycling,NA,NA,big repeat,no uptake,NA
+Anthony6,CHI,we're here,TRP,recycling,NA,NA,big repeat,no uptake,NA
+Anthony6,CHI,xx[x],same-turn,aborting,NA,NA,NA,overlap,NA
+Anthony6,CHI,but where's baby e,NA,NA,NA,NA,NA,misspeak,NA
+Anthony6,CHI,where's mommy elephant,same-turn,replacing,NA,NA,NA,NA,NA
+Anthony6,CHI,I wanna swipe that,TRP,recycling,NA,NA,NA,NA,NA
+Anthony6,CHI,you [never find],same-turn,aborting,NA,NA,NA,overlap,NA
+Anthony6,CHI,[where's ma],same-turn,aborting,NA,NA,NA,NA,NA
+Anthony6,CHI,where's momma elephant,same-turn,recycling,NA,NA,NA,overlap,NA
+Anthony6,CHI,I have to- I have to go to the bathroom,same-turn,recycling,NA,NA,big repeat,NA,NA
+Anthony6,CHI,I want to count the birdies,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Anthony6,CHI,I wanna count on xxx and count how many birdies are all,TRP,recycling,NA,NA,small repeat,NA,NA
+Anthony6,CHI,I wanna count,TRP,recycling,NA,NA,big repeat,NA,NA
+Anthony6,CHI,I- I want some cookie,same-turn,recycling,NA,NA,small repeat,NA,NA
+Anthony6,CHI,and now let's eat some x[xx],same-turn,aborting,NA,NA,NA,overlap,NA
+Anthony6,CHI,this,same-turn,aborting,NA,NA,NA,NA,NA
+Anthony6,CHI,the s,Third-turn,recycling,NA,NA,NA,NA,NA
+Anthony6,CHI,the s,same-turn,aborting,NA,NA,NA,NA,NA
+Anthony6,CHI,the blocks xxx,same-turn,aborting,NA,NA,NA,NA,NA
+Anthony6,CHI,a legos stack xxx,same-turn,reordering,NA,NA,NA,NA,NA
+Anthony6,CHI,and a block stack,same-turn,reordering,NA,NA,NA,NA,NA
+Anthony6,CHI,what's higher,TRP,recycling,NA,NA,big repeat,no uptake,NA
+Anthony6,CHI,what's higher,TRP,recycling,NA,NA,big repeat,no uptake,NA
+Anthony6,CHI,what's higher,TRP,recycling,NA,NA,big repeat,no uptake,NA
+Anthony6,CHI,which one is little,TRP,replacing,NA,NA,NA,correcting grammar,NA
+Anthony6,CHI,the little one,TRP,inserting,NA,NA,NA,NA,NA
+Anthony6,CHI,this not I n,same-turn,aborting,NA,NA,NA,NA,NA
+Anthony6,CHI,I not ride,TRP,reformatting,NA,NA,NA,NA,NA
+Anthony6,CHI,xxx not ride with the car,TRP,recycling,NA,NA,NA,NA,NA
+Anthony6,CHI,xxx not ride in the car,TRP,recycling,NA,NA,NA,NA,NA
+Anthony6,CHI,I wanna make a blocks stack,same-turn,recycling,NA,NA,small repeat,NA,NA
+Anthony6,CHI,do a pattern,same-turn,recycling,NA,NA,small repeat,NA,NA
+Anthony6,CHI,[xxx],same-turn,aborting,NA,NA,NA,overlap,NA
+Anthony6,CHI,that one spells,same-turn,recycling,NA,NA,big repeat,NA,NA
+Anthony6,CHI,I want,same-turn,aborting,NA,NA,NA,NA,NA
+Anthony6,CHI,I,same-turn,recycling,NA,NA,small repeat,NA,NA
+Anthony6,CHI,hokey dokey,TRP,recycling,NA,NA,big repeat,no uptake,NA
+Anthony6,CHI,hokey dokey,TRP,recycling,NA,NA,big repeat,no uptake,NA
+Anthony6,CHI,hokey dokey,Third-turn,recycling,NA,NA,big repeat,no uptake,NA
+Anthony6,CHI,hokey dokey,TRP,recycling,NA,NA,big repeat,no uptake,NA
+Anthony6,CHI,I want to do rhyming,same-turn,recycling,NA,NA,big repeat,NA,NA
+Anthony6,CHI,more words that xxx more words,same-turn,reordering,NA,NA,NA,NA,NA
+Anthony6,CHI,not that,TRP,recycling,NA,NA,big repeat,no uptake,NA
+Anthony6,CHI,Rose [xxx],same-turn,aborting,NA,NA,NA,NA,NA
+Anthony4,CHI,drinking the water,same-turn,recycling,NA,NA,small repeat,NA,NA
+Anthony4,CHI,and then we then,same-turn,reordering,NA,NA,NA,NA,NA
+Anthony4,CHI,yes and the [ball],same-turn,aborting,NA,NA,NA,overlap,NA
+Anthony4,CHI,I can mine,same-turn,replacing,NA,NA,NA,NA,NA
+Anthony4,CHI,I'm xx[x],same-turn,aborting,NA,NA,NA,overlap,NA
+Anthony4,CHI,[a miss] a miss it,same-turn,recycling,NA,NA,NA,overlap,NA
+Anthony4,CHI,I,same-turn,aborting,NA,NA,NA,NA,NA
+Anthony4,CHI,no way,TRP,recycling,NA,NA,big repeat,no uptake,NA
+Anthony4,CHI,his,same-turn,aborting,NA,NA,NA,NA,NA
+Anthony4,CHI,his shoes,Third-turn,recycling,NA,NA,small repeat,NA,NA
+Anthony4,CHI,its six fish,TRP,recycling,NA,NA,big repeat,overlap,NA
+Anthony4,CHI,[xxx],same-turn,aborting,NA,NA,NA,overlap,NA
+Anthony4,CHI,a baby xxx,TRP,recycling,NA,NA,NA,NA,NA
+Anthony4,CHI,lots of stuff,Third-turn,recycling,NA,NA,big repeat,no uptake,NA
+Anthony4,CHI,lots of stuff,Third-turn,recycling,NA,NA,big repeat,no uptake,NA
+Anthony4,CHI,it's,same-turn,aborting,NA,NA,NA,NA,NA
+Anthony4,CHI,it's a,same-turn,aborting,NA,NA,small repeat,NA,NA
+Anthony4,CHI,a mommy elephant,same-turn,recycling,NA,NA,small repeat,NA,NA
+Anthony4,CHI,and it- m- it's up here my elephant,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Anthony4,CHI,where's the snake,TRP,recycling,NA,NA,big repeat,no uptake,NA
+Anthony4,CHI,where's the snake where's the snake,TRP,recycling,NA,NA,big repeat,no uptake,NA
+Anthony4,CHI,its circles,TRP,recycling,NA,NA,big repeat,no uptake,NA
+Anthony4,CHI,[and the s one] the second one,same-turn,replacing,NA,NA,NA,overlap,replacing tone
+Anthony2,CHI,win win win win,same-turn,recycling,NA,NA,small repeat,no uptake,NA
+Anthony2,CHI,win win win,same-turn,recycling,NA,NA,small repeat,no uptake,NA
+Anthony2,CHI,"see, xxx",Third-turn,recycling,NA,NA,small repeat,no uptake,NA
+Anthony2,CHI,mmm hmm hmm,same-turn,searching,NA,small search,NA,NA,NA
+Anthony2,CHI,um balloon,same-turn,searching,NA,small search,NA,NA,NA
+Anthony2,CHI,[a] star a star,same-turn,recycling,NA,NA,small repeat,overlap,NA
+Anthony2,CHI,xxx,Third-turn,recycling,NA,NA,small repeat,no uptake,NA
+Anthony2,CHI,that's the,same-turn,aborting,NA,NA,NA,NA,NA
+Anthony2,CHI,a wolf,Third-turn,recycling,NA,NA,NA,NA,NA

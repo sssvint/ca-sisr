@@ -1,0 +1,192 @@
+file,Speaker,Utterance,type,reptype,pause,search,repeat,cause,other
+Albert6,NA,(1.5),same-turn,searching,long pause,pause search,NA,NA,NA
+Albert6,CHI,I don't know what that is called,same-turn,recycling,NA,NA,big repeat,NA,NA
+Albert6,CHI,I'm brushing the (.3) her eyebrows (.) a,same-turn,replacing,short pause,NA,NA,NA,NA
+Albert6,CHI,all a,same-turn,recycling,NA,NA,small repeat,NA,NA
+Albert6,CHI,all around to,same-turn,recycling,NA,NA,small repeat,NA,NA
+Albert6,NA,(1.6),same-turn,searching,long pause,pause search,NA,NA,NA
+Albert6,CHI,to somewhere,NA,NA,NA,NA,small repeat,NA,NA
+Albert6,CHI,I'm brushing the (.3) her eyebrows (.) a,same-turn,aborting,NA,NA,NA,NA,NA
+Albert6,CHI,all a,same-turn,aborting,NA,NA,NA,NA,NA
+Albert6,CHI,all around to,same-turn,recycling,NA,NA,NA,NA,NA
+Albert6,CHI,it- it- it's going (.) to five ten fifty school,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Albert6,NA,(3.5),same-turn,searching,long pause,pause search,NA,NA,NA
+Albert6,CHI,the baby powder to school,same-turn,recycling,NA,NA,small repeat,NA,NA
+Albert6,CHI,and they,same-turn,aborting,NA,NA,small repeat,NA,NA
+Albert6,CHI,and they talk about,same-turn,recycling,NA,NA,NA,NA,NA
+Albert6,NA,(1.2),same-turn,searching,long pause,pause search,NA,NA,NA
+Albert6,NA,(2.0),NA,NA,long pause,NA,NA,NA,NA
+Albert6,NA,(1.5),same-turn,searching,long pause,pause search,NA,NA,NA
+Albert6,NA,(5.0),NA,NA,long pause,NA,NA,NA,NA
+Albert6,NA,(3.0),same-turn,searching,long pause,pause search,NA,NA,NA
+Albert6,NA,(0.5),same-turn,searching,short pause,NA,NA,NA,NA
+Albert6,CHI,th- that stuff um xxx,same-turn,recycling,NA,small search,NA,stuttering,NA
+Albert6,NA,(1.1),same-turn,searching,long pause,pause search,NA,NA,NA
+Albert6,CHI,that stuff's gonna be taken to,same-turn,recycling,NA,NA,NA,NA,NA
+Albert6,NA,(2.0),same-turn,searching,long pause,pause search,NA,NA,NA
+Albert6,CHI,eh [wh-],same-turn,aborting,NA,NA,NA,overlap,NA
+Albert6,CHI,why did it do that,Third-turn,recycling,NA,NA,small repeat,NA,NA
+Albert6,CHI,no wanna leg- legos,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Albert6,CHI,I,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Albert6,CHI,I need it,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Albert6,CHI,this,TRP,replacing,NA,NA,NA,NA,NA
+Albert6,CHI,this from those people,TRP,recycling,NA,NA,small repeat,stuttering,NA
+Albert6,CHI,um,same-turn,searching,NA,small search,NA,NA,NA
+Albert6,CHI,how do you open that,Third-position,specification,NA,NA,NA,NA,NA
+Albert6,CHI,I don't know what that's called,Third-position,specification,NA,NA,NA,NA,NA
+Albert6,CHI,I don't know what,same-turn,aborting,NA,NA,NA,NA,NA
+Albert6,CHI,um,same-turn,searching,NA,small search,NA,NA,NA
+Albert6,CHI,uh,NA,NA,NA,small search,NA,NA,NA
+Albert6,CHI,um,same-turn,searching,NA,NA,NA,NA,NA
+Albert6,CHI,I want that one,same-turn,recycling,NA,NA,small repeat,NA,NA
+Albert6,CHI,stop,TRP,recycling,NA,NA,small repeat,no uptake,NA
+Albert6,CHI,wh- wh- why did it,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Albert6,CHI,why,same-turn,recycling,NA,NA,small repeat,NA,NA
+Albert6,CHI,why did it,same-turn,recycling,NA,NA,big repeat,NA,NA
+Albert6,CHI,why did it do that,same-turn,recycling,NA,NA,big repeat,NA,NA
+Albert6,CHI,wh- wh- why did it,same-turn,aborting,NA,NA,NA,NA,NA
+Albert6,CHI,why,same-turn,aborting,NA,NA,NA,NA,NA
+Albert6,CHI,why did it,same-turn,aborting,NA,NA,NA,NA,NA
+Albert6,CHI,stop doing,same-turn,aborting,NA,NA,NA,NA,NA
+Albert6,CHI,stop getting it right now,same-turn,replacing,NA,NA,NA,NA,NA
+Albert6,CHI,you're gonna,same-turn,aborting,NA,NA,NA,NA,NA
+Albert6,CHI,you're gonna,Third-turn,recycling,NA,NA,big repeat,NA,NA
+Albert6,CHI,you're gonna- you're gonna have it [xxx],Third-turn,recycling,NA,NA,big repeat,NA,NA
+Albert6,CHI,you're gonna- you're gonna have it [xxx],same-turn,recycling,NA,NA,big repeat,NA,NA
+Albert6,CHI,I,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Albert6,CHI,I,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Albert6,CHI,I'm gonna move this,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Albert6,CHI,this xxx bag,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Albert6,CHI,I'm I'm,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Albert6,CHI,I'm I'm,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Albert6,CHI,I'm,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Albert6,CHI,I'm i'm,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Albert6,CHI,I wanna scan it before I put it in that bag,same-turn,reformatting,NA,NA,NA,NA,NA
+Albert6,CHI,this is stuff,TRP,replacing,NA,NA,NA,NA,NA
+Albert6,CHI,stuff,TRP,recycling,NA,NA,small repeat,NA,NA
+Albert6,NA,(1.5),same-turn,searching,long pause,pause search,NA,NA,NA
+Albert6,CHI,stuff that needs,same-turn,recycling,NA,NA,small repeat,NA,NA
+Albert6,CHI,needs to,same-turn,recycling,NA,NA,big repeat,NA,NA
+Albert6,NA,(2.0),same-turn,searching,long pause,pause search,NA,NA,NA
+Albert6,CHI,stuff needs to be,same-turn,recycling,NA,NA,big repeat,NA,NA
+Albert6,CHI,to be taken to,same-turn,recycling,NA,NA,small repeat,NA,NA
+Albert6,CHI,to,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Albert6,CHI,to,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Albert6,CHI,to the five,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Albert6,CHI,to,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Albert6,CHI,to five,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Albert6,CHI,to to one twenty five ten,same-turn,recycling,NA,NA,NA,NA,NA
+Albert6,CHI,to,same-turn,searching,NA,repetition search,NA,NA,NA
+Albert6,CHI,to,same-turn,searching,NA,repetition search,NA,NA,NA
+Albert6,CHI,to the five,same-turn,searching,NA,repetition search,NA,NA,NA
+Albert6,CHI,to,same-turn,searching,NA,repetition search,NA,NA,NA
+Albert6,CHI,to five,same-turn,searching,NA,repetition search,NA,NA,NA
+Albert6,CHI,to to one twenty five ten,same-turn,searching,NA,repetition search,NA,NA,NA
+Albert6,CHI,I can't do that,Third-turn,recycling,NA,NA,small repeat,NA,NA
+Albert6,CHI,I don't like it,TRP,recycling,NA,NA,big repeat,no uptake,NA
+Albert6,CHI,I don't like it,Third-turn,recycling,NA,NA,big repeat,no uptake,NA
+Albert6,CHI,[why],NA,NA,NA,NA,NA,overlap,NA
+Albert6,CHI,wh[y],same-turn,recycling,NA,NA,small repeat,overlap,NA
+Albert6,CHI,[why do] we need to give it back,same-turn,recycling,NA,NA,small repeat,NA,NA
+Albert6,CHI,I'm packing,same-turn,aborting,NA,NA,NA,NA,NA
+Albert6,CHI,I'm packing this up,same-turn,recycling,NA,NA,big repeat,NA,NA
+Albert6,CHI,I'm packing it up,TRP,replacing,NA,NA,NA,NA,NA
+Albert6,CHI,I'm packing this up,TRP,replacing,NA,NA,NA,NA,NA
+Albert6,NA,(0.7),same-turn,searching,short pause,pause search,NA,NA,NA
+Albert6,CHI,I'm packing this up,same-turn,recycling,NA,NA,small repeat,NA,NA
+Albert6,NA,(0.6),NA,NA,short pause,NA,NA,NA,NA
+Albert6,CHI,xxx I'm gonna car(0.7)ry home,NA,NA,short pause,NA,NA,NA,NA
+Albert6,NA,(0.9),same-turn,searching,short pause,pause search,NA,NA,NA
+Albert6,CHI,um,same-turn,searching,NA,small search,NA,NA,NA
+Albert6,CHI,[you did not],same-turn,recycling,NA,NA,big repeat,NA,NA
+Albert6,CHI,[you did not],same-turn,aborting,NA,NA,NA,overlap,NA
+Albert6,CHI,um um um that,same-turn,searching,NA,small search,NA,NA,NA
+Albert6,CHI,um,same-turn,searching,NA,small search,NA,NA,NA
+Albert6,CHI,I want,same-turn,aborting,NA,NA,NA,NA,NA
+Albert6,CHI,I,same-turn,recycling,NA,NA,small repeat,NA,NA
+Albert6,CHI,I,same-turn,aborting,NA,NA,NA,NA,NA
+Albert6,CHI,uh um [xxx],same-turn,searching,NA,small search,NA,NA,NA
+Albert6,CHI,in,same-turn,recycling,NA,NA,small repeat,NA,NA
+Albert6,CHI,in that door for you to put it in your car,same-turn,recycling,NA,NA,small repeat,NA,NA
+Albert6,CHI,[her mom gonna knock],same-turn,aborting,NA,NA,NA,overlap,NA
+Albert6,CHI,her m[om xxx],Third-turn,recycling,NA,NA,NA,NA,NA
+Albert6,CHI,it's Brian,Third-position,repetition,NA,NA,NA,no uptake,NA
+Albert6,CHI,I wan-,same-turn,aborting,NA,NA,NA,NA,NA
+Albert6,CHI,I wanna do turn,Third-turn,recycling,NA,NA,small repeat,NA,NA
+Albert6,CHI,[I- I want-],same-turn,recycling,NA,NA,NA,overlap,NA
+Albert6,CHI,I wanna do a turn,same-turn,recycling,NA,NA,big repeat,NA,NA
+Albert6,CHI,uh uh,same-turn,searching,NA,small search,NA,NA,NA
+Albert4,CHI,it's a mirror,same-turn,recycling,NA,NA,big repeat,no uptake,NA
+Albert4,NA,(1.0),same-turn,searching,long pause,pause search,NA,NA,NA
+Albert4,CHI,they,same-turn,aborting,NA,NA,NA,NA,NA
+Albert4,NA,(2.5),NA,NA,long pause,NA,NA,NA,NA
+Albert4,CHI,that's ps three over there,same-turn,recycling,NA,NA,big repeat,no uptake,NA
+Albert4,NA,(3.5),NA,NA,long pause,NA,NA,NA,NA
+Albert4,CHI,there's- (0.6) there's two,same-turn,recycling,NA,pause search,NA,NA,NA
+Albert4,NA,(1.0),same-turn,searching,long pause,NA,NA,NA,NA
+Albert4,CHI,pups xxx,Third-turn,replacing,NA,NA,NA,NA,NA
+Albert4,NA,(1.6),same-turn,searching,long pause,pause search,NA,NA,NA
+Albert4,CHI,that's a bunny carrot,same-turn,recycling,NA,NA,NA,NA,NA
+Albert4,CHI,[that's a],same-turn,aborting,NA,NA,NA,NA,NA
+Albert4,CHI,that's a hamster eating a carrot,Third-turn,recycling,NA,NA,small repeat,overlap,NA
+Albert4,CHI,i see his clothes flying in the air (1.0) in the air,same-turn,recycling,long pause,NA,big repeat,NA,NA
+Albert4,CHI,she's (0.5) he's getting undressed,same-turn,replacing,NA,NA,NA,misspeak,NA
+Albert4,CHI,my,same-turn,aborting,NA,NA,NA,NA,NA
+Albert4,CHI,I- I'm still playing with this,same-turn,reformatting,NA,NA,NA,NA,NA
+Albert4,CHI,I- I'm still playing with this,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Albert4,CHI,mom we're play- we're playing tug of war,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Albert4,CHI,it's going to go on the road,TRP,recycling,NA,NA,NA,NA,NA
+Albert4,CHI,it's a road,TRP,reformatting,NA,NA,NA,NA,NA
+Albert4,CHI,my,same-turn,aborting,NA,NA,NA,NA,NA
+Albert4,CHI,my,same-turn,aborting,NA,NA,NA,NA,NA
+Albert4,CHI,it's hot,same-turn,deleting,NA,NA,NA,NA,NA
+Albert4,CHI,a road for this,TRP,recycling,NA,NA,NA,NA,NA
+Albert2,NA,(6.0),same-turn,searching,long pause,pause search,NA,NA,NA
+Albert2,CHI,there's a smiley face on the ball,same-turn,recycling,NA,NA,small repeat,NA,NA
+Albert2,CHI,where's the other one,TRP,recycling,NA,NA,big repeat,no uptake,NA
+Albert2,CHI,where,same-turn,aborting,NA,NA,small repeat,NA,NA
+Albert2,CHI,where the other one go,same-turn,recycling,NA,NA,big repeat,NA,NA
+Albert2,CHI,where the other one go,TRP,recycling,NA,NA,big repeat,NA,NA
+Albert2,NA,(1.0),same-turn,searching,long pause,NA,NA,NA,NA
+Albert2,CHI,Maddy had one of those,same-turn,recycling,NA,NA,NA,NA,NA
+Albert2,NA,(0.7),NA,NA,short pause,NA,NA,NA,NA
+Albert2,CHI,what's that,same-turn,recycling,NA,NA,small repeat,NA,NA
+Albert2,CHI,that,Third-turn,recycling,NA,NA,NA,NA,NA
+Albert2,CHI,that's a two and a five,same-turn,recycling,NA,NA,small repeat,NA,NA
+Albert2,CHI,I wanna blow the bubbles,Third-position,specification,NA,NA,NA,NA,NA
+Albert2,CHI,mommy blow it up,TRP,recycling,NA,NA,big repeat,overlap,NA
+Albert2,CHI,i plo- it popped over the girl,same-turn,replacing,NA,NA,NA,misspeak,NA
+Albert2,CHI,now you blow it and then i can,TRP,reformatting,NA,NA,NA,NA,NA
+Albert2,CHI,blow it please,Third-turn,recycling,NA,NA,NA,no uptake,NA
+Albert2,CHI,are you gonna blow the balloon please,TRP,inserting,NA,NA,NA,NA,NA
+Albert2,CHI,I the balloon back,TRP,replacing,NA,NA,NA,NA,NA
+Albert2,CHI,white,TRP,recycling,NA,NA,small repeat,NA,NA
+Albert2,CHI,white,TRP,recycling,NA,NA,small repeat,NA,NA
+Albert2,CHI,the bottom is white,TRP,reformatting,NA,NA,NA,NA,NA
+Albert2,CHI,white in,same-turn,recycling,NA,NA,small repeat,NA,NA
+Albert2,CHI,you painting the tongue,TRP,replacing,NA,NA,NA,NA,NA
+Albert2,CHI,you paint the tongue,TRP,replacing,NA,NA,big repeat,no uptake,NA
+Albert2,CHI,the tongue mommy,TRP,reformatting,NA,NA,NA,no uptake,NA
+Albert2,CHI,that was number,TRP,reformatting,NA,NA,NA,NA,NA
+Albert2,CHI,number one,TRP,recycling,NA,NA,NA,NA,NA
+Albert2,CHI,and um,same-turn,searching,NA,NA,NA,NA,NA
+Albert2,CHI,that one starts,Third-turn,recycling,NA,NA,big repeat,NA,NA
+Albert2,CHI,that went too fast,TRP,inserting,NA,NA,big repeat,NA,NA
+Albert2,CHI,I'm going to burn [the],same-turn,aborting,NA,NA,NA,NA,NA
+Albert2,CHI,I'm going to burn that,Third-turn,replacing,NA,NA,big repeat,overlap,NA
+Albert2,CHI,star in (0.5) in this,same-turn,recycling,short pause,NA,NA,NA,NA
+Albert2,CHI,it's a- it's- starfish,same-turn,recycling,NA,NA,NA,stuttering,NA
+Albert2,CHI,he got oatmeal,same-turn,recycling,NA,NA,small repeat,NA,NA
+Albert2,CHI,the,same-turn,aborting,NA,NA,NA,NA,NA
+Albert2,NA,(4.0),NA,NA,long pause,NA,NA,NA,NA
+Albert2,CHI,that's a hottub,same-turn,recycling,NA,NA,small repeat,NA,NA
+Albert2,CHI,can (0.5) that one cold,same-turn,reformatting,short pause,NA,NA,NA,NA
+Albert2,CHI,that,same-turn,aborting,NA,NA,NA,NA,NA
+Albert2,CHI,you,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Albert2,CHI,you,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Albert2,CHI,you,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Albert2,CHI,you turning,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Albert2,CHI,you you take your turn to xxx,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Albert2,CHI,you turning,same-turn,aborting,NA,NA,NA,NA,NA
+Albert2,CHI,you you take your turn to xxx,TRP,reformatting,NA,NA,small repeat,stuttering,NA
+Albert2,CHI,down to grocery,TRP,replacing,NA,NA,NA,NA,NA

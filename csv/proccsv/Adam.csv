@@ -1,0 +1,257 @@
+file,Speaker,Utterance,type,reptype,pause,search,repeat,cause,other
+Adam5,CHI,I have a nice chair that we bought f- for- (.) for you,same-turn,recycling,short pause,NA,small repeat,stuttering,NA
+Adam5,CHI,[it's],same-turn,aborting,NA,NA,NA,overlap,NA
+Adam5,CHI,maybe you (.) [xxx],same-turn,aborting,NA,NA,NA,overlap,NA
+Adam5,CHI,it's so comfy that you,same-turn,aborting,short pause,NA,NA,NA,NA
+Adam5,CHI,no one can leave it,same-turn,replacing,NA,NA,NA,NA,NA
+Adam5,CHI,"no one can sit on, on our chair",TRP,replacing,short pause,NA,NA,NA,NA
+Adam5,CHI,"no one can sit on, on our chair",same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Adam5,CHI,whenever you want,same-turn,aborting,short pause,NA,NA,NA,NA
+Adam5,CHI,whenever you,same-turn,aborting,short pause,NA,NA,NA,NA
+Adam5,CHI,you,same-turn,aborting,NA,NA,NA,NA,NA
+Adam5,CHI,you,same-turn,aborting,NA,NA,NA,NA,NA
+Adam5,CHI,you tell him you you can come to my house,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Adam5,CHI,whenever you,TRP,recycling,NA,repetition search,big repeat,NA,NA
+Adam5,CHI,you,TRP,recycling,NA,repetition search,small repeat,NA,NA
+Adam5,CHI,you,TRP,recycling,NA,repetition search,small repeat,NA,NA
+Adam5,CHI,you tell him you you can come to my house,TRP,reformatting,NA,NA,NA,NA,NA
+Adam5,CHI,like,same-turn,aborting,short pause,NA,NA,NA,NA
+Adam5,CHI,well you gonna,same-turn,aborting,short pause,NA,NA,NA,NA
+Adam5,CHI,xxx how about we go at the same time tomorrow,same-turn,reformatting,NA,NA,NA,NA,NA
+Adam5,CHI,they're going to the,same-turn,aborting,NA,NA,NA,NA,NA
+Adam5,NA,(1.0),same-turn,searching,long pause,pause search,NA,NA,NA
+Adam5,CHI,he's going to grab,same-turn,aborting,long pause,NA,NA,NA,NA
+Adam5,CHI,"I'm going to jump to lily pad to lily pad and make this, this lily pad broke and go and catch you in my net",same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Adam5,CHI,he's giving up,NA,NA,short pause,NA,NA,NA,NA
+Adam5,CHI,giving up,TRP,recycling,short pause,NA,big repeat,NA,NA
+Adam5,CHI,maybe the- the kid stopped frog and,same-turn,aborting,NA,NA,small repeat,stuttering,NA
+Adam5,NA,(1.0),same-turn,searching,long pause,pause search,NA,NA,NA
+Adam5,CHI,uh,same-turn,searching,NA,small search,NA,NA,NA
+Adam5,NA,(0.5),same-turn,searching,long pause,pause search,NA,NA,NA
+Adam5,CHI,maybe the- the kid stopped frog and,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Adam5,CHI,"the, a boy",same-turn,replacing,NA,NA,NA,correcting grammar,NA
+Adam5,CHI,he's going in the bath,TRP,recycling,NA,NA,big repeat,overlap,NA
+Adam5,CHI,I like,same-turn,aborting,short pause,NA,NA,NA,NA
+Adam5,CHI,I like the boy best,same-turn,recycling,short pause,NA,big repeat,NA,NA
+Adam5,CHI,I like the frog,TRP,replacing,NA,NA,NA,NA,NA
+Adam5,CHI,why did it this,same-turn,aborting,NA,NA,NA,NA,NA
+Adam5,CHI,why did,same-turn,aborting,NA,NA,NA,NA,NA
+Adam5,CHI,why was this back,same-turn,reformatting,NA,NA,NA,NA,NA
+Adam5,CHI,why did it this,same-turn,replacing,NA,NA,NA,misspeak,NA
+Adam5,CHI,why did,same-turn,recycling,NA,NA,big repeat,NA,NA
+Adam5,CHI,"even, even better than air",same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Adam5,CHI,"it's, it's in front of you",same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Adam5,CHI,"and then, and then say banana when you say go",same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Adam5,CHI,a banana,TRP,inserting,NA,NA,NA,NA,NA
+Adam5,CHI,"I want, I put it on your head",same-turn,replacing,NA,NA,NA,NA,NA
+Adam5,CHI,"the wand, the magic wand touched the snake and the elephant go here",same-turn,inserting,NA,NA,NA,NA,NA
+Adam5,CHI,well remember don't run in the woods because they're wild animal there that could eat,NA,NA,short pause,NA,NA,NA,NA
+Adam5,CHI,"could get eaten by the, by the wild animals",same-turn,reformatting,NA,NA,NA,NA,NA
+Adam5,CHI,"could get eaten by the, by the wild animals",same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Adam5,CHI,Africa doesn't have the,same-turn,aborting,short pause,NA,NA,NA,NA
+Adam5,CHI,"Africa is not the place where, where they have to water soap",TRP,reformatting,NA,NA,NA,NA,NA
+Adam5,CHI,"let's go there, but",same-turn,aborting,short pause,NA,NA,NA,NA
+Adam5,CHI,they just have a restaurant that has animatronics animals that are,same-turn,aborting,short pause,NA,NA,NA,NA
+Adam5,CHI,animals that are,TRP,recycling,long pause,repetition search,big repeat,NA,NA
+Adam5,CHI,"Africa is not the place where, where they have to water soap",same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Adam5,CHI,it's just a pretend restaurant words,TRP,inserting,NA,NA,NA,NA,NA
+Adam5,CHI,"yeah, it's, it's a",same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Adam5,CHI,"yeah, it's, it's a",same-turn,aborting,long pause,NA,NA,NA,NA
+Adam5,CHI,"usually snakes are not, are not scared of things",same-turn,recycling,short pause,NA,small repeat,stuttering,NA
+Adam5,CHI,"usually snakes are not afraid of things, and elephants aren't too",TRP,inserting,NA,NA,big repeat,NA,NA
+Adam5,CHI,you started,same-turn,aborting,short pause,NA,NA,NA,NA
+Adam5,CHI,those guys are,same-turn,aborting,short pause,NA,NA,NA,NA
+Adam5,CHI,those babies are gonna go,same-turn,replacing,short pause,NA,NA,NA,NA
+Adam5,CHI,"they're not really going to grow up because those guys are not, they're not real",TRP,reformatting,NA,NA,NA,NA,NA
+Adam5,CHI,"they're not really going to grow up because those guys are not, they're not real",same-turn,replacing,NA,NA,small repeat,NA,NA
+Adam5,CHI,so they just,same-turn,aborting,short pause,NA,NA,NA,NA
+Adam5,CHI,so they,same-turn,aborting,short pause,NA,small repeat,NA,NA
+Adam5,CHI,they're kinda mad about the,same-turn,aborting,long pause,NA,NA,NA,NA
+Adam5,CHI,so they,TRP,recycling,NA,NA,NA,NA,NA
+Adam5,CHI,they're kinda mad about the,TRP,recycling,NA,NA,NA,NA,NA
+Adam5,CHI,"I'm so glad that I, that I'm a snake",same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Adam5,CHI,you,same-turn,aborting,short pause,NA,NA,NA,NA
+Adam5,CHI,and you make the elephant enclosure,TRP,recycling,NA,NA,NA,NA,NA
+Adam5,CHI,I never,NA,NA,short pause,NA,NA,NA,NA
+Adam5,CHI,get bitten by a,NA,NA,short pause,NA,NA,NA,NA
+Adam5,CHI,by my snakes,same-turn,replacing,NA,NA,NA,NA,NA
+Adam5,CHI,don't make a,same-turn,aborting,short pause,NA,NA,NA,NA
+Adam5,CHI,remember don't get it to the line,TRP,replacing,NA,NA,NA,NA,NA
+Adam5,CHI,well I'll give,same-turn,aborting,short pause,NA,NA,NA,NA
+Adam5,CHI,well elephants like peanuts too,same-turn,parenthesizing,NA,NA,NA,NA,NA
+Adam5,CHI,I'll give you hay and peanuts,Third-turn,recycling,NA,NA,NA,NA,NA
+Adam5,CHI,when the,same-turn,aborting,long pause,NA,NA,NA,NA
+Adam5,CHI,maybe you can,same-turn,aborting,long pause,NA,NA,NA,NA
+Adam5,CHI,[these are a ri-],same-turn,aborting,NA,NA,NA,NA,NA
+Adam5,CHI,these are rides,same-turn,recycling,NA,NA,NA,overlap,NA
+Adam5,CHI,these are rides,same-turn,deleting,NA,NA,NA,correcting grammar,NA
+Adam5,CHI,[Mickey you don't] know g-,same-turn,aborting,NA,NA,NA,NA,NA
+Adam5,CHI,hey don't go I,TRP,sequence-jumping,NA,NA,NA,NA,NA
+Adam5,CHI,I'm on the rollercoaster,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Adam5,CHI,why are,same-turn,aborting,NA,NA,NA,NA,NA
+Adam5,CHI,why are you,same-turn,aborting,NA,NA,NA,NA,NA
+Adam5,CHI,why are you,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Adam5,CHI,yeah it is but,NA,NA,short pause,NA,NA,NA,NA
+Adam5,CHI,why the plane fly,NA,NA,short pause,NA,NA,NA,NA
+Adam5,CHI,flying low,same-turn,reformatting,NA,NA,small repeat,correcting grammar,NA
+Adam5,CHI,but [the ride],same-turn,aborting,NA,NA,NA,NA,NA
+Adam5,CHI,the ride going into the woods,Third-turn,recycling,NA,NA,small repeat,overlap,NA
+Adam5,CHI,[wait but wa]it,same-turn,replacing,NA,NA,NA,overlap,replacing tone
+Adam5,CHI,only want,same-turn,recycling,NA,repetition search,big repeat,NA,NA
+Adam5,CHI,I only want,same-turn,recycling,NA,repetition search,big repeat,NA,NA
+Adam5,CHI,I only want,same-turn,recycling,NA,repetition search,big repeat,NA,NA
+Adam5,CHI,I only want,same-turn,recycling,NA,repetition search,big repeat,NA,NA
+Adam3,CHI,it's t[ime],same-turn,aborting,NA,NA,NA,overlap,NA
+Adam3,CHI,the baby likes to xxx,NA,NA,short pause,NA,NA,NA,NA
+Adam3,CHI,he likes to,TRP,recycling,short pause,NA,NA,NA,NA
+Adam3,CHI,to run his,same-turn,recycling,short pause,NA,small repeat,NA,NA
+Adam3,CHI,his friend elephant for sleepovers,same-turn,recycling,short pause,NA,small repeat,NA,NA
+Adam3,CHI,and teddy bear,NA,NA,short pause,NA,NA,NA,NA
+Adam3,CHI,the ice,same-turn,aborting,NA,NA,NA,NA,NA
+Adam3,CHI,you can,NA,NA,short pause,NA,NA,NA,NA
+Adam3,CHI,have the one,same-turn,aborting,short pause,NA,NA,NA,NA
+Adam3,CHI,the green one,TRP,inserting,short pause,NA,NA,NA,NA
+Adam3,CHI,from the,NA,NA,short pause,NA,NA,NA,NA
+Adam3,CHI,front of the line,NA,NA,short pause,NA,NA,NA,NA
+Adam3,CHI,from the,TRP,recycling,short pause,NA,NA,NA,NA
+Adam3,CHI,car,TRP,replacing,short pause,NA,NA,NA,NA
+Adam3,CHI,hear it when,same-turn,aborting,NA,NA,NA,NA,NA
+Adam3,CHI,hear,same-turn,recycling,NA,NA,small repeat,NA,NA
+Adam3,CHI,hear were for elephant,same-turn,recycling,NA,NA,small repeat,NA,NA
+Adam3,CHI,[his],same-turn,aborting,NA,NA,NA,NA,NA
+Adam3,CHI,his friend,same-turn,recycling,NA,NA,small repeat,overlap,NA
+Adam3,CHI,look it's,same-turn,aborting,NA,NA,NA,NA,NA
+Adam3,CHI,this is,same-turn,replacing,short pause,NA,small repeat,NA,NA
+Adam3,CHI,[is the di-] dragon,Third-turn,recycling,NA,NA,small repeat,overlap,NA
+Adam3,CHI,[is the di-] dragon,same-turn,recycling,NA,NA,NA,misspeak,NA
+Adam3,CHI,the the baby,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Adam3,CHI,on to an,same-turn,recycling,NA,repetition search,big repeat,NA,NA
+Adam3,CHI,a ball,same-turn,replacing,NA,NA,NA,correcting grammar,NA
+Adam3,CHI,it's going to bring one for th- that it made the,same-turn,recycling,NA,NA,small repeat,NA,NA
+Adam3,CHI,[and and],same-turn,aborting,NA,NA,NA,overlap,NA
+Adam3,CHI,[and and],same-turn,recycling,NA,NA,small repeat,NA,NA
+Adam3,CHI,when with dumb and dad which,same-turn,aborting,short pause,NA,NA,NA,NA
+Adam3,CHI,who see the baby which,same-turn,aborting,short pause,NA,NA,NA,NA
+Adam3,CHI,they,same-turn,aborting,short pause,NA,NA,NA,NA
+Adam3,CHI,and he saw them,TRP,reformatting,short pause,NA,NA,NA,NA
+Adam3,CHI,in,same-turn,aborting,short pause,NA,NA,NA,NA
+Adam3,CHI,in front of him,same-turn,recycling,short pause,NA,small repeat,NA,NA
+Adam3,CHI,and and,same-turn,recycling,short pause,repetition search,small repeat,NA,NA
+Adam3,CHI,and I was looking y- for you all over the place,same-turn,inserting,NA,NA,small repeat,correcting grammar,NA
+Adam3,CHI,who see the baby which,same-turn,parenthesizing,NA,NA,NA,NA,NA
+Adam3,CHI,[and],same-turn,aborting,NA,NA,NA,overlap,NA
+Adam3,CHI,the the the,same-turn,recycling,NA,repetition search,small repeat,NA,NA
+Adam3,CHI,the baby will,same-turn,aborting,short pause,NA,small repeat,NA,NA
+Adam3,CHI,the elephants are,same-turn,replacing,short pause,NA,NA,NA,NA
+Adam3,CHI,are are,same-turn,recycling,NA,repetition search,small repeat,NA,NA
+Adam3,CHI,are get away from the,same-turn,recycling,short pause,NA,small repeat,NA,NA
+Adam3,CHI,the snake,same-turn,recycling,NA,NA,small repeat,NA,NA
+Adam3,CHI,do as long as i,same-turn,aborting,short pause,NA,NA,NA,NA
+Adam3,CHI,with,NA,NA,short pause,repetition search,NA,NA,NA
+Adam3,CHI,with,TRP,recycling,short pause,repetition search,small repeat,NA,NA
+Adam3,CHI,no ice cream for you and,NA,NA,short pause,NA,NA,NA,NA
+Adam3,CHI,but,same-turn,aborting,short pause,NA,NA,NA,NA
+Adam3,CHI,no,TRP,reformatting,NA,NA,NA,NA,NA
+Adam3,CHI,but,same-turn,recycling,NA,NA,small repeat,NA,NA
+Adam3,CHI,I'll be,same-turn,aborting,short pause,NA,NA,NA,NA
+Adam3,CHI,do you want to be the baby,same-turn,reformatting,NA,NA,NA,NA,NA
+Adam3,CHI,"that, eh,",same-turn,searching,short pause,small search,NA,NA,NA
+Adam3,CHI,I'm going to go,NA,NA,short pause,NA,NA,NA,NA
+Adam3,CHI,get,NA,NA,short pause,NA,NA,NA,NA
+Adam3,CHI,the cup,same-turn,aborting,short pause,NA,NA,NA,NA
+Adam3,CHI,the more cupcakes,same-turn,inserting,NA,NA,NA,NA,NA
+Adam3,CHI,from the,same-turn,aborting,NA,NA,NA,NA,NA
+Adam3,CHI,the,Third-turn,recycling,NA,repetition search,small repeat,NA,NA
+Adam3,CHI,the,same-turn,recycling,NA,repetition search,small repeat,NA,NA
+Adam3,CHI,[the],same-turn,aborting,NA,NA,NA,overlap,NA
+Adam3,CHI,the s- the same ones,Third-turn,recycling,NA,NA,NA,NA,NA
+Adam3,CHI,the s- the same ones,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Adam3,CHI,um,same-turn,searching,NA,small search,NA,NA,NA
+Adam3,CHI,this w-,same-turn,aborting,NA,NA,NA,NA,NA
+Adam3,CHI,there are plenty of them,TRP,reformatting,NA,NA,NA,NA,NA
+Adam3,CHI,there's a ch- lot,same-turn,replacing,NA,NA,NA,misspeak,NA
+Adam3,CHI,with plenty,NA,NA,short pause,NA,NA,NA,NA
+Adam3,CHI,there's plenty of chocolate ones,TRP,reformatting,short pause,NA,NA,NA,NA
+Adam3,CHI,[I get some more] apple juice,Third-turn,recycling,NA,NA,big repeat,overlap,NA
+Adam3,CHI,into the- your cup,same-turn,recycling,NA,NA,small repeat,NA,NA
+Adam3,CHI,into the- your cup,same-turn,replacing,NA,NA,NA,NA,NA
+Adam3,CHI,but,NA,NA,short pause,NA,NA,NA,NA
+Adam3,CHI,but,same-turn,recycling,short pause,NA,small repeat,NA,NA
+Adam3,CHI,the snake ranned out,NA,NA,short pause,NA,NA,NA,NA
+Adam3,CHI,some pink,same-turn,aborting,short pause,NA,NA,NA,NA
+Adam3,CHI,look at the,same-turn,sequence-jumping,short pause,NA,NA,NA,NA
+Adam3,CHI,snake ranned out,same-turn,sequence-jumping,short pause,NA,NA,NA,NA
+Adam3,CHI,snake ranned out,Third-turn,recycling,NA,NA,big repeat,NA,NA
+Adam3,CHI,they should,same-turn,aborting,short pause,NA,NA,NA,NA
+Adam3,CHI,they should,same-turn,recycling,short pause,NA,big repeat,NA,NA
+Adam3,CHI,they should all take,same-turn,recycling,short pause,NA,NA,NA,NA
+Adam3,CHI,could,TRP,replacing,short pause,NA,NA,NA,NA
+Adam3,CHI,the,same-turn,recycling,NA,repetition search,small repeat,NA,NA
+Adam3,CHI,the,same-turn,recycling,NA,repetition search,small repeat,NA,NA
+Adam3,CHI,the,same-turn,recycling,NA,repetition search,small repeat,NA,NA
+Adam3,CHI,all the pink cups on the ground,NA,NA,short pause,NA,NA,NA,NA
+Adam3,CHI,who are nice and clean and,NA,NA,short pause,NA,NA,NA,NA
+Adam3,CHI,nice,TRP,recycling,short pause,NA,NA,NA,NA
+Adam3,CHI,dirty,TRP,replacing,short pause,NA,NA,NA,NA
+Adam3,CHI,and wash them off,NA,NA,short pause,NA,NA,NA,NA
+Adam3,CHI,m off,TRP,recycling,short pause,repetition search,small repeat,NA,NA
+Adam3,CHI,and wash them off,TRP,recycling,short pause,repetition search,big repeat,NA,NA
+Adam3,CHI,at home,NA,NA,short pause,NA,NA,NA,NA
+Adam3,CHI,I see,NA,NA,short pause,NA,NA,NA,NA
+Adam3,CHI,a,same-turn,searching,NA,repetition search,NA,NA,NA
+Adam3,CHI,a,same-turn,searching,NA,repetition search,small repeat,stuttering,NA
+Adam3,CHI,a c,same-turn,aborting,NA,repetition search,small repeat,stuttering,NA
+Adam3,CHI,I see,same-turn,recycling,short pause,NA,NA,NA,NA
+Adam3,CHI,I don't,NA,NA,short pause,NA,NA,NA,NA
+Adam3,CHI,see one,NA,NA,short pause,NA,NA,NA,NA
+Adam3,CHI,here's a colorful one,TRP,replacing,NA,NA,NA,NA,NA
+Adam3,CHI,they should,same-turn,aborting,NA,NA,NA,NA,NA
+Adam3,CHI,they should,same-turn,aborting,NA,repetition search,big repeat,NA,NA
+Adam3,CHI,they should all take,same-turn,aborting,NA,repetition search,big repeat,NA,NA
+Adam3,CHI,could,same-turn,aborting,NA,NA,NA,NA,NA
+Adam3,CHI,the,same-turn,aborting,NA,NA,NA,NA,NA
+Adam3,CHI,the,same-turn,aborting,NA,repetition search,small repeat,stuttering,NA
+Adam3,CHI,the,same-turn,aborting,NA,repetition search,small repeat,stuttering,NA
+Adam3,CHI,the,same-turn,aborting,NA,repetition search,small repeat,stuttering,NA
+Adam3,CHI,I see,same-turn,aborting,NA,NA,NA,NA,NA
+Adam3,CHI,a,same-turn,aborting,NA,NA,NA,NA,NA
+Adam3,CHI,a,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Adam3,CHI,a c,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Adam3,CHI,I see,same-turn,aborting,NA,NA,NA,NA,NA
+Adam3,CHI,I see,Third-turn,recycling,NA,NA,big repeat,NA,NA
+Adam3,CHI,I'm,same-turn,aborting,short pause,NA,NA,NA,NA
+Adam3,CHI,I'm going to get some,same-turn,recycling,short pause,NA,small repeat,NA,NA
+Adam3,CHI,lots of,same-turn,replacing,short pause,NA,NA,NA,NA
+Adam3,CHI,that,same-turn,aborting,short pause,NA,NA,NA,NA
+Adam3,CHI,elephant,NA,NA,short pause,NA,NA,NA,NA
+Adam3,CHI,can we,NA,NA,short pause,NA,NA,NA,NA
+Adam3,CHI,go in your house and,NA,NA,short pause,NA,NA,NA,NA
+Adam3,CHI,play with your games,NA,NA,short pause,NA,NA,NA,NA
+Adam3,CHI,can the elephants,TRP,reformatting,short pause,NA,NA,NA,NA
+Adam3,CHI,go in the baby's house,NA,NA,short pause,NA,NA,NA,NA
+Adam3,CHI,do you have a green car,TRP,inserting,NA,NA,NA,NA,NA
+Adam3,CHI,and the a car bounced on to,same-turn,replacing,NA,NA,NA,correcting grammar,NA
+Adam3,CHI,we'd better take it away,TRP,replacing,NA,NA,NA,NA,NA
+Adam3,CHI,it's gonna make,same-turn,aborting,NA,NA,NA,NA,NA
+Adam3,CHI,the,same-turn,aborting,NA,NA,NA,NA,NA
+Adam3,CHI,and the,same-turn,aborting,short pause,NA,NA,NA,NA
+Adam3,CHI,can,same-turn,sequence-jumping,NA,NA,NA,NA,NA
+Adam3,CHI,can that could go on there,same-turn,recycling,NA,NA,small repeat,NA,NA
+Adam3,CHI,it's,NA,NA,short pause,NA,NA,NA,NA
+Adam3,CHI,tall enough,NA,NA,short pause,NA,NA,NA,NA
+Adam3,CHI,it's tall enough,TRP,recycling,NA,NA,NA,NA,NA
+Adam1,CHI,uh,same-turn,searching,NA,small search,NA,NA,NA
+Adam1,CHI,can I,same-turn,aborting,NA,NA,NA,NA,NA
+Adam1,CHI,be be a ball,same-turn,recycling,NA,NA,small repeat,stuttering,NA
+Adam1,CHI,um,same-turn,searching,NA,small search,NA,NA,NA
+Adam1,CHI,more Bubbles,Third-turn,replacing,NA,NA,NA,misspeak,NA
+Adam1,CHI,feeding the baby,TRP,replacing,NA,NA,NA,NA,NA
+Adam1,CHI,help please,TRP,recycling,NA,NA,big repeat,no uptake,NA
+Adam1,CHI,there's the soon,TRP,inserting,NA,NA,NA,NA,NA
+Adam1,CHI,here,same-turn,aborting,NA,NA,NA,NA,NA
+Adam1,CHI,here's the tow,same-turn,recycling,NA,NA,small repeat,NA,NA
+Adam1,CHI,there's the tow,TRP,replacing,NA,NA,NA,misspeak,NA
+Adam1,CHI,it's pasta for a cookie,TRP,recycling,NA,NA,big repeat,NA,NA
+Adam1,CHI,more pasta,TRP,replacing,NA,NA,NA,NA,NA
+Adam1,CHI,a bed,TRP,inserting,NA,NA,small repeat,NA,NA
+Adam1,CHI,they're up on the nest,TRP,replacing,NA,NA,NA,misspeak,NA

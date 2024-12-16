@@ -1,0 +1,160 @@
+---
+title: "Adam"
+author: "Samuel Vinter"
+date: "2024-12-13"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+pacman::p_load(tidyverse, dplyr, readr, ggplot2)
+```
+
+```{r}
+setwd("../csv")
+Adam <- read_csv("proccsv/Adam.csv")
+Adam_5 <- read_delim("fullcsv/Adam_5.csv", 
+    delim = ";", escape_double = FALSE, trim_ws = TRUE)
+Adam_3 <- read_delim("fullcsv/Adam_3.csv", 
+    delim = ";", escape_double = FALSE, trim_ws = TRUE)
+Adam_1 <- read_delim("fullcsv/Adam_1.csv", 
+    delim = ";", escape_double = FALSE, trim_ws = TRUE)
+```
+
+```{r}
+Adam5_utt <- Adam_5 %>%
+  filter(Speaker=="CHI") %>%
+  nrow()
+
+Adam3_utt <- Adam_3 %>%
+  filter(Speaker=="CHI") %>%
+  nrow()
+
+Adam1_utt <- Adam_1 %>%
+  filter(Speaker=="CHI") %>%
+  nrow()
+```
+
+```{r}
+Adam_5_rep <- Adam %>%
+  filter(file=="Adam5")
+
+Adam_3_rep <- Adam %>%
+  filter(file=="Adam3")
+
+Adam_1_rep <- Adam %>%
+  filter(file=="Adam1")
+```
+
+```{r}
+sprintf("Total utterances for file Adam 1: %d", nrow(Adam_1))
+sprintf("Total utterances for file Adam 3: %d", nrow(Adam_3))
+sprintf("Total utterances for file Adam 5: %d", nrow(Adam_5))
+
+sprintf("Total CHI utterances for file Adam 1: %d", Adam1_utt)
+sprintf("Total CHI utterances for file Adam 3: %d", Adam3_utt)
+sprintf("Total CHI utterances for file Adam 5: %d", Adam5_utt)
+```
+
+```{r}
+desc <- data.frame(
+  file = c("Adam 1", "Adam 3", "Adam 5"),
+  "total chi utt vs total n" = c(Adam1_utt/nrow(Adam_1), Adam3_utt/nrow(Adam_3), Adam5_utt/nrow(Adam_5)),
+  "n repairs vs n of chi utt" = c(nrow(Adam_1_rep)/Adam1_utt, nrow(Adam_3_rep)/Adam3_utt, nrow(Adam_5_rep)/Adam5_utt),
+  "n incomprehensible (xxx)" = c((sum(stringr::str_count(Adam_1$Utterance, "xxx"))), (sum(stringr::str_count(Adam_3$Utterance, "xxx"))), (sum(stringr::str_count(Adam_5$Utterance, "xxx")))),
+  "n incompr vs total n of chi" = c((sum(stringr::str_count(Adam_1$Utterance, "xxx")))/Adam1_utt, (sum(stringr::str_count(Adam_3$Utterance, "xxx")))/Adam3_utt, (sum(stringr::str_count(Adam_5$Utterance, "xxx")))/Adam5_utt)
+)
+
+desc
+```
+
+
+```{r}
+ggplot(Adam_5_rep, aes(x = reorder(reptype, reptype, function(x)-length(x)))) +
+  aes(fill = reptype) +
+  geom_bar() +
+  xlab("Repair type") +
+  ggtitle("Repair types by count in session 5 for Adam")
+
+ggplot(Adam_3_rep, aes(x = reorder(reptype, reptype, function(x)-length(x)))) +
+  aes(fill = reptype) +
+  geom_bar() +
+  xlab("Repair type") +
+  ggtitle("Repair types by count in session 3 for Adam")
+
+ggplot(Adam_1_rep, aes(x = reorder(reptype, reptype, function(x)-length(x)))) +
+  aes(fill = reptype) +
+  geom_bar() +
+  xlab("Repair type") +
+  ggtitle("Repair types by count in session 1 for Adam")
+```
+
+```{r}
+Adam_summ <- Adam %>%
+  group_by(file, reptype) %>%
+  summarise(count = n(), .groups = "drop") %>%
+  na.omit()
+
+# x is file, y is count, lines is different repair types
+ggplot(Adam_summ, aes(x = file, y=count, color=reptype, group=reptype)) +
+  geom_line(size = 1) +
+  geom_point(size = 2, position=position_jitter(width=0.05,height=0.05)) +
+  geom_text(aes(label = count), vjust = -0.5, size = 3) +# Add points to highlight individual counts 
+  ggtitle("Repair types over time (total) for Adam")
+```
+
+```{r}
+total_utterances <- data.frame(
+  file = c("Adam1", "Adam3", "Adam5"),
+  total = c(Adam1_utt, Adam3_utt, Adam5_utt)  # Total utterances for each file
+)
+
+Adam_rel <- Adam_summ %>%
+  left_join(total_utterances, by = "file") %>%
+  mutate(proportion = count / total)
+
+ggplot(Adam_rel, aes(x = file, y = proportion, color = reptype, group = reptype)) +
+  geom_line(size = 1) +
+  geom_point(size = 2, position=position_jitter(width=0.005,height=0.005)) +
+  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), vjust = -0.5, size = 3) +
+  ggtitle("Repair types over time (relative to total CHI utterances) for Adam")
+```
+
+```{r}
+Adam_l <- Adam %>%
+    pivot_longer(
+      cols = c("pause", "search", "repeat", "cause"),
+      names_to = "more",
+      values_to = "whatsmore",
+      values_drop_na = TRUE
+    )
+```
+
+```{r}
+Adam_more_summ <- Adam_l %>%
+  group_by(file, whatsmore) %>%
+  summarise(count = n(), .groups = "drop") %>%
+  na.omit()
+
+# x is file, y is count, lines is different repair types
+ggplot(Adam_more_summ, aes(x = file, y=count, color=whatsmore, group=whatsmore)) +
+  geom_line(size = 1) +
+  geom_point(size = 2) +
+  geom_text(aes(label = count), vjust = -0.5, size = 3) +# Add points to highlight individual counts 
+  ggtitle("Repair causes, types over time (total) for Adam")
+```
+
+```{r}
+Adam_more_rel <- Adam_more_summ %>%
+  left_join(total_utterances, by = "file") %>%
+  mutate(proportion = count / total)
+
+ggplot(Adam_more_rel, aes(x = file, y = proportion, color = whatsmore, group = whatsmore)) +
+  geom_line(size = 1) +
+  geom_point(size = 2) +
+  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), vjust = -0.5, size = 3) +
+  ggtitle("Repair causes, types over time (relative to total CHI utterances) for Adam")
+```

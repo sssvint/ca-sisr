@@ -1,0 +1,161 @@
+---
+title: "AS"
+author: "Samuel Vinter"
+date: "2024-12-13"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+pacman::p_load(tidyverse, dplyr, readr, ggplot2)
+```
+
+```{r}
+setwd("../csv")
+AS <- read_csv("proccsv/AS.csv")
+AS_6 <- read_delim("fullcsv/AS2_6.csv", 
+    delim = ";", escape_double = FALSE, trim_ws = TRUE)
+AS_4 <- read_delim("fullcsv/AS2_4.csv", 
+    delim = ";", escape_double = FALSE, trim_ws = TRUE)
+AS_2 <- read_delim("fullcsv/AS2_2.csv", 
+    delim = ";", escape_double = FALSE, trim_ws = TRUE)
+```
+
+```{r}
+AS6_utt <- AS_6 %>%
+  filter(Speaker=="CHI") %>%
+  nrow()
+
+AS4_utt <- AS_4 %>%
+  filter(Speaker=="CHI") %>%
+  nrow()
+
+AS2_utt <- AS_2 %>%
+  filter(Speaker=="CHI") %>%
+  nrow()
+```
+
+```{r}
+AS_6_rep <- AS %>%
+  filter(file=="AS6")
+
+AS_4_rep <- AS %>%
+  filter(file=="AS4")
+
+AS_2_rep <- AS %>%
+  filter(file=="AS2")
+```
+
+```{r}
+sprintf("Total utterances for file AS 2: %d", nrow(AS_2))
+sprintf("Total utterances for file AS 4: %d", nrow(AS_4))
+sprintf("Total utterances for file AS 6: %d", nrow(AS_6))
+
+sprintf("Total CHI utterances for file AS 2: %d", AS2_utt)
+sprintf("Total CHI utterances for file AS 4: %d", AS4_utt)
+sprintf("Total CHI utterances for file AS 6: %d", AS6_utt)
+```
+
+
+```{r}
+desc <- data.frame(
+  file = c("AS 2", "AS 4", "AS 6"),
+  "total chi utt vs total n" = c(AS2_utt/nrow(AS_2), AS4_utt/nrow(AS_4), AS6_utt/nrow(AS_6)),
+  "n repairs vs n of chi utt" = c(nrow(AS_2_rep)/AS2_utt, nrow(AS_4_rep)/AS4_utt, nrow(AS_6_rep)/AS6_utt),
+  "n incomprehensible (xxx)" = c((sum(stringr::str_count(AS_2$Utterance, "xxx"))), (sum(stringr::str_count(AS_4$Utterance, "xxx"))), (sum(stringr::str_count(AS_6$Utterance, "xxx")))),
+  "n incompr vs total n of chi" = c((sum(stringr::str_count(AS_2$Utterance, "xxx")))/AS2_utt, (sum(stringr::str_count(AS_4$Utterance, "xxx")))/AS4_utt, (sum(stringr::str_count(AS_6$Utterance, "xxx")))/AS6_utt)
+)
+
+desc
+```
+
+
+```{r}
+ggplot(AS_6_rep, aes(x = reorder(reptype, reptype, function(x)-length(x)))) +
+  aes(fill = reptype) +
+  geom_bar() +
+  xlab("Repair type") +
+  ggtitle("Repair types by count in session 6 for AS2")
+
+ggplot(AS_4_rep, aes(x = reorder(reptype, reptype, function(x)-length(x)))) +
+  aes(fill = reptype) +
+  geom_bar() +
+  xlab("Repair type") +
+  ggtitle("Repair types by count in session 4 for AS2")
+
+ggplot(AS_2_rep, aes(x = reorder(reptype, reptype, function(x)-length(x)))) +
+  aes(fill = reptype) +
+  geom_bar() +
+  xlab("Repair type") +
+  ggtitle("Repair types by count in session 4 for AS2")
+```
+
+```{r}
+AS_summ <- AS %>%
+  group_by(file, reptype) %>%
+  summarise(count = n(), .groups = "drop") %>%
+  na.omit()
+
+# x is file, y is count, lines is different repair types
+ggplot(AS_summ, aes(x = file, y=count, color=reptype, group=reptype)) +
+  geom_line(size = 1) +
+  geom_point(size = 2, position=position_jitter(width=0.05,height=0.05)) +
+  geom_text(aes(label = count), vjust = -0.5, size = 3) +# Add points to highlight individual counts 
+  ggtitle("Repair types over time (total) for AS2")
+```
+
+```{r}
+total_utterances <- data.frame(
+  file = c("AS2", "AS4", "AS6"),
+  total = c(AS2_utt, AS4_utt, AS6_utt)  # Total utterances for each file
+)
+
+AS_rel <- AS_summ %>%
+  left_join(total_utterances, by = "file") %>%
+  mutate(proportion = count / total)
+
+ggplot(AS_rel, aes(x = file, y = proportion, color = reptype, group = reptype)) +
+  geom_line(size = 1) +
+  geom_point(size = 2, position=position_jitter(width=0.005,height=0.005)) +
+  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), vjust = -0.5, size = 3) +
+  ggtitle("Repair types over time (relative to total CHI utterances) for AS2")
+```
+
+```{r}
+AS_l <- AS %>%
+    pivot_longer(
+      cols = c("pause", "search", "repeat", "cause"),
+      names_to = "more",
+      values_to = "whatsmore",
+      values_drop_na = TRUE
+    )
+```
+
+```{r}
+AS_more_summ <- AS_l %>%
+  group_by(file, whatsmore) %>%
+  summarise(count = n(), .groups = "drop") %>%
+  na.omit()
+
+# x is file, y is count, lines is different repair types
+ggplot(AS_more_summ, aes(x = file, y=count, color=whatsmore, group=whatsmore)) +
+  geom_line(size = 1) +
+  geom_point(size = 2) +
+  geom_text(aes(label = count), vjust = -0.5, size = 3) +# Add points to highlight individual counts
+  ggtitle("Repair causes, types over time (total) for AS2")
+```
+
+```{r}
+AS_more_rel <- AS_more_summ %>%
+  left_join(total_utterances, by = "file") %>%
+  mutate(proportion = count / total)
+
+ggplot(AS_more_rel, aes(x = file, y = proportion, color = whatsmore, group = whatsmore)) +
+  geom_line(size = 1) +
+  geom_point(size = 2) +
+  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), vjust = -0.5, size = 3) +
+  ggtitle("Repair causes, types over time (relative to total CHI utterances) for AS2")
+```
