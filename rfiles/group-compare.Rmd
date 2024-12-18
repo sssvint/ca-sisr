@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r}
-pacman::p_load(tidyverse, dplyr, ggplot2, readr, car, lme4, pals, tidyr)
+pacman::p_load(tidyverse, dplyr, ggplot2, readr, car, lme4, pals, tidyr, caret, reshape2)
 ```
 
 ```{r}
@@ -32,6 +32,8 @@ for (file in csv_files) {
 ```
 
 ```{r}
+# function to make descriptive stuff for each kid
+
 counts <- function(group, chi, rep, full2, full4, full6){
   # its a little tricky cause adam is 1/3/5 but everyone else is 2/4/6
   n_full_utt_2 <- nrow(full2) # n of total utterances for 1/2
@@ -113,6 +115,7 @@ group_all_count$session <- as.factor(group_all_count$session)
 ```
 
 ```{r}
+# means and standard deviations between each group 
 summary_count_grp <- group_all_count %>%
   group_by(group) %>%
   summarise(
@@ -142,8 +145,9 @@ print(summary_count_grp)
 ```
 
 ```{r}
+# summaries of means and sds for sessions and groups
 summary_count_session_group <- group_all_count %>%
-  group_by(session, group) %>%
+  group_by(group, session) %>%
   summarise(
     total_utt_mean = mean(total_utt, na.rm = TRUE),
     total_utt_sd = sd(total_utt, na.rm = TRUE),
@@ -165,14 +169,21 @@ summary_count_session_group <- group_all_count %>%
     
     xxx_vs_chi_mean = mean(xxx_vs_chi, na.rm = TRUE),
     xxx_vs_chi_sd = sd(xxx_vs_chi, na.rm = TRUE)
-  )
+  ) %>%
+  arrange(session)
 
 print(summary_count_session_group)
 ```
 
 ```{r}
+# violin and boxplots for different things
 ggplot(group_all_count, aes(x = session, y = total_chi_utt, fill = group)) +
   geom_violin(trim = FALSE) +
+  labs(title = "Distribution of total child utterances by session and group", y = "total number of child utterances", x = "Session") +
+  theme_minimal()
+
+ggplot(group_all_count, aes(x = session, y = total_chi_utt, fill = group)) +
+  geom_boxplot() +
   labs(title = "Distribution of total child utterances by session and group", y = "total number of child utterances", x = "Session") +
   theme_minimal()
 
@@ -181,8 +192,18 @@ ggplot(group_all_count, aes(x = session, y = chi_utt_vs_total_utt*100, fill = gr
   labs(title = "Distribution of proportion of child utterances to total utt.-s by session and group", y = "proportion of child utterances in %", x = "Session") +
   theme_minimal()
 
+ggplot(group_all_count, aes(x = session, y = chi_utt_vs_total_utt*100, fill = group)) +
+  geom_boxplot() +
+  labs(title = "Distribution of proportion of child utterances to total utt.-s by session and group", y = "proportion of child utterances in %", x = "Session") +
+  theme_minimal()
+
 ggplot(group_all_count, aes(x = session, y = n_of_repairs, fill = group)) +
   geom_violin(trim = FALSE) +
+  labs(title = "Distribution of total repairs by session and group", y = "total number of repairs", x = "Session") +
+  theme_minimal()
+
+ggplot(group_all_count, aes(x = session, y = n_of_repairs, fill = group)) +
+  geom_boxplot() +
   labs(title = "Distribution of total repairs by session and group", y = "total number of repairs", x = "Session") +
   theme_minimal()
 
@@ -190,7 +211,14 @@ ggplot(group_all_count, aes(x = session, y = repair_vs_chi_utt*100, fill = group
   geom_violin(trim = FALSE) +
   labs(title = "Distribution of proportion of repairs to child utt.-s by session and group", y = "proportion of repairs in %", x = "Session") +
   theme_minimal()
+
+ggplot(group_all_count, aes(x = session, y = repair_vs_chi_utt*100, fill = group)) +
+  geom_boxplot() +
+  labs(title = "Distribution of proportion of repairs to child utt.-s by session and group", y = "proportion of repairs in %", x = "Session") +
+  theme_minimal()
 ```
+############################################
+
 ███████ ████████  █████  ████████ ███████ 
 ██         ██    ██   ██    ██    ██      
 ███████    ██    ███████    ██    ███████ 
@@ -204,18 +232,22 @@ ggplot(group_all_count, aes(x = session, y = repair_vs_chi_utt*100, fill = group
    ██    ██           ██    ██         ██ 
    ██    ███████ ███████    ██    ███████
 
+############################################
+
 ```{r}
+# t test for child utterances in proportion to total utterances, by group
 shapiro.test(group_all_count$chi_utt_vs_total_utt)
 
 hist(group_all_count$chi_utt_vs_total_utt)
 qqnorm(group_all_count$chi_utt_vs_total_utt)
 qqline(group_all_count$chi_utt_vs_total_utt, col = "red")
 
-t.test(chi_utt_vs_total_utt ~ group, data = group_all_count)
+t.test(chi_utt_vs_total_utt ~ group, data = group_all_count) # significant!
 ```
 
 
 ```{r}
+# wilcox test and transformed data t test for repairs in proportion to child utterances
 hist(group_all_count$repair_vs_chi_utt)
 qqnorm(group_all_count$repair_vs_chi_utt)
 qqline(group_all_count$repair_vs_chi_utt, col = "red")
@@ -227,18 +259,20 @@ hist(arcsine_repair)
 qqnorm(arcsine_repair)
 qqline(arcsine_repair, col = "red")
 
-t.test(arcsine_repair ~ group, data = group_all_count)
+t.test(arcsine_repair ~ group, data = group_all_count) # not significant 
 ```
 
 
 ```{r}
+# wilcox tests for abs counts of child utterances and repairs
 hist(group_all_count$total_chi_utt)
 hist(group_all_count$n_of_repairs)
 wilcox.test(total_chi_utt ~ group, data = group_all_count)
-wilcox.test(n_of_repairs ~ group, data = group_all_count)
+wilcox.test(n_of_repairs ~ group, data = group_all_count) # once again, utterances are significant but repairs are not
 ```
 
 ```{r}
+# anova for child utterance proportions, by group and session
 anova_child_utt <- aov(chi_utt_vs_total_utt ~ group * session,
   data = group_all_count
 )
@@ -247,10 +281,11 @@ plot(anova_child_utt, which=3)
 
 leveneTest(anova_child_utt)
 
-summary(anova_child_utt)
+summary(anova_child_utt) # group has a significant effect but nothing else
 ```
 
 ```{r}
+# anova for repairs in prop to chi utts, also by group and session
 anova_rep <- aov(repair_vs_chi_utt ~ group * session, data = group_all_count)
 
 plot(anova_rep, which=2)
@@ -258,7 +293,7 @@ plot(anova_rep, which=3)
 
 leveneTest(anova_rep) 
 
-summary(anova_rep)
+summary(anova_rep) # group has a mildly significantŠ effect?
 ```
 
 ```{r}
@@ -348,6 +383,10 @@ short_group <- rbind(AD, AH, AS) %>%
 
 all <- rbind(long_group, short_group) %>%
     select(!other)
+
+factorcols <- c("file", "Speaker", "type", "reptype", "pause", "search", "repeat", "cause", "session", "group")
+all[factorcols] <- lapply(all[factorcols], factor)
+
 all$reptype <- as.factor(all$reptype)
 ```
 
@@ -362,20 +401,36 @@ colScale_reptype <- list(
 ```
 
 ```{r}
-all_long <- all %>%
+all_l <- all %>%
     pivot_longer(
       cols = c("pause", "search", "repeat", "cause"),
       names_to = "more",
       values_to = "whatsmore",
       values_drop_na = FALSE
     )
-all_long$whatsmore <- as.factor(all_long$whatsmore)
 
-colors_more <- as.vector(tol(12))
-names(colors_more) <- levels(all_long$whatsmore)
+factorcols <- c("more", "whatsmore")
+all_l[factorcols] <- lapply(all_l[factorcols], factor)
+
+l_colors <- c(
+  "short pause" = "firebrick",
+  "long pause" = "salmon",
+  "pause search" = "violet",
+  "repetition search" = "purple",
+  "small search" = "dodgerblue",
+  "big search" = "mediumblue",
+  "small repeat" = "green",
+  "big repeat" = "darkgreen",
+  "correcting grammar" = "darkkhaki",
+  "misspeak" = "khaki",
+  "overlap" = "orange",
+  "stuttering" = "saddlebrown",
+  "no uptake" = "#362110"
+)
+
 colScale_moretype <- list(
-  scale_colour_manual(name = "Repair (sub)types, causes",values = colors_more),
-  scale_fill_manual(name = "Repair (sub)types, causes",values = colors_more)
+  scale_colour_manual(name = "Repair (sub)types, causes",values = l_colors),
+  scale_fill_manual(name = "Repair (sub)types, causes",values = l_colors)
 )
 ```
 
@@ -438,6 +493,77 @@ ggplot(short_reptype_summary, aes(x = session, y=count, fill=reptype, group=rept
 ```
 
 ```{r}
+long_utterances <- group_all_count %>%
+  filter(group=="long") %>%
+  group_by(session) %>%
+  summarize(chi_utt = sum(total_chi_utt))
+
+short_utterances <- group_all_count %>%
+  filter(group=="short") %>%
+  group_by(session) %>%
+  summarize(chi_utt = sum(total_chi_utt))
+```
+
+```{r}
+long_reptype_summary$session <- as.factor(long_reptype_summary$session)
+long_reptype_props_utts <- long_reptype_summary %>%
+  left_join(long_utterances, by="session") %>%
+  mutate(proportion = count/chi_utt) %>%
+  mutate(label = ifelse(proportion < 0.01, NA, proportion)) %>%
+  mutate(label = round(label, 4))
+long_reptype_props_utts$reptype <- reorder(long_reptype_props_utts$reptype, long_reptype_props_utts$proportion)
+
+short_reptype_summary$session <- as.factor(short_reptype_summary$session)
+short_reptype_props_utts <- short_reptype_summary %>%
+  left_join(short_utterances, by="session") %>%
+  mutate(proportion = count/chi_utt) %>%
+  mutate(label = ifelse(proportion < 0.01, NA, proportion)) %>%
+  mutate(label = round(label, 4))
+short_reptype_props_utts$reptype <- reorder(short_reptype_props_utts$reptype, short_reptype_props_utts$proportion)
+```
+
+```{r}
+ggplot(long_reptype_props_utts, aes(x = session, y = proportion*100, color = reptype, group = reptype)) +
+  geom_line(size = 1, alpha = 0.7) +
+  geom_point(size = 2) +
+  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), vjust = -0.6, size = 3) +
+  labs(y = "proportion, %") +
+  ggtitle("Repair types over time (relative to all chi utt) for long name group") +
+  colScale_reptype
+
+ggplot(long_reptype_props_utts, aes(x = session, y = proportion*100, fill = reptype, group = reptype)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), 
+            position = position_stack(vjust = 0.5), 
+            size = 2.5) +
+  labs(y = "proportion, %") +
+  ggtitle("Repair types over time (relative to all chi utt) for long name group") +
+  colScale_reptype
+
+
+
+
+ggplot(short_reptype_props_utts, aes(x = session, y = proportion*100, color = reptype, group = reptype)) +
+  geom_line(size = 1, alpha = 0.7) +
+  geom_point(size = 2) +
+  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), vjust = -0.6, size = 3) +
+  labs(y = "proportion, %") +
+  ggtitle("Repair types over time (relative to all chi utt) for short name group") +
+  colScale_reptype
+
+
+ggplot(short_reptype_props_utts, aes(x = session, y = proportion*100, fill = reptype, group = reptype)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), 
+            position = position_stack(vjust = 0.5), 
+            size = 2.5) +
+  labs(y = "proportion, %") +
+  ggtitle("Repair types over time (relative to all chi utt) for short name group") +
+  colScale_reptype
+```
+
+
+```{r}
 long_total_repairs <- long_group %>%
   group_by(session) %>%
   drop_na(reptype) %>%
@@ -454,7 +580,7 @@ ggplot(long_reptype_summary_props, aes(x = session, y = proportion*100, color = 
   geom_point(size = 2) +
   geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), vjust = -0.6, size = 3) +
   labs(y = "proportion, %") +
-  ggtitle("Repair types over time (relative) for long name group") +
+  ggtitle("Repair types proportions for long name group") +
   colScale_reptype
 
 long_reptype_summary_props$reptype <- reorder(long_reptype_summary_props$reptype, long_reptype_summary_props$proportion)
@@ -465,7 +591,7 @@ ggplot(long_reptype_summary_props, aes(x = session, y = proportion*100, fill = r
             position = position_stack(vjust = 0.5), 
             size = 2.5) +
   labs(y = "proportion, %") +
-  ggtitle("Repair types over time (relative) for long name group") +
+  ggtitle("Repair types proportions for long name group") +
   colScale_reptype
 
 
@@ -487,7 +613,7 @@ ggplot(short_reptype_summary_props, aes(x = session, y = proportion*100, color =
   geom_point(size = 2) +
   geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), vjust = -0.6, size = 3) +
   labs(y = "proportion, %") +
-  ggtitle("Repair types over time (relative) for short name group") +
+  ggtitle("Repair types proportions for short name group") +
   colScale_reptype
 
 short_reptype_summary_props$reptype <- reorder(short_reptype_summary_props$reptype, short_reptype_summary_props$proportion)
@@ -498,14 +624,14 @@ ggplot(short_reptype_summary_props, aes(x = session, y = proportion*100, fill = 
             position = position_stack(vjust = 0.5), 
             size = 2.5) +
   labs(y = "proportion, %") +
-  ggtitle("Repair types over time (relative) for short name group") +
+  ggtitle("Repair types proportions for short name group") +
   colScale_reptype
 ```
 
 
 ```{r}
-long_l <- subset(all_long, group=="long") 
-short_l <- subset(all_long, group=="short") 
+long_l <- subset(all_l, group=="long") 
+short_l <- subset(all_l, group=="short") 
 ```
 
 ```{r}
@@ -541,56 +667,56 @@ ggplot(short_l_summary, aes(x = session, y=count, fill=whatsmore, group=whatsmor
 ```
 
 ```{r}
-long_l_props_total <- long_l_summary %>%
-  left_join(long_total_repairs, by = "session") %>%
-  mutate(proportion = count / repair_count) %>%
-  mutate(label = ifelse(proportion < 0.004, NA, proportion)) %>%
-  mutate(label = round(label, 4))
-
-short_l_props_total <- short_l_summary %>%
-  left_join(short_total_repairs, by = "session") %>%
-  mutate(proportion = count / repair_count) %>%
-  mutate(label = ifelse(proportion < 0.004, NA, proportion)) %>%
-  mutate(label = round(label, 4))
-
-ggplot(long_l_props_total, aes(x = session, y = proportion*100, color = whatsmore, group = whatsmore)) +
-  geom_line(size = 1, alpha = 0.7) +
-  geom_point(size = 2) +
-  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), vjust = -0.6, size = 3) +
-  labs(y = "proportion, %") +
-  ggtitle("Repair causes/types (relative to total repairs), long names")+
-  colScale_moretype
-
-ggplot(short_l_props_total, aes(x = session, y = proportion*100, color = whatsmore, group = whatsmore)) +
-  geom_line(size = 1, alpha = 0.7) +
-  geom_point(size = 2) +
-  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), vjust = -0.6, size = 3) +
-  labs(y = "proportion, %") +
-  ggtitle("Repair causes/types (relative to total repairs), short names")+
-  colScale_moretype
-
-
-long_l_props_total$whatsmore <- reorder(long_l_props_total$whatsmore, long_l_props_total$proportion, sum)
-
-ggplot(long_l_props_total, aes(x = session, y = proportion*100, fill = whatsmore, group = whatsmore)) +
-  geom_bar(stat = "identity") +
-  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), 
-            position = position_stack(vjust = 0.5), 
-            size = 2.5) +
-  labs(y = "proportion, %") +
-  ggtitle("Repair causes/types (relative to total repairs), long names")+
-  colScale_moretype
-
-short_l_props_total$whatsmore <- reorder(short_l_props_total$whatsmore, short_l_props_total$proportion, sum)
-
-ggplot(short_l_props_total, aes(x = session, y = proportion*100, fill = whatsmore, group = whatsmore)) +
-  geom_bar(stat = "identity") +
-  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), 
-            position = position_stack(vjust = 0.5), 
-            size = 2.5) +
-  labs(y = "proportion, %") +
-  ggtitle("Repair causes/types (relative to total repairs), short names")+
-  colScale_moretype
+# long_l_props_total <- long_l_summary %>%
+#   left_join(long_total_repairs, by = "session") %>%
+#   mutate(proportion = count / repair_count) %>%
+#   mutate(label = ifelse(proportion < 0.004, NA, proportion)) %>%
+#   mutate(label = round(label, 4))
+# 
+# short_l_props_total <- short_l_summary %>%
+#   left_join(short_total_repairs, by = "session") %>%
+#   mutate(proportion = count / repair_count) %>%
+#   mutate(label = ifelse(proportion < 0.004, NA, proportion)) %>%
+#   mutate(label = round(label, 4))
+# 
+# ggplot(long_l_props_total, aes(x = session, y = proportion*100, color = whatsmore, group = whatsmore)) +
+#   geom_line(size = 1, alpha = 0.7) +
+#   geom_point(size = 2) +
+#   geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), vjust = -0.6, size = 3) +
+#   labs(y = "proportion, %") +
+#   ggtitle("Repair causes/types (relative to total repairs), long names")+
+#   colScale_moretype
+# 
+# ggplot(short_l_props_total, aes(x = session, y = proportion*100, color = whatsmore, group = whatsmore)) +
+#   geom_line(size = 1, alpha = 0.7) +
+#   geom_point(size = 2) +
+#   geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), vjust = -0.6, size = 3) +
+#   labs(y = "proportion, %") +
+#   ggtitle("Repair causes/types (relative to total repairs), short names")+
+#   colScale_moretype
+# 
+# 
+# long_l_props_total$whatsmore <- reorder(long_l_props_total$whatsmore, long_l_props_total$proportion, sum)
+# 
+# ggplot(long_l_props_total, aes(x = session, y = proportion*100, fill = whatsmore, group = whatsmore)) +
+#   geom_bar(stat = "identity") +
+#   geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), 
+#             position = position_stack(vjust = 0.5), 
+#             size = 2.5) +
+#   labs(y = "proportion, %") +
+#   ggtitle("Repair causes/types (relative to total repairs), long names")+
+#   colScale_moretype
+# 
+# short_l_props_total$whatsmore <- reorder(short_l_props_total$whatsmore, short_l_props_total$proportion, sum)
+# 
+# ggplot(short_l_props_total, aes(x = session, y = proportion*100, fill = whatsmore, group = whatsmore)) +
+#   geom_bar(stat = "identity") +
+#   geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), 
+#             position = position_stack(vjust = 0.5), 
+#             size = 2.5) +
+#   labs(y = "proportion, %") +
+#   ggtitle("Repair causes/types (relative to total repairs), short names")+
+#   colScale_moretype
 ```
 
 ```{r}
@@ -621,7 +747,7 @@ ggplot(long_l_props_melted, aes(x = session, y = proportion*100, color = whatsmo
   geom_point(size = 2) +
   geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), vjust = -0.6, size = 3) +
   labs(y = "proportion, %") +
-  ggtitle("Repair causes/types (relative to melted repairs), long names")+
+  ggtitle("Repair causes/subtypes proportions, long names")+
   colScale_moretype
 
 ggplot(short_l_props_melted, aes(x = session, y = proportion*100, color = whatsmore, group = whatsmore)) +
@@ -629,7 +755,7 @@ ggplot(short_l_props_melted, aes(x = session, y = proportion*100, color = whatsm
   geom_point(size = 2) +
   geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), vjust = -0.6, size = 3) +
   labs(y = "proportion, %") +
-  ggtitle("Repair causes/types (relative to melted repairs), short names")+
+  ggtitle("Repair causes/subtypes proportions, short names")+
   colScale_moretype
 
 
@@ -641,7 +767,7 @@ ggplot(long_l_props_melted, aes(x = session, y = proportion*100, fill = whatsmor
             position = position_stack(vjust = 0.5), 
             size = 2.5) +
   labs(y = "proportion, %") +
-  ggtitle("Repair causes/types (relative to melted repairs), long names")+
+  ggtitle("Repair causes/subtypes proportions, long names")+
   colScale_moretype
 
 short_l_props_melted$whatsmore <- reorder(short_l_props_melted$whatsmore, short_l_props_melted$proportion, sum)
@@ -652,14 +778,15 @@ ggplot(short_l_props_melted, aes(x = session, y = proportion*100, fill = whatsmo
             position = position_stack(vjust = 0.5), 
             size = 2.5) +
   labs(y = "proportion, %") +
-  ggtitle("Repair causes/types (relative to melted repairs), short names")+
+  ggtitle("Repair causes/subtypes proportions, short names")+
   colScale_moretype
 ```
 
 
 ```{r}
-nopause_long_total_repairs <- long_group %>%
-  filter(!(pause %in% "short pause")) %>%
+nopause_long_total_repairs <- long_l %>%
+  drop_na(whatsmore) %>%
+  filter(!(whatsmore %in% "short pause")) %>%
   group_by(session) %>%
   summarise(repair_count = n())
 ```
@@ -702,12 +829,7 @@ ggplot(long_nopause_props, aes(x = session, y = proportion*100, fill = whatsmore
 ###################################################
 
 ```{r}
-long_turns <- group_long_rep %>%
-  mutate(session = case_when(
-    grepl("1|2", file) ~ 2,
-    grepl("3|4", file) ~ 4,
-    grepl("5|6", file) ~ 6,
-  )) %>%
+long_turns <- long_group %>%
   group_by(session, type) %>%
   summarise(count = n(), .groups = "drop") %>%
   na.omit() %>%
@@ -721,12 +843,7 @@ ggplot(long_turns, aes(x = session, y=count, fill=type, group=type)) +
             size = 3) +
   ggtitle("Turn types for repair over time (total) for long name group")
 
-short_turns <- group_short_rep %>%
-  mutate(session = case_when(
-    grepl("1|2", file) ~ 2,
-    grepl("3|4", file) ~ 4,
-    grepl("5|6", file) ~ 6,
-  )) %>%
+short_turns <- short_group %>%
   group_by(session, type) %>%
   summarise(count = n(), .groups = "drop") %>%
   na.omit() %>%
@@ -745,47 +862,217 @@ ggplot(short_turns, aes(x = session, y=count, fill=type, group=type)) +
 # should be total repairs not total utterances!
 long_turns_rel <- long_turns %>%
   left_join(long_total_repairs, by = "session") %>%
-  mutate(proportion = count / total) %>%
-  mutate(label_rel = ifelse(proportion < 0.004, NA, proportion)) %>%
-  mutate(label_rel = round(label_rel, 4))
+  mutate(proportion = count / repair_count) %>%
+  mutate(label = ifelse(proportion < 0.004, NA, proportion)) %>%
+  mutate(label = round(label, 4))
+long_turns_rel$type <- reorder(long_turns_rel$type, long_turns_rel$proportion)
 
 short_turns_rel <- short_turns %>%
   left_join(short_total_repairs, by = "session") %>%
-  mutate(proportion = count / total) %>%
-  mutate(label_rel = ifelse(proportion < 0.004, NA, proportion)) %>%
-  mutate(label_rel = round(label_rel, 4))
+  mutate(proportion = count / repair_count) %>%
+  mutate(label = ifelse(proportion < 0.004, NA, proportion)) %>%
+  mutate(label = round(label, 4))
+short_turns_rel$type <- reorder(short_turns_rel$type, short_turns_rel$proportion)
+```
 
+```{r}
 ggplot(long_turns_rel, aes(x = session, y = proportion*100, color = type, group = type)) +
     geom_line(size = 1, alpha = 0.7) +
   geom_point(size = 2) +
-  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), vjust = -0.5, size = 3) +
+  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), vjust = -0.5, size = 2.5) +
   labs(y = "proportion, %") +
   ggtitle("Turn types (relative) for long name group")
 
 ggplot(short_turns_rel, aes(x = session, y = proportion*100, color = type, group = type)) +
     geom_line(size = 1, alpha = 0.7) +
   geom_point(size = 2) +
-  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), vjust = -0.5, size = 3) +
+  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), vjust = -0.5, size = 2.5) +
   labs(y = "proportion, %") +
   ggtitle("Turn types (relative) for short name group")
-
-long_turns_rel$type <- reorder(long_turns_rel$type, long_turns_rel$proportion)
 
 ggplot(long_turns_rel, aes(x = session, y = proportion*100, fill = type, group = type)) +
   geom_bar(stat = "identity") +
-    geom_text(aes(label = label_rel*100), 
+    geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), 
             position = position_stack(vjust = 0.5), 
-            size = 3) +
+            size = 2.5) +
   labs(y = "proportion, %") +
   ggtitle("Turn types (relative) for long name group")
 
-short_turns_rel$type <- reorder(short_turns_rel$type, short_turns_rel$proportion)
 
 ggplot(short_turns_rel, aes(x = session, y = proportion*100, fill = type, group = type)) +
   geom_bar(stat = "identity") +
-    geom_text(aes(label = label_rel*100), 
+    geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), 
             position = position_stack(vjust = 0.5), 
-            size = 3) +
+            size = 2.5) +
   labs(y = "proportion, %") +
   ggtitle("Turn types (relative) for short name group")
 ```
+
+#################################################################################
+
+ ██████  ██████       ██████   ██████  ██████ ██    ██ ██████        ███████ 
+██      ██    ██     ██    ██ ██      ██      ██    ██ ██   ██       ██      
+██      ██    ██     ██    ██ ██      ██      ██    ██ ██████  █████ ███████ 
+██      ██    ██     ██    ██ ██      ██      ██    ██ ██   ██            ██ 
+ ██████  ██████       ██████   ██████  ██████  ██████  ██   ██       ███████ 
+
+#################################################################################
+
+```{r}
+dummylong <- subset(long_group, select = c("reptype", "pause", "search", "repeat", "cause"))
+dummy_model_long <- dummyVars(" ~ .", data = dummylong)
+encoded_long <- predict(dummy_model_long, newdata = dummylong)
+encoded_long <- as.data.frame(encoded_long)
+encoded_long[is.na(encoded_long)] <- 0
+
+colnames(encoded_long) <- sub("^[^.]+\\.", "", colnames(encoded_long))
+colnames(encoded_long) <- sub("`repeat`", "", colnames(encoded_long))
+
+coocc_long <- combn(names(encoded_long), 2, simplify = FALSE) %>%
+    map_dfr(~ {
+      var1 <- .x[1]
+      var2 <- .x[2]
+      data.frame(
+        pair = paste(var1, var2, sep = " & "),
+        count = sum(encoded_long[[var1]] == 1 & encoded_long[[var2]] == 1)
+      )
+    })
+
+coocc_long <- coocc_long %>% 
+  filter(count > 0)
+
+coocc_long_sep <- coocc_long %>%
+  separate(pair, into = c("event1", "event2"), sep = " & ")
+```
+
+```{r}
+dummyshort <- subset(short_group, select = c("reptype", "pause", "search", "repeat", "cause"))
+dummy_model_short <- dummyVars(" ~ .", data = dummyshort)
+encoded_short <- predict(dummy_model_short, newdata = dummyshort)
+encoded_short <- as.data.frame(encoded_short)
+encoded_short[is.na(encoded_short)] <- 0
+
+colnames(encoded_short) <- sub("^[^.]+\\.", "", colnames(encoded_short))
+colnames(encoded_short) <- sub("`repeat`", "", colnames(encoded_short))
+
+coocc_short <- combn(names(encoded_short), 2, simplify = FALSE) %>%
+    map_dfr(~ {
+      var1 <- .x[1]
+      var2 <- .x[2]
+      data.frame(
+        pair = paste(var1, var2, sep = " & "),
+        count = sum(encoded_short[[var1]] == 1 & encoded_short[[var2]] == 1)
+      )
+    })
+
+coocc_short <- coocc_short %>% 
+  filter(count > 0)
+
+coocc_short_sep <- coocc_short %>%
+  separate(pair, into = c("event1", "event2"), sep = " & ")
+```
+
+```{r}
+comparison_df <- full_join(
+  coocc_long, 
+  coocc_short, 
+  by = "pair", 
+  suffix = c("_long", "_short")
+)
+```
+
+```{r}
+comparison_df <- comparison_df %>%
+  mutate(
+    count_long = replace_na(count_long, 0),
+    count_short = replace_na(count_short, 0)
+  )
+```
+
+```{r}
+difference_df <- comparison_df %>%
+  mutate(
+    difference = count_long - count_short,
+    abs_difference = abs(difference)
+  ) %>%
+  arrange(desc(abs_difference))
+
+bubble_plot <- difference_df %>%
+  mutate(
+    direction = ifelse(difference > 0, "long", "short"),
+    abs_difference = abs(difference)
+  ) %>%
+  ggplot(aes(x = reorder(pair, abs_difference), y = abs_difference, 
+             size = abs_difference, color = direction)) +
+  geom_point(alpha = 0.7) +
+  coord_flip() +
+  scale_color_manual(values = c("long" = "blue", "short" = "red")) +
+  theme_minimal() +
+  labs(
+    title = "Co-occurrence Difference Magnitude",
+    x = "Co-occurrence Pairs",
+    y = "Absolute Difference in Occurrence",
+    size = "Difference Magnitude",
+    color = "Predominant Group"
+  ) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+lollipop_plot <- difference_df %>%
+  mutate(
+    direction = ifelse(difference > 0, "long", "short"),
+    abs_difference = abs(difference)
+  ) %>%
+  ggplot(aes(x = reorder(pair, abs_difference), y = difference, color = direction)) +
+  geom_segment(aes(x = pair, xend = pair, y = 0, yend = difference)) +
+  geom_point() +
+  coord_flip() +
+  scale_color_manual(values = c("long" = "blue", "short" = "red")) +
+  theme_minimal() +
+  labs(
+    title = "Co-occurrence Difference",
+    x = "Co-occurrence Pairs",
+    y = "Difference in Occurrence (long-short)",
+    color = "Predominant Group"
+  )
+
+bubble_plot
+lollipop_plot
+```
+
+
+```{r}
+coocc_long_matrix <- acast(coocc_long_sep, event1 ~ event2, value.var = "count", fill = 0)
+
+coocc_short_matrix <- acast(coocc_short_sep, event1 ~ event2, value.var = "count", fun.aggregate = sum, fill = 0)
+```
+
+
+```{r}
+ggplot(melt(coocc_long_matrix), aes(x = Var1, y = Var2, fill = value)) +
+  geom_tile(color = "lightblue") +
+  scale_fill_gradientn(colours = c("white", "yellow", "purple"), values = c(0,0.1,1))+
+  geom_text(aes(label = value), color = "black", size = 3) +
+  labs(x = "Event 1", y = "Event 2", fill = "Co-occurrences") +
+  ggtitle("Co-occurrence matrix for long group") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+ggplot(melt(coocc_short_matrix), aes(x = Var1, y = Var2, fill = value)) +
+  geom_tile(color = "lightblue") +
+  scale_fill_gradientn(colours = c("white", "yellow", "purple"), values = c(0,0.1,1))+
+  geom_text(aes(label = value), color = "black", size = 3) +
+  labs(x = "Event 1", y = "Event 2", fill = "Co-occurrences") +
+  ggtitle("Co-occurrence matrix for short group") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+```{r}
+comparison_df_sep <- comparison_df %>%
+  separate(pair, into = c("event1", "event2"), sep = " & ")
+```
+
+```{r}
+
+```
+

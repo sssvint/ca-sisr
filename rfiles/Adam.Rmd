@@ -129,7 +129,7 @@ Adam_l <- Adam %>%
       cols = c("pause", "search", "repeat", "cause"),
       names_to = "more",
       values_to = "whatsmore",
-      values_drop_na = TRUE
+      values_drop_na = FALSE
     )
 ```
 
