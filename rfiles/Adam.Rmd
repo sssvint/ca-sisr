@@ -158,3 +158,95 @@ ggplot(Adam_more_rel, aes(x = file, y = proportion, color = whatsmore, group = w
   geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), vjust = -0.5, size = 3) +
   ggtitle("Repair causes, types over time (relative to total CHI utterances) for Adam")
 ```
+
+```{r}
+library(caret)
+```
+
+```{r}
+Adam$reptype <- as.factor(Adam$reptype)
+Adam$cause <- as.factor(Adam$cause)
+Adam$search <- as.factor(Adam$search)
+Adam$`repeat` <- as.factor(Adam$`repeat`)
+Adam$pause <- as.factor(Adam$pause)
+```
+
+```{r}
+dummyneed <- subset(Adam, select = c("reptype", "pause", "search", "repeat", "cause"))
+
+dummy_model <- dummyVars(" ~ .", data = dummyneed)
+
+encoded_data <- predict(dummy_model, newdata = dummyneed)
+
+encoded_data <- as.data.frame(encoded_data)
+
+encoded_data[is.na(encoded_data)] <- 0
+```
+
+```{r}
+colnames(encoded_data) <- sub("^[^.]+\\.", "", colnames(encoded_data))
+colnames(encoded_data) <- sub("`repeat`", "", colnames(encoded_data))
+```
+
+
+```{r}
+count_co_occurrence <- function(df) {
+  combn(names(df), 2, simplify = FALSE) %>%
+    map_dfr(~ {
+      var1 <- .x[1]
+      var2 <- .x[2]
+      data.frame(
+        pair = paste(var1, var2, sep = " & "),
+        count = sum(df[[var1]] == 1 & df[[var2]] == 1)
+      )
+    })
+}
+
+# Apply the function to your data
+co_occurrence_df <- count_co_occurrence(encoded_data)
+
+co_occurrence_df <- co_occurrence_df %>% filter(count > 0)
+```
+
+```{r}
+library(igraph)
+library(RColorBrewer)
+```
+
+```{r}
+co_occurrence_df <- co_occurrence_df %>%
+  separate(pair, into = c("event1", "event2"), sep = " & ")
+```
+
+```{r}
+edges <- as.data.frame(cbind(co_occurrence_df$event1, co_occurrence_df$event2))
+
+g <- graph_from_data_frame(edges, directed = FALSE)
+
+E(g)$weight <- co_occurrence_df$count
+
+# Assign a unique color to each node
+unique_events <- unique(c(co_occurrence_df$event1, co_occurrence_df$event2))  # Get unique event names (nodes)
+
+pal <- colorRampPalette( brewer.pal(9,"Set3") )(21)
+  
+# Map each node to a unique color
+vertex.col <- pal[match(V(g)$name, unique_events)]
+```
+
+```{r}
+plot(g,
+     #vertex.label.color = "black",
+     #vertex.frame.color = "black",
+     #edge.color = "black",
+     vertex.color = vertex.col,
+     vertex.label.cex = 0.7,
+     layout = layout_in_circle,
+     main = "Event Co-occurrence Graph")
+
+# Add a legend
+legend("topleft", bty = "n", 
+       legend = unique_events, 
+       fill = pal, border = NA, cex = 0.6)
+```
+

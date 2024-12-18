@@ -9,22 +9,783 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
+```{r}
+pacman::p_load(tidyverse, dplyr, ggplot2, readr, car, lme4, pals, tidyr)
 ```
 
-## Including Plots
+```{r}
+setwd("../csv")
+AD <- read_csv("proccsv/AD.csv")
+AH <- read_csv("proccsv/AH.csv")
+AS <- read_csv("proccsv/AS.csv")
+Albert <- read_csv("proccsv/Albert.csv")
+Anthony <- read_csv("proccsv/Anthony.csv")
+Adam <- read_csv("proccsv/Adam.csv")
 
-You can also embed plots, for example:
+folder_path <- "fullcsv"
+csv_files <- list.files(path = folder_path, pattern = "\\.csv$", full.names = TRUE)
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+for (file in csv_files) {
+  file_name <- tools::file_path_sans_ext(basename(file))
+  assign(file_name, read_delim(file, delim = ";"))
+}
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+```{r}
+counts <- function(group, chi, rep, full2, full4, full6){
+  # its a little tricky cause adam is 1/3/5 but everyone else is 2/4/6
+  n_full_utt_2 <- nrow(full2) # n of total utterances for 1/2
+  n_full_utt_4 <- nrow(full4) # n of total utterances 3/4
+  n_full_utt_6 <- nrow(full6) # n of total utterances 5/6
+  
+  n_chi_utt_2 <- full2 %>% # all of child utterances 1/2
+    filter(Speaker=="CHI") %>%
+    nrow()
+  n_chi_utt_4 <- full4 %>% # all of child utterances 3/4
+    filter(Speaker=="CHI") %>%
+    nrow()
+  n_chi_utt_6 <- full6 %>% # all of child utterances 5/6
+    filter(Speaker=="CHI") %>%
+    nrow()
+  
+  chi_2_rep <- rep %>% # n of repairs in 1/2
+    filter(grepl("1|2", file)) %>%
+    nrow()
+  chi_4_rep <- rep %>% # n of repairs in 3/4
+    filter(grepl("3|4", file)) %>%
+    nrow()
+  chi_6_rep <- rep %>%  # n of repairs 5/6
+    filter(grepl("5|6", file)) %>%
+    nrow()
+  
+  # how much does the kid speak relatively
+  chi_vs_total_2 <- n_chi_utt_2 / n_full_utt_2 
+  chi_vs_total_4 <- n_chi_utt_4 / n_full_utt_4
+  chi_vs_total_6 <- n_chi_utt_6 / n_full_utt_6
+  
+  # how much of the childs utterances is repairs
+  rep_vs_chi_2 <- chi_2_rep / n_chi_utt_2 
+  rep_vs_chi_4 <- chi_4_rep / n_chi_utt_4
+  rep_vs_chi_6 <- chi_6_rep / n_chi_utt_6
+  
+  # how much incomprehensible speech, marked xxx
+  n_xxx_2 <- sum(stringr::str_count(full2$Utterance, "xxx")) 
+  n_xxx_4 <- sum(stringr::str_count(full4$Utterance, "xxx"))
+  n_xxx_6 <- sum(stringr::str_count(full6$Utterance, "xxx"))
+  
+  # how much incompr speech relative to utterances
+  xxx_vs_chi_2 <- n_xxx_2 / n_chi_utt_2
+  xxx_vs_chi_4 <- n_xxx_4 / n_chi_utt_4
+  xxx_vs_chi_6 <- n_xxx_6 / n_chi_utt_6
+  
+  df <- tibble(
+    group = c(group, group, group),
+    chi = c(chi, chi, chi),
+    session = c(2, 4, 6),
+    total_utt = c(n_full_utt_2, n_full_utt_4, n_full_utt_6),
+    total_chi_utt = c(n_chi_utt_2, n_chi_utt_4, n_chi_utt_6),
+    chi_utt_vs_total_utt = c(chi_vs_total_2, chi_vs_total_4, chi_vs_total_6),
+    n_of_repairs = c(chi_2_rep, chi_4_rep, chi_6_rep),
+    repair_vs_chi_utt = c(rep_vs_chi_2, rep_vs_chi_4, rep_vs_chi_6),
+    n_xxx = c(n_xxx_2, n_xxx_4, n_xxx_6),
+    xxx_vs_chi = c(xxx_vs_chi_2, xxx_vs_chi_4, xxx_vs_chi_6)
+    
+  )
+  
+  return(df)
+  
+}
+```
+
+```{r}
+Adam_count <- counts("long", "Adam", Adam, Adam_1, Adam_3, Adam_5)
+Albert_count <- counts("long", "Albert", Albert, Albert_2, Albert_4, Albert_6)
+Anthony_count <- counts("long", "Anthony", Anthony, Anthony_2, Anthony_4, Anthony_6)
+AD_count <- counts("short", "AD", AD, AD_2, AD_4, AD_6)
+AH_count <- counts("short", "AH", AH, AH_2, AH_4, AH_6)
+AS_count <- counts("short", "AS", AS, AS2_2, AS2_4, AS2_6)
+```
+
+
+```{r}
+group_all_count <- rbind(Adam_count, Albert_count, Anthony_count, AD_count, AH_count, AS_count)
+group_all_count$session <- as.factor(group_all_count$session)
+```
+
+```{r}
+summary_count_grp <- group_all_count %>%
+  group_by(group) %>%
+  summarise(
+    total_utt_mean = mean(total_utt, na.rm = TRUE),
+    total_utt_sd = sd(total_utt, na.rm = TRUE),
+    
+    total_chi_utt_mean = mean(total_chi_utt, na.rm = TRUE),
+    total_chi_utt_sd = sd(total_chi_utt, na.rm = TRUE),
+    
+    chi_utt_vs_total_utt_mean = mean(chi_utt_vs_total_utt, na.rm = TRUE),
+    chi_utt_vs_total_utt_sd = sd(chi_utt_vs_total_utt, na.rm = TRUE),
+    
+    n_of_repairs_mean = mean(n_of_repairs, na.rm = TRUE),
+    n_of_repairs_sd = sd(n_of_repairs, na.rm = TRUE),
+    
+    repair_vs_chi_utt_mean = mean(repair_vs_chi_utt, na.rm = TRUE),
+    repair_vs_chi_utt_sd = sd(repair_vs_chi_utt, na.rm = TRUE),
+    
+    n_xxx_mean = mean(n_xxx, na.rm = TRUE),
+    n_xxx_sd = sd(n_xxx, na.rm = TRUE),
+    
+    xxx_vs_chi_mean = mean(xxx_vs_chi, na.rm = TRUE),
+    xxx_vs_chi_sd = sd(xxx_vs_chi, na.rm = TRUE)
+  )
+
+print(summary_count_grp)
+```
+
+```{r}
+summary_count_session_group <- group_all_count %>%
+  group_by(session, group) %>%
+  summarise(
+    total_utt_mean = mean(total_utt, na.rm = TRUE),
+    total_utt_sd = sd(total_utt, na.rm = TRUE),
+    
+    total_chi_utt_mean = mean(total_chi_utt, na.rm = TRUE),
+    total_chi_utt_sd = sd(total_chi_utt, na.rm = TRUE),
+    
+    chi_utt_vs_total_utt_mean = mean(chi_utt_vs_total_utt, na.rm = TRUE),
+    chi_utt_vs_total_utt_sd = sd(chi_utt_vs_total_utt, na.rm = TRUE),
+    
+    n_of_repairs_mean = mean(n_of_repairs, na.rm = TRUE),
+    n_of_repairs_sd = sd(n_of_repairs, na.rm = TRUE),
+    
+    repair_vs_chi_utt_mean = mean(repair_vs_chi_utt, na.rm = TRUE),
+    repair_vs_chi_utt_sd = sd(repair_vs_chi_utt, na.rm = TRUE),
+    
+    n_xxx_mean = mean(n_xxx, na.rm = TRUE),
+    n_xxx_sd = sd(n_xxx, na.rm = TRUE),
+    
+    xxx_vs_chi_mean = mean(xxx_vs_chi, na.rm = TRUE),
+    xxx_vs_chi_sd = sd(xxx_vs_chi, na.rm = TRUE)
+  )
+
+print(summary_count_session_group)
+```
+
+```{r}
+ggplot(group_all_count, aes(x = session, y = total_chi_utt, fill = group)) +
+  geom_violin(trim = FALSE) +
+  labs(title = "Distribution of total child utterances by session and group", y = "total number of child utterances", x = "Session") +
+  theme_minimal()
+
+ggplot(group_all_count, aes(x = session, y = chi_utt_vs_total_utt*100, fill = group)) +
+  geom_violin(trim = FALSE) +
+  labs(title = "Distribution of proportion of child utterances to total utt.-s by session and group", y = "proportion of child utterances in %", x = "Session") +
+  theme_minimal()
+
+ggplot(group_all_count, aes(x = session, y = n_of_repairs, fill = group)) +
+  geom_violin(trim = FALSE) +
+  labs(title = "Distribution of total repairs by session and group", y = "total number of repairs", x = "Session") +
+  theme_minimal()
+
+ggplot(group_all_count, aes(x = session, y = repair_vs_chi_utt*100, fill = group)) +
+  geom_violin(trim = FALSE) +
+  labs(title = "Distribution of proportion of repairs to child utt.-s by session and group", y = "proportion of repairs in %", x = "Session") +
+  theme_minimal()
+```
+███████ ████████  █████  ████████ ███████ 
+██         ██    ██   ██    ██    ██      
+███████    ██    ███████    ██    ███████ 
+     ██    ██    ██   ██    ██         ██ 
+███████    ██    ██   ██    ██    ███████ 
+                                          
+                                          
+████████ ███████ ███████ ████████ ███████ 
+   ██    ██      ██         ██    ██      
+   ██    █████   ███████    ██    ███████ 
+   ██    ██           ██    ██         ██ 
+   ██    ███████ ███████    ██    ███████
+
+```{r}
+shapiro.test(group_all_count$chi_utt_vs_total_utt)
+
+hist(group_all_count$chi_utt_vs_total_utt)
+qqnorm(group_all_count$chi_utt_vs_total_utt)
+qqline(group_all_count$chi_utt_vs_total_utt, col = "red")
+
+t.test(chi_utt_vs_total_utt ~ group, data = group_all_count)
+```
+
+
+```{r}
+hist(group_all_count$repair_vs_chi_utt)
+qqnorm(group_all_count$repair_vs_chi_utt)
+qqline(group_all_count$repair_vs_chi_utt, col = "red")
+
+wilcox.test(repair_vs_chi_utt ~ group, data = group_all_count)
+
+arcsine_repair = asin(sqrt(group_all_count$repair_vs_chi_utt))
+hist(arcsine_repair)
+qqnorm(arcsine_repair)
+qqline(arcsine_repair, col = "red")
+
+t.test(arcsine_repair ~ group, data = group_all_count)
+```
+
+
+```{r}
+hist(group_all_count$total_chi_utt)
+hist(group_all_count$n_of_repairs)
+wilcox.test(total_chi_utt ~ group, data = group_all_count)
+wilcox.test(n_of_repairs ~ group, data = group_all_count)
+```
+
+```{r}
+anova_child_utt <- aov(chi_utt_vs_total_utt ~ group * session,
+  data = group_all_count
+)
+
+plot(anova_child_utt, which=3)
+
+leveneTest(anova_child_utt)
+
+summary(anova_child_utt)
+```
+
+```{r}
+anova_rep <- aov(repair_vs_chi_utt ~ group * session, data = group_all_count)
+
+plot(anova_rep, which=2)
+plot(anova_rep, which=3)
+
+leveneTest(anova_rep) 
+
+summary(anova_rep)
+```
+
+```{r}
+m0 <- lm(repair_vs_chi_utt ~ group + chi_utt_vs_total_utt, data = group_all_count)
+summary(m0)
+```
+
+```{r}
+m1_utt <- lmer(chi_utt_vs_total_utt ~ group * session + (1 | chi), data = group_all_count)
+m1_rep <- lmer(repair_vs_chi_utt ~ group * session + (1 | chi), data = group_all_count)
+summary(m1_utt)
+summary(m1_rep)
+```
+#############################################
+
+██████  ███████ ██████   █████  ██ ██████  
+██   ██ ██      ██   ██ ██   ██ ██ ██   ██ 
+██████  █████   ██████  ███████ ██ ██████  
+██   ██ ██      ██      ██   ██ ██ ██   ██ 
+██   ██ ███████ ██      ██   ██ ██ ██   ██ 
+                                           
+                                           
+████████ ██    ██ ██████  ███████ ███████  
+   ██     ██  ██  ██   ██ ██      ██       
+   ██      ████   ██████  █████   ███████  
+   ██       ██    ██      ██           ██  
+   ██       ██    ██      ███████ ███████ 
+   
+#############################################
+
+```{r}
+Adam <- Adam %>%
+  mutate(row_number = row_number()) %>%
+  mutate(session = case_when(
+    grepl("1|2", file) ~ 2,
+    grepl("3|4", file) ~ 4,
+    grepl("5|6", file) ~ 6,
+  ))
+
+Albert <- Albert %>%
+  mutate(row_number = row_number())%>%
+  mutate(session = case_when(
+    grepl("1|2", file) ~ 2,
+    grepl("3|4", file) ~ 4,
+    grepl("5|6", file) ~ 6,
+  ))
+
+Anthony <- Anthony %>%
+  mutate(row_number = row_number())%>%
+  mutate(session = case_when(
+    grepl("1|2", file) ~ 2,
+    grepl("3|4", file) ~ 4,
+    grepl("5|6", file) ~ 6,
+  ))
+
+AD <- AD %>%
+  mutate(row_number = row_number())%>%
+  mutate(session = case_when(
+    grepl("1|2", file) ~ 2,
+    grepl("3|4", file) ~ 4,
+    grepl("5|6", file) ~ 6,
+  ))
+
+AH <- AH %>%
+  mutate(row_number = row_number())%>%
+  mutate(session = case_when(
+    grepl("1|2", file) ~ 2,
+    grepl("3|4", file) ~ 4,
+    grepl("5|6", file) ~ 6,
+  ))
+
+AS <- AS %>%
+  mutate(row_number = row_number())%>%
+  mutate(session = case_when(
+    grepl("1|2", file) ~ 2,
+    grepl("3|4", file) ~ 4,
+    grepl("5|6", file) ~ 6,
+  ))
+```
+
+```{r}
+long_group <- rbind(Adam, Albert, Anthony) %>%
+  mutate(group = "long")
+
+short_group <- rbind(AD, AH, AS) %>%
+  mutate(group = "short")
+
+all <- rbind(long_group, short_group) %>%
+    select(!other)
+all$reptype <- as.factor(all$reptype)
+```
+
+```{r}
+colors_rep <- as.vector(trubetskoy(14))
+
+names(colors_rep) <- levels(all$reptype)
+colScale_reptype <- list(
+  scale_fill_manual(name = "Repair type", values = colors_rep),
+  scale_colour_manual(name = "Repair type", values = colors_rep)
+)
+```
+
+```{r}
+all_long <- all %>%
+    pivot_longer(
+      cols = c("pause", "search", "repeat", "cause"),
+      names_to = "more",
+      values_to = "whatsmore",
+      values_drop_na = FALSE
+    )
+all_long$whatsmore <- as.factor(all_long$whatsmore)
+
+colors_more <- as.vector(tol(12))
+names(colors_more) <- levels(all_long$whatsmore)
+colScale_moretype <- list(
+  scale_colour_manual(name = "Repair (sub)types, causes",values = colors_more),
+  scale_fill_manual(name = "Repair (sub)types, causes",values = colors_more)
+)
+```
+
+```{r}
+long_group <- subset(all, group=="long")
+short_group <- subset(all, group=="short")
+```
+
+
+```{r}
+ggplot(long_group, aes(x = reorder(reptype, reptype, function(x)-length(x)))) +
+  aes(fill = reptype) +
+  geom_bar() +
+  xlab("Repair type") +
+  ggtitle("Repair types by count, long name group") +
+  colScale_reptype+ 
+  theme(axis.text.x = element_text(angle = 70, hjust=1))
+
+ggplot(short_group, aes(x = reorder(reptype, reptype, function(x)-length(x)))) +
+  aes(fill = reptype) +
+  geom_bar() +
+  xlab("Repair type") +
+  ggtitle("Repair types by count, short name group")+
+  colScale_reptype+ 
+  theme(axis.text.x = element_text(angle = 70, hjust=1))
+```
+
+```{r}
+long_reptype_summary <- long_group %>%
+  group_by(session, reptype) %>%
+  summarise(count = n(), .groups = "drop") %>%
+  drop_na(reptype) %>%
+  mutate(label = ifelse(count < 5, NA, count))
+long_reptype_summary$reptype <- reorder(long_reptype_summary$reptype, long_reptype_summary$count, sum)
+
+ggplot(long_reptype_summary, aes(x = session, y=count, fill=reptype, group=reptype)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = label), 
+            position = position_stack(vjust = 0.5), 
+            size = 2.5) +
+  colScale_reptype+ 
+  ggtitle("Repair types over time (total) for long name group") +
+  theme_gray()
+
+short_reptype_summary <- short_group %>%
+  group_by(session, reptype) %>%
+  summarise(count = n(), .groups = "drop") %>%
+  drop_na(reptype) %>%
+  mutate(label = ifelse(count < 5, NA, count)) 
+short_reptype_summary$reptype <- reorder(short_reptype_summary$reptype, short_reptype_summary$count)
+
+ggplot(short_reptype_summary, aes(x = session, y=count, fill=reptype, group=reptype)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = label), 
+            position = position_stack(vjust = 0.5), 
+            size = 2.5) +
+  colScale_reptype+ 
+  ggtitle("Repair types over time (total) for short name group") +
+  theme_gray()
+```
+
+```{r}
+long_total_repairs <- long_group %>%
+  group_by(session) %>%
+  drop_na(reptype) %>%
+  summarise(repair_count = n())
+
+long_reptype_summary_props <- long_reptype_summary %>%
+  left_join(long_total_repairs, by = "session") %>%
+  mutate(proportion = count / repair_count) %>%
+  mutate(label = ifelse(proportion < 0.01, NA, proportion)) %>%
+  mutate(label = round(label, 4))
+
+ggplot(long_reptype_summary_props, aes(x = session, y = proportion*100, color = reptype, group = reptype)) +
+  geom_line(size = 1, alpha = 0.7) +
+  geom_point(size = 2) +
+  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), vjust = -0.6, size = 3) +
+  labs(y = "proportion, %") +
+  ggtitle("Repair types over time (relative) for long name group") +
+  colScale_reptype
+
+long_reptype_summary_props$reptype <- reorder(long_reptype_summary_props$reptype, long_reptype_summary_props$proportion)
+
+ggplot(long_reptype_summary_props, aes(x = session, y = proportion*100, fill = reptype, group = reptype)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), 
+            position = position_stack(vjust = 0.5), 
+            size = 2.5) +
+  labs(y = "proportion, %") +
+  ggtitle("Repair types over time (relative) for long name group") +
+  colScale_reptype
+
+
+
+short_total_repairs <- short_group %>%
+  group_by(session) %>%
+  drop_na(reptype) %>%
+  summarise(repair_count = n())
+
+short_reptype_summary_props <- short_reptype_summary %>%
+  left_join(short_total_repairs, by = "session") %>%
+  mutate(proportion = count / repair_count) %>%
+  mutate(label = ifelse(proportion < 0.01, NA, proportion)) %>%
+  mutate(label = round(label, 4))
+
+
+ggplot(short_reptype_summary_props, aes(x = session, y = proportion*100, color = reptype, group = reptype)) +
+  geom_line(size = 1, alpha = 0.7) +
+  geom_point(size = 2) +
+  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), vjust = -0.6, size = 3) +
+  labs(y = "proportion, %") +
+  ggtitle("Repair types over time (relative) for short name group") +
+  colScale_reptype
+
+short_reptype_summary_props$reptype <- reorder(short_reptype_summary_props$reptype, short_reptype_summary_props$proportion)
+
+ggplot(short_reptype_summary_props, aes(x = session, y = proportion*100, fill = reptype, group = reptype)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), 
+            position = position_stack(vjust = 0.5), 
+            size = 2.5) +
+  labs(y = "proportion, %") +
+  ggtitle("Repair types over time (relative) for short name group") +
+  colScale_reptype
+```
+
+
+```{r}
+long_l <- subset(all_long, group=="long") 
+short_l <- subset(all_long, group=="short") 
+```
+
+```{r}
+long_l_summary <- long_l %>%
+  drop_na(whatsmore) %>%
+  group_by(session, whatsmore) %>%
+  summarise(count = n()) %>%
+  mutate(label = ifelse(count < 5, NA, count))
+long_l_summary$whatsmore <- reorder(long_l_summary$whatsmore, long_l_summary$count, sum)
+
+ggplot(long_l_summary, aes(x = session, y=count, fill=whatsmore, group=whatsmore)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = label), 
+            position = position_stack(vjust = 0.5), 
+            size = 2.5) +
+  ggtitle("Repair causes, types over time (total) for long name group") +
+  colScale_moretype
+
+short_l_summary <- short_l %>%
+  drop_na(whatsmore) %>%
+  group_by(session, whatsmore) %>%
+  summarise(count = n(), .groups = "drop") %>%
+  mutate(label = ifelse(count < 5, NA, count))
+short_l_summary$whatsmore <- reorder(short_l_summary$whatsmore, short_l_summary$count, sum)
+
+ggplot(short_l_summary, aes(x = session, y=count, fill=whatsmore, group=whatsmore)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = label), 
+            position = position_stack(vjust = 0.5), 
+            size = 2.5) +
+  ggtitle("Repair causes, types over time (total) for short name group")+
+  colScale_moretype
+```
+
+```{r}
+long_l_props_total <- long_l_summary %>%
+  left_join(long_total_repairs, by = "session") %>%
+  mutate(proportion = count / repair_count) %>%
+  mutate(label = ifelse(proportion < 0.004, NA, proportion)) %>%
+  mutate(label = round(label, 4))
+
+short_l_props_total <- short_l_summary %>%
+  left_join(short_total_repairs, by = "session") %>%
+  mutate(proportion = count / repair_count) %>%
+  mutate(label = ifelse(proportion < 0.004, NA, proportion)) %>%
+  mutate(label = round(label, 4))
+
+ggplot(long_l_props_total, aes(x = session, y = proportion*100, color = whatsmore, group = whatsmore)) +
+  geom_line(size = 1, alpha = 0.7) +
+  geom_point(size = 2) +
+  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), vjust = -0.6, size = 3) +
+  labs(y = "proportion, %") +
+  ggtitle("Repair causes/types (relative to total repairs), long names")+
+  colScale_moretype
+
+ggplot(short_l_props_total, aes(x = session, y = proportion*100, color = whatsmore, group = whatsmore)) +
+  geom_line(size = 1, alpha = 0.7) +
+  geom_point(size = 2) +
+  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), vjust = -0.6, size = 3) +
+  labs(y = "proportion, %") +
+  ggtitle("Repair causes/types (relative to total repairs), short names")+
+  colScale_moretype
+
+
+long_l_props_total$whatsmore <- reorder(long_l_props_total$whatsmore, long_l_props_total$proportion, sum)
+
+ggplot(long_l_props_total, aes(x = session, y = proportion*100, fill = whatsmore, group = whatsmore)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), 
+            position = position_stack(vjust = 0.5), 
+            size = 2.5) +
+  labs(y = "proportion, %") +
+  ggtitle("Repair causes/types (relative to total repairs), long names")+
+  colScale_moretype
+
+short_l_props_total$whatsmore <- reorder(short_l_props_total$whatsmore, short_l_props_total$proportion, sum)
+
+ggplot(short_l_props_total, aes(x = session, y = proportion*100, fill = whatsmore, group = whatsmore)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), 
+            position = position_stack(vjust = 0.5), 
+            size = 2.5) +
+  labs(y = "proportion, %") +
+  ggtitle("Repair causes/types (relative to total repairs), short names")+
+  colScale_moretype
+```
+
+```{r}
+long_l_total_repairs <- long_l %>%
+  drop_na(whatsmore) %>%
+  group_by(session)  %>%
+  summarise(repair_count = n())
+
+short_l_total_repairs <- short_l %>%
+  drop_na(whatsmore) %>%
+  group_by(session) %>%
+  summarise(repair_count = n())
+
+long_l_props_melted <- long_l_summary %>% # out of all of the lines that have a whatsmore
+  left_join(long_l_total_repairs, by = "session") %>%
+  mutate(proportion = count / repair_count) %>%
+  mutate(label = ifelse(proportion < 0.004, NA, proportion)) %>%
+  mutate(label = round(label, 4))
+
+short_l_props_melted <- short_l_summary %>%
+  left_join(short_l_total_repairs, by = "session") %>%
+  mutate(proportion = count / repair_count) %>%
+  mutate(label = ifelse(proportion < 0.004, NA, proportion)) %>%
+  mutate(label = round(label, 4))
+
+ggplot(long_l_props_melted, aes(x = session, y = proportion*100, color = whatsmore, group = whatsmore)) +
+  geom_line(size = 1, alpha = 0.7) +
+  geom_point(size = 2) +
+  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), vjust = -0.6, size = 3) +
+  labs(y = "proportion, %") +
+  ggtitle("Repair causes/types (relative to melted repairs), long names")+
+  colScale_moretype
+
+ggplot(short_l_props_melted, aes(x = session, y = proportion*100, color = whatsmore, group = whatsmore)) +
+  geom_line(size = 1, alpha = 0.7) +
+  geom_point(size = 2) +
+  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), vjust = -0.6, size = 3) +
+  labs(y = "proportion, %") +
+  ggtitle("Repair causes/types (relative to melted repairs), short names")+
+  colScale_moretype
+
+
+long_l_props_melted$whatsmore <- reorder(long_l_props_melted$whatsmore, long_l_props_melted$proportion, sum)
+
+ggplot(long_l_props_melted, aes(x = session, y = proportion*100, fill = whatsmore, group = whatsmore)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), 
+            position = position_stack(vjust = 0.5), 
+            size = 2.5) +
+  labs(y = "proportion, %") +
+  ggtitle("Repair causes/types (relative to melted repairs), long names")+
+  colScale_moretype
+
+short_l_props_melted$whatsmore <- reorder(short_l_props_melted$whatsmore, short_l_props_melted$proportion, sum)
+
+ggplot(short_l_props_melted, aes(x = session, y = proportion*100, fill = whatsmore, group = whatsmore)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), 
+            position = position_stack(vjust = 0.5), 
+            size = 2.5) +
+  labs(y = "proportion, %") +
+  ggtitle("Repair causes/types (relative to melted repairs), short names")+
+  colScale_moretype
+```
+
+
+```{r}
+nopause_long_total_repairs <- long_group %>%
+  filter(!(pause %in% "short pause")) %>%
+  group_by(session) %>%
+  summarise(repair_count = n())
+```
+
+```{r}
+long_nopause_props <- long_l_summary %>%
+  filter(!(whatsmore %in% "short pause")) %>%
+  left_join(nopause_long_total_repairs, by = "session") %>%
+  mutate(proportion = count / repair_count) %>%
+  mutate(label_rel = ifelse(proportion < 0.004, NA, proportion)) %>%
+  mutate(label_rel = round(label_rel, 4))
+
+ggplot(long_nopause_props, aes(x = session, y = proportion*100, color = whatsmore, group = whatsmore)) +
+  geom_line(size = 1, alpha = 0.7) +
+  geom_point(size = 2) +
+  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), vjust = -0.5, size = 2.5) +
+  labs(y = "proportion, %") +
+  ggtitle("Repair causes, types over time (relative) for long name group, no short pauses")+
+  colScale_moretype
+
+long_nopause_props$whatsmore <- reorder(long_nopause_props$whatsmore, long_nopause_props$proportion, sum)
+
+ggplot(long_nopause_props, aes(x = session, y = proportion*100, fill = whatsmore, group = whatsmore)) +
+  geom_bar(stat = "identity") +
+    geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), 
+            position = position_stack(vjust = 0.5), 
+            size = 2.5) +
+  labs(y = "proportion, %") +
+  ggtitle("Repair causes, types over time (relative) for long name group, no short pauses")+
+  colScale_moretype
+```
+
+###################################################
+████████ ██    ██ ██████  ███    ██ ███████ 
+   ██    ██    ██ ██   ██ ████   ██ ██      
+   ██    ██    ██ ██████  ██ ██  ██ ███████ 
+   ██    ██    ██ ██   ██ ██  ██ ██      ██ 
+   ██     ██████  ██   ██ ██   ████ ███████ 
+                                            
+###################################################
+
+```{r}
+long_turns <- group_long_rep %>%
+  mutate(session = case_when(
+    grepl("1|2", file) ~ 2,
+    grepl("3|4", file) ~ 4,
+    grepl("5|6", file) ~ 6,
+  )) %>%
+  group_by(session, type) %>%
+  summarise(count = n(), .groups = "drop") %>%
+  na.omit() %>%
+  mutate(label = ifelse(count < 5, NA, count))
+long_turns$type <- reorder(long_turns$type, long_turns$count, sum)
+
+ggplot(long_turns, aes(x = session, y=count, fill=type, group=type)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = label), 
+            position = position_stack(vjust = 0.5), 
+            size = 3) +
+  ggtitle("Turn types for repair over time (total) for long name group")
+
+short_turns <- group_short_rep %>%
+  mutate(session = case_when(
+    grepl("1|2", file) ~ 2,
+    grepl("3|4", file) ~ 4,
+    grepl("5|6", file) ~ 6,
+  )) %>%
+  group_by(session, type) %>%
+  summarise(count = n(), .groups = "drop") %>%
+  na.omit() %>%
+  mutate(label = ifelse(count < 5, NA, count))
+short_turns$type <- reorder(short_turns$type, short_turns$count, sum)
+
+ggplot(short_turns, aes(x = session, y=count, fill=type, group=type)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = label), 
+            position = position_stack(vjust = 0.5), 
+            size = 3) +
+  ggtitle("Turn types for repair over time (total) for short name group")
+```
+
+```{r}
+# should be total repairs not total utterances!
+long_turns_rel <- long_turns %>%
+  left_join(long_total_repairs, by = "session") %>%
+  mutate(proportion = count / total) %>%
+  mutate(label_rel = ifelse(proportion < 0.004, NA, proportion)) %>%
+  mutate(label_rel = round(label_rel, 4))
+
+short_turns_rel <- short_turns %>%
+  left_join(short_total_repairs, by = "session") %>%
+  mutate(proportion = count / total) %>%
+  mutate(label_rel = ifelse(proportion < 0.004, NA, proportion)) %>%
+  mutate(label_rel = round(label_rel, 4))
+
+ggplot(long_turns_rel, aes(x = session, y = proportion*100, color = type, group = type)) +
+    geom_line(size = 1, alpha = 0.7) +
+  geom_point(size = 2) +
+  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), vjust = -0.5, size = 3) +
+  labs(y = "proportion, %") +
+  ggtitle("Turn types (relative) for long name group")
+
+ggplot(short_turns_rel, aes(x = session, y = proportion*100, color = type, group = type)) +
+    geom_line(size = 1, alpha = 0.7) +
+  geom_point(size = 2) +
+  geom_text(aes(label = scales::percent(proportion, accuracy = 0.01)), vjust = -0.5, size = 3) +
+  labs(y = "proportion, %") +
+  ggtitle("Turn types (relative) for short name group")
+
+long_turns_rel$type <- reorder(long_turns_rel$type, long_turns_rel$proportion)
+
+ggplot(long_turns_rel, aes(x = session, y = proportion*100, fill = type, group = type)) +
+  geom_bar(stat = "identity") +
+    geom_text(aes(label = label_rel*100), 
+            position = position_stack(vjust = 0.5), 
+            size = 3) +
+  labs(y = "proportion, %") +
+  ggtitle("Turn types (relative) for long name group")
+
+short_turns_rel$type <- reorder(short_turns_rel$type, short_turns_rel$proportion)
+
+ggplot(short_turns_rel, aes(x = session, y = proportion*100, fill = type, group = type)) +
+  geom_bar(stat = "identity") +
+    geom_text(aes(label = label_rel*100), 
+            position = position_stack(vjust = 0.5), 
+            size = 3) +
+  labs(y = "proportion, %") +
+  ggtitle("Turn types (relative) for short name group")
+```

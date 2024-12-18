@@ -1,4 +1,4 @@
-﻿;Speaker;Utterance;Type of repair;Same-turn - specify type;TRP - specify type;Third-turn - specify type;Third-position - specify type;pause;search;repeat;cause;other
+;Speaker;Utterance;Type of repair;Same-turn - specify type;TRP - specify type;Third-turn - specify type;Third-position - specify type;pause;search;repeat;cause;other
 AH6;CHI;and where's the washcloth;;;;;;;;;;
 AH6;MOT;I don't know was there a washcloth;;;;;;;;;;
 AH6;CHI;before [I do it];;;;;;;;;;
@@ -33,7 +33,7 @@ AH6;CHI;she's going right here see because she- cause she has a hurty f- cause s
 AH6;CHI;(a lot of stuttering);;recycling;;;;;;;stuttering;
 AH6;CHI;she doesn't make;same-turn;aborting;;;;;;;;
 AH4;CHI;she she she;same-turn;recycling;;;;;repetition search;;stuttering;
-AH4;CHI;she she she;same-turn;aborting;;;;word repeat;;;;
+AH4;CHI;she she she;same-turn;aborting;;;;small repeat;;;;
 AH4;CHI;the the soap;same-turn;recycling;;;;;;small repeat;stuttering;
 AH4;CHI;this is the soap;;;;;;;;;;
 AH4;MOT;a little sponge;;;;;;;;;;

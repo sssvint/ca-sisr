@@ -240,8 +240,8 @@ Adam3,CHI,can that could go on there,same-turn,recycling,NA,NA,small repeat,NA,N
 Adam3,CHI,it's,NA,NA,short pause,NA,NA,NA,NA
 Adam3,CHI,tall enough,NA,NA,short pause,NA,NA,NA,NA
 Adam3,CHI,it's tall enough,TRP,recycling,NA,NA,NA,NA,NA
-Adam1,CHI,uh,same-turn,searching,NA,small search,NA,NA,NA
-Adam1,CHI,can I,same-turn,aborting,NA,NA,NA,NA,NA
+Adam1,CHI,uh,same-turn,searching,short pause,small search,NA,NA,NA
+Adam1,CHI,can I,same-turn,aborting,short pause,NA,NA,NA,NA
 Adam1,CHI,be be a ball,same-turn,recycling,NA,NA,small repeat,stuttering,NA
 Adam1,CHI,um,same-turn,searching,NA,small search,NA,NA,NA
 Adam1,CHI,more Bubbles,Third-turn,replacing,NA,NA,NA,misspeak,NA
